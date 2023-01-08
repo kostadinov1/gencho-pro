@@ -24,18 +24,17 @@ const App = () => {
   return (
     <Layout className="layout">
       <Header>
-      <div style={{float: 'left'}}>
-        <h1 style={{color: 'white', fontSize: '50px',fontFamily: 'Kanit', marginTop: '-6px'}}>gencho.pro</h1>
-        {/* <img
-        width={96}
-        height={54}
-        src='/logo192.png' 
-        alt='logo'/> */}
+      <div style={{float: 'left', marginTop: '7px'}}>
+        <img
+        width={120}
+        height={50}
+        src='/images/logos/gpro-logo-1.png' 
+        alt='logo'/>
       </div> 
       
         <div className="logo" />
         <Menu
-          style={{fontSize: '35px', fontFamily: 'Verdana', color: 'orange', paddingLeft: '200px'}}
+          style={{fontSize: '35px', fontFamily: 'Verdana', color: 'orange', paddingLeft: '50px'}}
           theme="dark"
           mode="horizontal"
           defaultSelectedKeys={['1']}

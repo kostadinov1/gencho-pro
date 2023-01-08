@@ -1,4 +1,7 @@
 
+/* .layout {
+    background-image: url('/public/images/backgrounds/background-1.jpg');
+} */
 
 .title {
     text-align: center;
@@ -6,6 +9,7 @@
 }
 
 p {
-    padding: 0 30px;
-    font-size: large;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: xx-large;
 }

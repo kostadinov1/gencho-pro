@@ -8,20 +8,23 @@
 }
 .title {
     text-align: center;
-    font-size: 32px;
+    font-size: 36px;
+    color:aliceblue;
 }
 
 p {
     padding-left: 50px;
     padding-right: 50px;
-    font-size: large;
+    font-size: x-large;
+    color:aliceblue;
+
 }
 
 .menu-icon {
     
 }
 .layout {
-    background-color: #ececec;    
-    /* background-image: url('/images/backgrounds/background-1.jpg'); */
+    /* background-color: #ececec;     */
+    background-image: url('/images/backgrounds/background-nasa.jpg');
 
 }

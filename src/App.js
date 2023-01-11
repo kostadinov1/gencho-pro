@@ -6,6 +6,9 @@ import Home from './components/Home/Home';
 import { faAt, faHouseChimney,  faSquarePollVertical } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { GithubOutlined } from '@ant-design/icons';
+import Projects from './components/Projects/Projects';
+import Contacts from './components/Contacts/Contacts'
+import PersonalZone from './components/PersonalZone/PersonalZone'
 const { Header, Content, Footer } = Layout;
 
 const App = () => {
@@ -71,6 +74,11 @@ const items =[
         <Routes >
           {/* Menu */}
           <Route path='/' element={<Home />}/>
+          <Route path='/projects' element={<Projects/>}/>
+          <Route path='/contacts' element={<Contacts/>}/>
+          <Route path='/personal-zone' element={<PersonalZone />}/>
+
+
         </Routes>
 
   

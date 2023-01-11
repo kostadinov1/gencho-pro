@@ -4,20 +4,23 @@ const Home = () => {
     return (
         <>
         <section >
-            <Image
+            {/* <Image
             src='/images/banners/gpro-banner-0.png'
             width={'100%'}
             height={'100%'}
             preview={false}
             >
 
-            </Image>
+            </Image> */}
             <div >
                 <h1 className='title'>Hello and Welcome to my website!</h1>
                 <p>My name is Evgeni Kostadinov and I am web developer.
-                    I have several <Link to='/projects'>projects</Link> completed using React JS as Frontend and Django REST as a backend service.
-                    I am also using AWS, Docker and NginX to deploy my applications. You can have a look at the code in my <a href='https://github.com/kostadinov1'>GitHub Profile</a>.
-                     I am looking forward to get a lot more experience and I am exited about the technology that the future will bring us. </p>
+                    I study Web Development at <a href='https://softuni.bg/'>SoftUni</a> Bulgaria.
+                    My personal <Link to='/projects'>projects</Link> are made using Django REST as a Back End
+                    and ReactJS as Front End. I am using AWS and Nginx as well as Docker to deploy my applications.
+                    You can have a look at the code in my <a href='https://github.com/kostadinov1'>GitHub Profile</a>.
+                    
+                </p>
                 {/* <Image 
                 src='/images/backgrounds/background-1.jpg' 
                 preview={false}

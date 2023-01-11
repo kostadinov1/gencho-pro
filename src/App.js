@@ -1,40 +1,62 @@
-
-
+// import 'antd/dist/reset.css';
 import { Link, Route, Routes } from 'react-router-dom';
 import React from 'react';
-import { Breadcrumb, Layout, Menu, theme } from 'antd';
+import { Layout, Menu, ConfigProvider } from 'antd';
 import Home from './components/Home/Home';
+import { faAt, faHouseChimney,  faSquarePollVertical } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { GithubOutlined } from '@ant-design/icons';
 const { Header, Content, Footer } = Layout;
 
+const App = () => {
+  
 const items =[
   {
                 key: 1,
                 label: <Link to='/'>Home</Link>,
-                // icon:<FontAwesomeIcon icon={faHouseChimney} />
+                icon:<FontAwesomeIcon
+                className='menu-icon'
+                icon={faHouseChimney} 
+                />
               },
               {
                 key: 2,
                 label: <Link to='/projects'>Projects</Link>,
-                // icon:<FontAwesomeIcon icon={faDiagramProject}></FontAwesomeIcon>
+                icon:<FontAwesomeIcon icon={faSquarePollVertical} />
+              },
+              {
+                key: 3,
+                label: <a href='https://github.com/kostadinov1' >GitHub</a>,
+                icon: <GithubOutlined></GithubOutlined>
+              },
+              {
+                key: 4,
+                label: <Link to='/contacts'>Contacts</Link>,
+                icon:<FontAwesomeIcon icon={faAt}></FontAwesomeIcon>
               },
             ]
-const App = () => {
-  
 
   return (
+    <ConfigProvider
+      theme={{
+        token: {
+          colorPrimary: '#FF8900',
+        },
+      }}
+    >
     <Layout className="layout">
       <Header>
-      <div style={{float: 'left', marginTop: '7px'}}>
+      <div className="logo" >
         <img
-        width={120}
+        width={170}
         height={50}
         src='/images/logos/gpro-logo-1.png' 
         alt='logo'/>
       </div> 
       
-        <div className="logo" />
+        <div  />
         <Menu
-          style={{fontSize: '35px', fontFamily: 'Verdana', color: 'orange', paddingLeft: '50px'}}
+          style={{fontFamily: 'Verdana', color: '#57fc01', }}
           theme="dark"
           mode="horizontal"
           defaultSelectedKeys={['1']}
@@ -61,85 +83,8 @@ const App = () => {
         Ant Design ©2018 Created by Ant UED
       </Footer>
     </Layout>
+    </ConfigProvider>
+
   );
 };
 export default App;
-
-
-// import { Link, Route, Routes } from 'react-router-dom';
-// import React from 'react';
-// import { Breadcrumb, Layout, Menu, theme } from 'antd';
-// const { Header, Content, Footer } = Layout;
-
-// const items =[
-//   {
-//                 key: 1,
-//                 label: <Link to='/'>Home</Link>,
-//                 // icon:<FontAwesomeIcon icon={faHouseChimney} />
-//               },
-//               {
-//                 key: 2,
-//                 label: <Link to='/projects'>Projects</Link>,
-//                 // icon:<FontAwesomeIcon icon={faDiagramProject}></FontAwesomeIcon>
-//               },
-//             ]
-// const App = () => {
-//   const {
-//     token: { colorBgContainer },
-//   } = theme.useToken();
-//   return (
-//     <Layout className="layout">
-//       <Header>
-//       <div style={{}}>
-//         <img src='' 
-
-//         alt='logo'/>
-//       </div>
-// {/*         
-//         <div className="logo" /> */}
-//         <Menu
-//           theme="dark"
-//           mode="horizontal"
-//           defaultSelectedKeys={['1']}
-//           items={items}
-//           />
-//       </Header>
-//       <Content
-//         style={{
-//           padding: '0 50px',
-//         }}
-//       >
-//         <Breadcrumb
-//           style={{
-//             margin: '16px 0',
-//           }}
-//         >
-//           <Breadcrumb.Item>Home</Breadcrumb.Item>
-//           <Breadcrumb.Item>List</Breadcrumb.Item>
-//           <Breadcrumb.Item>App</Breadcrumb.Item>
-//         </Breadcrumb>
-//         <div
-//           className="site-layout-content"
-//           style={{
-//             background: colorBgContainer,
-//           }}
-//         >
-//         <Routes >
-//           {/* Menu */}
-//           {/* <Route path='/' element={<Home />}/> */}
-//         </Routes>
-
-//         </div>
-//       </Content>
-//       <Footer
-//         style={{
-//           textAlign: 'center',
-//         }}
-//       >
-//         Ant Design ©2018 Created by Ant UED
-//       </Footer>
-//     </Layout>
-//   );
-// };
-// export default App;
-

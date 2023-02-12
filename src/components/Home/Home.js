@@ -2,19 +2,21 @@ import { Image, Space } from 'antd'
 import { Link } from 'react-router-dom'
 const Home = () => {
     return (
+        <>
+        <Image
+            style={{padding: '80px'}}
+            src='/images/banners/banner-1.png'
+            width={'100%'}
+            height={'100%'}
+            preview={false}
+            />
         <Space direction='vertical'>
             <Space  size={'small'} style={{padding: '50px' }}>
-                <Image
-                    style={{}}
-                    src='/images/banners/banner-1.png'
-                    width={'100%'}
-                    height={'100%'}
-                    preview={false}
-                    />
+
        
             </Space>
                 <Space >
-                    <Space direction='vertical'>
+                    <Space direction='vertical' >
                     <h1 className='title'>Hello and Welcome to my website!</h1>
                     <p>My name is Evgeni Kostadinov and I am web developer.
                         I study Web Development at <a href='https://softuni.bg/'>SoftUni</a> Bulgaria.
@@ -24,7 +26,8 @@ const Home = () => {
                     </p>
                     </Space>
                         <Image 
-                            src='/images/backgrounds/background-1.jpg' 
+                            src='/images/fillups/fillup-code.jpg'
+                            style={{padding: '60px'}}
                             preview={false}
                             width={'auto'}
                             height={'auto'}
@@ -34,6 +37,7 @@ const Home = () => {
             </Space>
 
         </Space>
+                            </>
     )
 }
 

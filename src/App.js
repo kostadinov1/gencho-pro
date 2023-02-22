@@ -1,4 +1,5 @@
 // import 'antd/dist/reset.css';
+import './App.css'
 import {Link, Route, Routes } from 'react-router-dom';
 import React from 'react';
 
@@ -12,17 +13,18 @@ import PersonalZone from './components/PersonalZone/PersonalZone'
 const App = () => {
 
   return (
-        <section>
-          <header>
-              <ul className='nav-bar'>
+        <section id='body'>
+          <header className='nav-bar'>
+              <i id='logo' />
+              <h1>gencho.pro</h1>
+              <ul className='nav-bar-links'>
                 <li><Link>Home</Link></li>
                 <li><Link>Projects</Link></li>
                 <li><Link>Contacts</Link></li>
                 <li><Link>Personal-Zone</Link></li>
-
               </ul>
           </header>
-          <main>
+          <main className='main'>
             <Routes >
               {/* Menu */}
               <Route path='/' element={<Home />}/>
@@ -31,7 +33,7 @@ const App = () => {
               <Route path='/personal-zone' element={<PersonalZone />}/>
             </Routes>
           </main>
-          <footer>
+          <footer className='footer'>
 
           </footer>
         </section>

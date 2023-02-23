@@ -18,23 +18,34 @@ const App = () => {
               <i id='logo' />
               <h1>gencho.pro</h1>
               <ul className='nav-bar-links'>
-                <li><Link>Home</Link></li>
-                <li><Link>Projects</Link></li>
-                <li><Link>Contacts</Link></li>
-                <li><Link>Personal-Zone</Link></li>
+                <li><Link to={'/'}>Home</Link></li>
+                <li><Link to={'/projects'}>Projects</Link></li>
+                <li><Link to={'/contacts'}>Contacts</Link></li>
+                <li><Link to={'/login'}>Login</Link></li>
               </ul>
+              {/* <button className='login-btn' >Login</button> */}
           </header>
-          <main className='main'>
+          <main>
             <Routes >
               {/* Menu */}
               <Route path='/' element={<Home />}/>
               <Route path='/projects' element={<Projects/>}/>
               <Route path='/contacts' element={<Contacts/>}/>
-              <Route path='/personal-zone' element={<PersonalZone />}/>
+              <Route path='/login' element={<PersonalZone />}/>
             </Routes>
           </main>
-          <footer className='footer'>
+          <footer>
+            <div>
+            <h3>Footer</h3>
+                <ul>
+                    <li><a href='https://www.github.com/kostadinov1'>Github</a></li>
+                    <li><a href='https://www.github.com/kostadinov1'>LinkedIn</a></li>
+                    <li><a href='https://www.github.com/kostadinov1'>Github</a></li>
+                    <li><a href='https://www.github.com/kostadinov1'>Github</a></li>
+                    <li><a href='https://www.github.com/kostadinov1'>Github</a></li>
+                </ul>             
 
+            </div>
           </footer>
         </section>
 

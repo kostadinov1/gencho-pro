@@ -1,51 +1,78 @@
-/* font-family: 'Gajraj One', cursive;
-font-family: 'Pacifico', cursive;
-font-family: 'Space Mono', monospace; */
+:root{
+    --ink: #3392db;
+    --posy: #4d0c15;
+    --embers: #b82601;
+}
+/*
+      COLOR PALETTE
+black - #000000
+ink   - #062f4f
+posy  - 
+
+
+*/
 
 * {
     box-sizing: border-box;
   }
-
+button {
+    all: unset;
+}
+html {
+    background-color: black;
+}
 #body {
-    scroll-behavior: smooth;
-    font-family: Arial, Helvetica, sans-serif;
-
-    background: url('../public/images/backgrounds/background-7.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
+    position: relative;
+    font-family: Helvetica, Arial, sans-serif;
+    background-color: black;  
+    /* height: 100%;   */
     
 }
+.login-btn {
+    margin-right: 40px;
+    color: var(--ink);
+    border: 2px solid var(--embers);
+    border-radius: 24px;
+    margin: 15px;
+    padding: 5px 30px;
+}
   
-  .nav-bar {
+.nav-bar {
+    box-shadow: 7px 5px 5px 1px rgba(168, 40, 40, 0.3), 0 6px 20px 0 rgba(120, 5, 5, 0.19);
     display: flex;
     position: sticky;
+    margin-left: 25px;
+    margin-right: 25px;
     top: 10px;    
-    left: 20px;
-    right: 20px;
-    background-color: rgb(20, 20, 20);
-    border:1px solid #b2001c;
+    left: 30px;
+    right: 30px;
+    z-index: 1;
+    background-color: black;
+    border: 1px solid #813772;
     border-radius: 10px;
     overflow: hidden;
     
   }
-  .nav-bar h1 {
-    color: #b2001c;
+.nav-bar h1 {
+    color: var(--embers);
     font-family: 'Gajraj One', cursive;
     font-weight: bold;
     font-size: 52px;
     letter-spacing: 5px;
     margin-top: auto;
     margin-bottom: auto;
-    margin-left: 200px;
+    margin-left: 30px;
   }
-  .nav-bar-links {
+
+.nav-bar-links {
     display: flex;
     margin-left: auto;
     margin-right: auto;
     font-size: 24px;
     overflow: hidden;
   }
-  .nav-bar-links *{
+.nav-bar-links *{
+    
     font-style: italic;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
@@ -60,18 +87,20 @@ font-family: 'Space Mono', monospace; */
     margin-left: 30px;
   }
 
-  .nav-bar-links *:hover {
+.nav-bar-links *:hover {
     scale: 1.02;
     color: lightgray;
   }
-
-  .main {
-    /* margin: 50px; */
-    height: 100vh;
+main {
+    height: auto;
+}
+footer {
     color: white;
-  }
+    position: absolute;
+    bottom: 0px;
 
-/* 
+}
+/* list idea 
   transform: rotateY(-45deg) translateZ(0) scale(1);
 transform-origin: right center;
 transform-style: preserve-3d;

@@ -2,15 +2,24 @@
     --ink: #3392db;
     --posy: #4d0c15;
     --embers: #b82601;
+    --morning-sky: #cae4db;
+    --honey: #dcae1d;
+    --cerulean: #00303f;
+    --mist: #7a9d96;
+    --dark-sunset: #130e13;
+    --shadow-sunset: #201615;
+    --sun-shadow: #a34314;
 }
 /*
-      COLOR PALETTE
-black - #000000
-ink   - #062f4f
-posy  - 
-
+Photo by <a href="https://unsplash.com/@marekpiwnicki?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Marek Piwnicki</a> on <a href="https://unsplash.com/t/wallpapers?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 
 */
+html {
+  background-color: var(--cerulean);
+  /* background-color: rgba(0, 0, 0, 0.7); */
+
+
+}
 
 * {
     box-sizing: border-box;
@@ -18,13 +27,19 @@ posy  -
 button {
     all: unset;
 }
-html {
-    background-color: black;
+a {
+  text-decoration: none;
 }
+li {
+  text-decoration: none;
+  list-style: none;
+
+}
+
 #body {
     position: relative;
     font-family: Helvetica, Arial, sans-serif;
-    background-color: black;  
+    background-color: var(--honey);  
     /* height: 100%;   */
     
 }
@@ -37,60 +52,73 @@ html {
     padding: 5px 30px;
 }
   
-.nav-bar {
-    box-shadow: 7px 5px 5px 1px rgba(168, 40, 40, 0.3), 0 6px 20px 0 rgba(120, 5, 5, 0.19);
-    display: flex;
-    position: sticky;
-    margin-left: 25px;
-    margin-right: 25px;
-    top: 10px;    
-    left: 30px;
-    right: 30px;
-    z-index: 1;
-    background-color: black;
-    border: 1px solid #813772;
-    border-radius: 10px;
-    overflow: hidden;
-    
-  }
-.nav-bar h1 {
-    color: var(--embers);
-    font-family: 'Gajraj One', cursive;
-    font-weight: bold;
-    font-size: 52px;
-    letter-spacing: 5px;
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-left: 30px;
-  }
+  .nav-bar {
+      box-shadow: 7px 5px 5px 1px rgba(168, 40, 40, 0.3), 0 6px 20px 0 rgba(120, 5, 5, 0.19);
+      display: flex;
+      position: absolute;
+      margin-left: 25px;
+      margin-right: 25px;
+      top: 10px;    
+      left: 30px;
+      right: 30px;
+      z-index: 1;
+      background-color: rgba(0, 0, 0, 0.1);
+      /* border: 1px solid #813772; */
+      border-radius: 10px;
+      overflow: hidden;
+      
+    }
+    .nav-bar h1 {
+        background-color: rgba(0, 0, 0, 0.02);
+        color: var(--sun-shadow);
+        font-family: 'Gajraj One', cursive;
+        font-weight: bold;
+        font-size: 52px;
+        letter-spacing: 5px;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-left: 30px;
+        padding-left: 30px;
+        padding-right: 30px;
+        border-radius: 20px;
 
-.nav-bar-links {
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 24px;
-    overflow: hidden;
-  }
-.nav-bar-links *{
-    
-    font-style: italic;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    font-size: 28px;
-    color: lightslategray;
-    letter-spacing: 4px;
-    text-decoration: none;
+      }
 
-    display: flex;
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-left: 30px;
-  }
+    .nav-bar-links {
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 24px;
+        overflow: hidden;
+      }
+    .nav-bar-links *{
+        
+        font-style: italic;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 28px;
+        color: var(--morning-sky);
+        letter-spacing: 4px;
+        text-decoration: none;
 
-.nav-bar-links *:hover {
-    scale: 1.02;
-    color: lightgray;
-  }
+        display: flex;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-left: 30px;
+      }
+
+    .nav-bar-links *:hover {
+        scale: 1.02;
+        color: var(--embers);
+      }
+
+    #nav-bar-menu-icon {
+      margin: auto 30px;
+      font-size: 36px;
+      cursor: pointer;
+      color: var(--sun-shadow);
+    }
+
 main {
     height: auto;
 }

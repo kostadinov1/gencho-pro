@@ -18,7 +18,7 @@ const App = () => {
         <section id='body'>
           <header className='nav-bar'>
               {/* <i id='logo' /> */}
-              <h1>Gencho Pro</h1>
+              <h1>gencho pro</h1>
               <ul className='nav-bar-links'>
                 <li><Link to={'/'}>Home</Link></li>
                 <li><Link to={'/projects'}>Projects</Link></li>

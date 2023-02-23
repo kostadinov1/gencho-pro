@@ -15,7 +15,7 @@ Photo by <a href="https://unsplash.com/@marekpiwnicki?utm_source=unsplash&utm_me
 
 */
 html {
-  background-color: var(--cerulean);
+  background-color: var(--shadow-sunset);
   /* background-color: rgba(0, 0, 0, 0.7); */
 
 
@@ -30,6 +30,10 @@ button {
 a {
   text-decoration: none;
 }
+/* ul {
+  text-decoration: none;
+  list-style: none;
+} */
 li {
   text-decoration: none;
   list-style: none;
@@ -39,7 +43,6 @@ li {
 #body {
     position: relative;
     font-family: Helvetica, Arial, sans-serif;
-    background-color: var(--honey);  
     /* height: 100%;   */
     
 }
@@ -97,7 +100,7 @@ li {
         font-family: Arial, Helvetica, sans-serif;
         font-weight: bold;
         font-size: 28px;
-        color: var(--morning-sky);
+        color: whitesmoke;
         letter-spacing: 4px;
         text-decoration: none;
 

@@ -1,7 +1,7 @@
 import './home.css'
 import './home-responsive.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { GithubOutlined, LinkedinOutlined } from '@ant-design/icons'
+import { CodeOutlined, GithubOutlined, LinkedinOutlined } from '@ant-design/icons'
 const Home = () => {
     return (
         <section className="home">
@@ -13,14 +13,13 @@ const Home = () => {
                     </div>
                 </div>
                 <div className='hero-right'>
-                    <div className='hero-right-image-box'><img alt=''></img></div>
                     <div className='hero-right-links-box'>
-                        <h3>My Links</h3>
+                        {/* <h3>My Links</h3> */}
                         <ul>
-                            <li><a href='https://www.softuni.bg/en'>SoftUni</a></li>
+                            <li><CodeOutlined /><a href='https://www.softuni.bg/en'>SoftUni</a></li>
                             <li><LinkedinOutlined /> <a href='https://www.github.com/kostadinov1'>LinkedIn</a></li>
                             <li><GithubOutlined /> <a href='https://www.github.com/kostadinov1'>Github</a></li>
-                            <li><FontAwesomeIcon icon={['fa', 'brands', 'fa', 'docker']} /><a href='https://hub.docker.com/u/gencho'>DockerHub</a></li>
+                            <li><FontAwesomeIcon icon={['fa-doker']} /><a href='https://hub.docker.com/u/gencho'>DockerHub</a></li>
                             {/* <li><a href='https://www.github.com/kostadinov1'>Github</a></li> */}
                         </ul>
                     </div>

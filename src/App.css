@@ -4,6 +4,7 @@
     --embers: #b82601;
     --morning-sky: #cae4db;
     --honey: #dcae1d;
+    --lemon: #feaf2e;
     --cerulean: #00303f;
     --mist: #7a9d96;
     --dark-sunset: #130e13;
@@ -15,7 +16,7 @@ Photo by <a href="https://unsplash.com/@marekpiwnicki?utm_source=unsplash&utm_me
 
 */
 html {
-  background-color: var(--shadow-sunset);
+  /* background-color: var(--shadow-sunset); */
   /* background-color: rgba(0, 0, 0, 0.7); */
 
 
@@ -46,15 +47,7 @@ li {
     /* height: 100%;   */
     
 }
-.login-btn {
-    margin-right: 40px;
-    color: var(--ink);
-    border: 2px solid var(--embers);
-    border-radius: 24px;
-    margin: 15px;
-    padding: 5px 30px;
-}
-  
+
   .nav-bar {
       box-shadow: 7px 5px 5px 1px rgba(168, 40, 40, 0.3), 0 6px 20px 0 rgba(120, 5, 5, 0.19);
       display: flex;
@@ -70,6 +63,11 @@ li {
       border-radius: 10px;
       overflow: hidden;
       
+    }
+    #logo {
+        width:90px;
+        margin: 0px;
+        padding: 0px;
     }
     .nav-bar h1 {
         background-color: rgba(0, 0, 0, 0.02);
@@ -114,6 +112,15 @@ li {
         scale: 1.02;
         color: var(--embers);
       }
+    
+      .login-btn {
+        margin-right: 40px;
+        color: var(--ink);
+        border: 2px solid var(--embers);
+        border-radius: 24px;
+        margin: 15px;
+        padding: 5px 30px;
+    }
 
     #nav-bar-menu-icon {
       margin: auto 30px;
@@ -126,11 +133,31 @@ main {
     height: auto;
 }
 footer {
+    /* background-color: var(--shadow-sunset); */
+    background: rgb(13,12,17);
+    background: linear-gradient(0deg, rgba(13,12,17,1) 22%, rgba(36,28,20,1) 35%, rgba(47,35,22,1) 49%, rgba(64,46,24,1) 71%, rgba(255,174,48,1) 100%); 
+    display: flex;
+    justify-content: space-evenly;
     color: white;
-    position: absolute;
+    position: relative;
     bottom: 0px;
+    padding: 20px;
 
 }
+    .footer-list-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        
+    }
+        .footer-list-box h5 {
+            margin-bottom: 0px;
+            margin-top: 25px;
+        }
+        .footer-list-box * {
+            color: white;
+        }
 /* list idea 
   transform: rotateY(-45deg) translateZ(0) scale(1);
 transform-origin: right center;

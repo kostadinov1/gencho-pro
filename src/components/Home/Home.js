@@ -1,5 +1,6 @@
 import './home.css'
 import './home-responsive.css'
+// import imgFile from '/public/images/my_photos/profile_photo_2.jpg '
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { CodeOutlined, GithubOutlined, LinkedinOutlined } from '@ant-design/icons'
 const Home = () => {
@@ -36,9 +37,83 @@ const Home = () => {
                     <p>
                         I am a full time professional working in London, UK, for the last 10 years. I am studying web developement at <a href='https://www.softuni.bg'>SoftUni</a>  Bulgaria.
                     </p>
+                        <div className='skills-box'>
+                            <div className='skill-list'>
+                                <h2>Hard Skills</h2>
+                                <ul>
+                                    <li>Python</li>
+                                    <li>Javascript</li>
+                                    <li>Django</li>
+                                    <li>Django REST</li>
+                                    <li>React JS</li>
+                                    <li>Postgresql</li>
+                                    <li>SQL</li>
+                                    <li></li>
+                                    <li></li>
+                                </ul> 
+                            </div>
+                            <div className='skill-list'>
+                            <h2>Soft Skills</h2>
+                            <ul>
+                                <li>Python</li>
+                                <li>Javascript</li>
+                                <li>Django</li>
+                                <li>Django REST</li>
+                                <li>React JS</li>
+                                <li>Postgresql</li>
+                                <li>SQL</li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                            </div>
+                            <div className='skill-list'>
+                                <h2>Hard Skills</h2>
+                                <ul>
+                                    <li>Python</li>
+                                    <li>Javascript</li>
+                                    <li>Django</li>
+                                    <li>Django REST</li>
+                                    <li>React JS</li>
+                                    <li>Postgresql</li>
+                                    <li>SQL</li>
+                                    <li></li>
+                                    <li></li>
+                                </ul>
+                            </div>
+                        </div>
+                                <h2>Certificates</h2>
+                        <div className='certs'>
+                            <div className='softuni'>
+                                <ul>
+                                    <li><a href='https://softuni.bg/certificates/details/92282/d5c821a8'>Python Basics</a></li>
+                                    <li><a href='https://softuni.bg/certificates/details/104716/f7731ca1'>Python Fundamentals</a></li>
+                                    <li><a href='https://softuni.bg/certificates/details/110486/b3a92e3e'>Python OOP</a></li>
+                                    <li><a href='https://softuni.bg/certificates/details/133018/a77e1107'>Python Web Basics</a></li>
+                                    <li><a href='https://softuni.bg/certificates/details/132409/e1a771d7'>Python Web Framework</a></li>
+
+                                    <li><a href='#'>Javascript Advanced</a></li>
+                                    <li><a href='https://softuni.bg/certificates/details/131663/42a7f1c8'>Javascript Applications</a></li>
+                                    {/* <li><a href='#'></a>HTML&CSS</li> */}
+                                    <li><a href='#'>A</a></li>
+                                </ul>
+                            </div>
+                            <div className='softuni'>
+                                <ul>
+                                    <li><a href='https://softuni.bg/certificates/details/92282/d5c821a8'>Python Basics</a></li>
+                                    <li><a href='https://softuni.bg/certificates/details/104716/f7731ca1'>Python Fundamentals</a></li>
+                                    <li><a href='https://softuni.bg/certificates/details/110486/b3a92e3e'>Python OOP</a></li>
+                                    <li><a href='#'>Python Advanced</a></li>
+                                    <li><a href='#'>Python Web Framework</a></li>
+                                    {/* <li><a href='#'>Javascript Advanced</a></li> */}
+                                    <li><a href='#'>Javascript Applications</a></li>
+                                    {/* <li><a href='#'></a>HTML&CSS</li> */}
+                                    <li><a href='#'>A</a></li>
+                                </ul>
+                            </div>
+                        </div>
                 </div>
                 <div className='info-right'>
-                    <img src={'../../'} alt=''></img> 
+                    <img src={'/images/my_photos/profile_photo_2.jpg'} alt=''></img> 
                 </div>
             </section>
         </section>

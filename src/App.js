@@ -17,7 +17,7 @@ const App = () => {
   return (
         <section id='body'>
           <header className='nav-bar'>
-              {/* <i id='logo' /> */}
+              <img id='logo' alt='' src={'/images/logos/craiyon_logo_3-removebg-preview.png'}  />
               <h1>gencho pro</h1>
               <ul className='nav-bar-links'>
                 <li><Link to={'/'}>Home</Link></li>
@@ -38,8 +38,8 @@ const App = () => {
             </Routes>
           </main>
           <footer>
-            <div>
-            <h3>Footer</h3>
+            <div className='footer-list-box'>
+            <h5>Useful Links</h5>
                 <ul>
                     <li><a href='https://www.github.com/kostadinov1'>Github</a></li>
                     <li><a href='https://www.github.com/kostadinov1'>LinkedIn</a></li>
@@ -47,7 +47,26 @@ const App = () => {
                     <li><a href='https://www.github.com/kostadinov1'>Github</a></li>
                     <li><a href='https://www.github.com/kostadinov1'>Github</a></li>
                 </ul>             
-
+            </div>
+            <div className='footer-list-box'>
+                <h5>Useful Links</h5>
+                <ul>
+                    <li><a href='https://www.github.com/kostadinov1'>Github</a></li>
+                    <li><a href='https://www.github.com/kostadinov1'>LinkedIn</a></li>
+                    <li><a href='https://www.github.com/kostadinov1'>DockerHub</a></li>
+                    <li><a href='https://www.github.com/kostadinov1'>Github</a></li>
+                    <li><a href='https://www.github.com/kostadinov1'>Github</a></li>
+                </ul>
+            </div>            
+            <div className='footer-list-box'>
+            <h5>Useful Links</h5>
+                <ul>
+                    <li><a href='https://www.github.com/kostadinov1'>Github</a></li>
+                    <li><a href='https://www.github.com/kostadinov1'>LinkedIn</a></li>
+                    <li><a href='https://www.github.com/kostadinov1'>DockerHub</a></li>
+                    <li><a href='https://www.github.com/kostadinov1'>Github</a></li>
+                    <li><a href='https://www.github.com/kostadinov1'>Github</a></li>
+                </ul>             
             </div>
           </footer>
         </section>

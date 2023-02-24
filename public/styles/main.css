@@ -1,8 +1,18 @@
-html {
-    /* color: #feaf2e;
-    background: rgb(230,147,67);
-background: linear-gradient(288deg, rgba(230,147,67,1) 25%, rgba(232,149,65,1) 44%, rgba(234,151,63,1) 64%, rgba(235,153,62,1) 79%, rgba(237,156,60,1) 91%, rgba(253,175,46,1) 100%); */
+:root{
+  --ai-bluegray: #273c49;
+  --ink: #3392db;
+  --posy: #4d0c15;
+  --embers: #b82601;
+  --morning-sky: #cae4db;
+  --honey: #dcae1d;
+  --lemon: #feaf2e;
+  --cerulean: #00303f;
+  --mist: #7a9d96;
+  --dark-sunset: #130e13;
+  --shadow-sunset: #201615;
+  --sun-shadow: #a34314;
 }
+
 
 * {
     box-sizing: border-box;
@@ -10,14 +20,25 @@ background: linear-gradient(288deg, rgba(230,147,67,1) 25%, rgba(232,149,65,1) 4
 
 button {
     all: unset;
+    background-color: var(--ai-bluegray);
+    border-radius: 8px;
+    border: 1px solid var(--ai-bluegray);
+    color: var(--morning-sky);
 }
+
 a {
   text-decoration: none;
+  color: var(--ink);
 }
+a:hover {
+  color: var(--embers);
+}
+
 /* ul {
   text-decoration: none;
   list-style: none;
 } */
+
 li {
   text-decoration: none;
   list-style: none;

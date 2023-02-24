@@ -1,17 +1,4 @@
-:root{
-    --ai-bluegray: #273c49;
-    --ink: #3392db;
-    --posy: #4d0c15;
-    --embers: #b82601;
-    --morning-sky: #cae4db;
-    --honey: #dcae1d;
-    --lemon: #feaf2e;
-    --cerulean: #00303f;
-    --mist: #7a9d96;
-    --dark-sunset: #130e13;
-    --shadow-sunset: #201615;
-    --sun-shadow: #a34314;
-}
+
 /*
 Photo by <a href="https://unsplash.com/@marekpiwnicki?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Marek Piwnicki</a> on <a href="https://unsplash.com/t/wallpapers?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 
@@ -58,7 +45,7 @@ button:hover {
       left: 30px;
       right: 30px;
       z-index: 1;
-      background-color: rgba(0, 0, 0, 0.1);
+      background-color: rgba(0, 0, 0, 0.24);
       /* border: 1px solid #813772; */
       border-radius: 10px;
       overflow: hidden;
@@ -75,7 +62,7 @@ button:hover {
         color: var(--ai-bluegray);
         font-family: 'Gajraj One', cursive;
         font-weight: bold;
-        font-size: 48px;
+        font-size: 38px;
         letter-spacing: 5px;
         margin-top: auto;
         margin-bottom: auto;
@@ -90,23 +77,27 @@ button:hover {
         display: flex;
         margin-left: auto;
         margin-right: auto;
-        /* font-size: 24px; */
         overflow: hidden;
+        font-size: 24px;
+        font-weight: bold;
+
       }
     .nav-bar-links *{
         
         font-style: italic;
-        font-family: Helvetica, sans-serif;
+        font-family: 'Gajraj One', Helvetica, sans-serif;
         font-weight: bold;
-        font-size: 32px;
-        color: var(--ai-bluegray);
-        letter-spacing: 4px;
+        color: rgba(23, 23, 23, 0.789);
+        letter-spacing: 2px;
         text-decoration: none;
 
         display: flex;
         margin-top: auto;
         margin-bottom: auto;
-        margin-left: 30px;
+        margin-left: 6px;
+      }
+      .nav-bar-links li {
+        margin-right: 36px;
       }
 
     .nav-bar-links *:hover {
@@ -125,18 +116,20 @@ button:hover {
 
     #nav-bar-menu-icon {
       margin: auto 30px;
-      font-size: 36px;
+      font-size: 32px;
       cursor: pointer;
     }
+    #nav-bar-menu-icon:hover {
+      /* background-color: rgba(0, 0, 0, 0.01); */
+      scale: 1.3;
+    }
+    /* #nav-bar-menu-icon: */
 
 main {
     height: auto;
 }
 footer {
-    background-color: rgba(0, 0, 0, 0.5);
-    /* background-color: var(--shadow-sunset); */
-    /* background: rgb(13,12,17);
-    background: linear-gradient(0deg, rgba(13,12,17,1) 22%, rgba(36,28,20,1) 35%, rgba(47,35,22,1) 49%, rgba(64,46,24,1) 71%, rgba(255,174,48,1) 100%);  */
+    background-color: rgba(0, 0, 0, 0.8);
     display: flex;
     justify-content: space-evenly;
     color: white;
@@ -157,7 +150,7 @@ footer {
             margin-top: 25px;
         }
         .footer-list-box * {
-            color: white;
+            color: var(--lemon);
         }
 /* list idea 
   transform: rotateY(-45deg) translateZ(0) scale(1);

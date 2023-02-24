@@ -9,7 +9,7 @@ import Projects from './components/Projects/Projects';
 import Contacts from './components/Contacts/Contacts'
 import PersonalZone from './components/PersonalZone/PersonalZone'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { faAt, faBars, faHouseChimney, faTerminal, faUserSecret } from '@fortawesome/free-solid-svg-icons';
 import Login from './components/PersonalZone/Login';
 
 
@@ -21,12 +21,11 @@ const App = () => {
               <img id='logo' alt='' src={'/images/logos/craiyon_logo_3.ico'}  />
               <h1>gencho</h1>
               <ul className='nav-bar-links'>
-                <li><Link to={'/'}>Home</Link></li>
-                <li><Link to={'/projects'}>Projects</Link></li>
-                <li><Link to={'/contacts'}>Contacts</Link></li>
-                <li><Link to={'/login'}>Login</Link></li>
+                <li><FontAwesomeIcon icon={faHouseChimney} /><Link to={'/'}>Home</Link></li>
+                <li><FontAwesomeIcon icon={faTerminal} /><Link to={'/projects'}>Projects</Link></li>
+                <li><FontAwesomeIcon icon={faAt} /><Link to={'/contacts'}>Contacts</Link></li>
+                <li><FontAwesomeIcon icon={faUserSecret}/><Link to={'/login'}>Login</Link></li>
               </ul>
-              {/* <button className='login-btn' >Login</button> */}
               <FontAwesomeIcon icon={faBars} id='nav-bar-menu-icon'/>
           </header>
           <main>

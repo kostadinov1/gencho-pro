@@ -1,13 +1,36 @@
-.projects-box {
-    color: white;
-    height: 100vh;
+.projects {
+    color: whitesmoke;
+    /* height: 100vh; */
     background-color: rgba(0,0,0,0.2);
 
-    /* margin-top: 200px; */
 }
-    .projects {
-        /* margin-top: 200px; */
-    }
-    /* .info {
+    .projects-container {
+            margin-top: 130px;
+            
+            display: flex;
+            /* margin-top: 200px; */
+        }
+        .project-box {
+            
+            max-width: 70vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin: 20px;
+            padding: 20px;
+            background-color: rgba(0,0,0,0.6);
+            letter-spacing: 0.8pt;
+            border-radius: 8px;
 
-    } */
+        }
+        .project-desc {
+            margin: 14px ;
+            border-radius: 8px;
+        }
+        .project-img {
+            margin: 10px auto;
+            padding: 6px;
+            background-color: gray;
+            border: 4px solid gray;
+        }
+

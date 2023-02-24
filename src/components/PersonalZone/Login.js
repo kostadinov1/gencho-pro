@@ -4,7 +4,7 @@ import './login.css'
 function Login() {
   return (
     <section className='login'>
-        <div className='form-box'>
+        <div className='login-form-box'>
             <h1>Login here</h1>
             <form>
                 <input type={'email'} placeholder='Email'></input>

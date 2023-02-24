@@ -1,19 +1,37 @@
 .login {
     height: 100vh;
+    background: rgba(0,0,0,0.2);
+
 }
-    .form-box {
+    .login-form-box {
+        position: relative;
+        top: 180px;
+        margin-top: 200px;
+        padding: 50px;
         display: flex;
         flex-direction: column;
-        /* width: 30%; */
-        align-items: center;
+        max-width: 58vw;
         justify-content: center;
+        align-items: center;
+        margin: auto  auto;
+        background: rgba(0,0,0,0.5);
+        border: 1px solid #4a4a4a;
+        border-radius: 10px;
+        min-height: 50%;
+        max-height: 60%;
+        color: whitesmoke;
 
     }
-    .form-box input {
-        width: 80%;
-        margin: 5px auto 5px 58px;
+    .login-form-box input {
+        width: 50%;
+        margin: 5px auto 5px 250px;
+           /* display: inline-flex; */
+           justify-content: center;
+           align-items: center;
+           border: 1px solid #4a4a4a;
+           background: rgba(255, 255, 255, 0.3);
     }
-    .form-box button {
+    .login-form-box button {
         margin-top: 20px;
-        margin-left: 220px;
+        margin-left: 380px;
     }

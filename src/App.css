@@ -15,31 +15,8 @@
 Photo by <a href="https://unsplash.com/@marekpiwnicki?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Marek Piwnicki</a> on <a href="https://unsplash.com/t/wallpapers?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 
 */
-html {
-  /* background-color: var(--shadow-sunset); */
-  /* background-color: rgba(0, 0, 0, 0.7); */
+ 
 
-
-}
-
-* {
-    box-sizing: border-box;
-  }
-button {
-    all: unset;
-}
-a {
-  text-decoration: none;
-}
-/* ul {
-  text-decoration: none;
-  list-style: none;
-} */
-li {
-  text-decoration: none;
-  list-style: none;
-
-}
 
 #body {
     position: relative;
@@ -65,21 +42,22 @@ li {
       
     }
     #logo {
-        width:90px;
+        width: 90px;
+        height: 90px;
         margin: 0px;
         padding: 0px;
     }
     .nav-bar h1 {
-        background-color: rgba(0, 0, 0, 0.02);
-        color: var(--sun-shadow);
+        /* background-color: rgba(0, 0, 0, 0.02); */
+        color: #273c49;
         font-family: 'Gajraj One', cursive;
         font-weight: bold;
-        font-size: 52px;
+        font-size: 48px;
         letter-spacing: 5px;
         margin-top: auto;
         margin-bottom: auto;
-        margin-left: 30px;
-        padding-left: 30px;
+        margin-left: 0px;
+        padding-left: 0px;
         padding-right: 30px;
         border-radius: 20px;
 
@@ -126,7 +104,7 @@ li {
       margin: auto 30px;
       font-size: 36px;
       cursor: pointer;
-      color: var(--sun-shadow);
+      color: #273c49;
     }
 
 main {

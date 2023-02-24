@@ -21,7 +21,7 @@ const Home = () => {
                             <li><LinkedinOutlined /> <a href='https://www.github.com/kostadinov1'>LinkedIn</a></li>
                             <li><GithubOutlined /> <a href='https://www.github.com/kostadinov1'>Github</a></li>
                             <li><FontAwesomeIcon icon={['fa-doker']} /><a href='https://hub.docker.com/u/gencho'>DockerHub</a></li>
-                            {/* <li><a href='https://www.github.com/kostadinov1'>Github</a></li> */}
+                            <li><a href='https://monkeytype.com/profile/evgeni'>MonkeyType</a></li>
                         </ul>
                     </div>
                 </div>
@@ -35,7 +35,9 @@ const Home = () => {
                 <div className='info-left'>
                     <h1>About Me</h1>
                     <p>
-                        I am a full time professional working in London, UK, for the last 10 years. I am studying web developement at <a href='https://www.softuni.bg'>SoftUni</a>  Bulgaria.
+                        Hi! My name is Evgeni and this year I'm about to gradute web developement at <a href='https://www.softuni.bg'>SoftUni</a> Bulgaria.
+                        For the last 10 years I live in London, Uk, working a construction related full time job. About 3 year ago I found programming.
+                        It started as a hobby, but now, I'm about to gratuate and go professional 
                     </p>
                         <div className='skills-box'>
                             <div className='skill-list'>
@@ -91,10 +93,10 @@ const Home = () => {
                                     <li><a href='https://softuni.bg/certificates/details/133018/a77e1107'>Python Web Basics</a></li>
                                     <li><a href='https://softuni.bg/certificates/details/132409/e1a771d7'>Python Web Framework</a></li>
 
-                                    <li><a href='#'>Javascript Advanced</a></li>
+                                    {/* <li><a href='#'>Javascript Advanced</a></li> */}
                                     <li><a href='https://softuni.bg/certificates/details/131663/42a7f1c8'>Javascript Applications</a></li>
                                     {/* <li><a href='#'></a>HTML&CSS</li> */}
-                                    <li><a href='#'>A</a></li>
+                                    {/* <li><a href='#'>React JS</a></li> */}
                                 </ul>
                             </div>
                             <div className='softuni'>
@@ -114,6 +116,9 @@ const Home = () => {
                 </div>
                 <div className='info-right'>
                     <img src={'/images/my_photos/profile_photo_2.jpg'} alt=''></img> 
+                    <div className='card-info'>
+
+                    </div>
                 </div>
             </section>
         </section>

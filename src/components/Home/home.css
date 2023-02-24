@@ -2,7 +2,7 @@
     position: relative;
     height: 100%;
     color: white;
-    background-color: #feaf2e;
+    background-color: rgba(0,0,0,0.5);
 
 }
     .hero {
@@ -125,8 +125,8 @@
         /* flex-direction: row-reverse; */
         height: 100vh;
         width: 100vw;
-        background: rgb(13,12,17);
-        background: linear-gradient(180deg, rgba(13,12,17,1) 22%, rgba(36,28,20,1) 35%, rgba(47,35,22,1) 49%, rgba(64,46,24,1) 71%, rgba(255,174,48,1) 100%); 
+        /* background: rgb(13,12,17); */
+        /* background: linear-gradient(180deg, rgba(13,12,17,1) 22%, rgba(36,28,20,1) 35%, rgba(47,35,22,1) 49%, rgba(64,46,24,1) 71%, rgba(255,174,48,1) 100%);  */
         padding: 20px;
     }
 

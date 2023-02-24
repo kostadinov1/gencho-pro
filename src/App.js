@@ -10,6 +10,7 @@ import Contacts from './components/Contacts/Contacts'
 import PersonalZone from './components/PersonalZone/PersonalZone'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
+import Login from './components/PersonalZone/Login';
 
 
 const App = () => {
@@ -17,7 +18,7 @@ const App = () => {
   return (
         <section id='body'>
           <header className='nav-bar'>
-              <img id='logo' alt='' src={'/images/logos/craiyon_logo_3-removebg-preview.png'}  />
+              <img id='logo' alt='' src={'/images/logos/craiyon_logo_3.ico'}  />
               <h1>gencho</h1>
               <ul className='nav-bar-links'>
                 <li><Link to={'/'}>Home</Link></li>
@@ -34,7 +35,7 @@ const App = () => {
               <Route path='/' element={<Home />}/>
               <Route path='/projects' element={<Projects/>}/>
               <Route path='/contacts' element={<Contacts/>}/>
-              <Route path='/login' element={<PersonalZone />}/>
+              <Route path='/login' element={<Login />}/>
             </Routes>
           </main>
           <footer>

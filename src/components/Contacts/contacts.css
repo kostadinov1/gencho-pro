@@ -1,6 +1,8 @@
 .contacts {
     height: 100vh;
     color: black;
+    background-color: rgba(0,0,0,0.2);
+
 }
 
 
@@ -14,12 +16,12 @@
         max-width: 58vw;
         justify-content: center;
         margin: auto  auto;
-        background: rgb(85,83,83);
-        background: linear-gradient(253deg, rgba(85,83,83,0.4780112728685224) 0%, rgba(107,105,105,0.25672275746235995) 17%, rgba(123,120,120,0.021428639815301076) 44%, rgba(127,124,124,0.2959384437368697) 46%, rgba(168,165,165,1) 69%, rgba(85,83,83,0.2231093120842087) 82%); 
+        background: rgba(0,0,0,0.5);
         border: 1px solid #4a4a4a;
         border-radius: 10px;
         min-height: 50%;
         max-height: 60%;
+        color: whitesmoke;
     }
     .form-box * {
         border-radius: 6px;
@@ -31,7 +33,7 @@
             margin-left: 14px;
             font-weight: bold;
             letter-spacing: 2px;
-            color: #2a2a2a;
+            
         }
         .contact-form form{
             display: flex;
@@ -46,8 +48,8 @@
             justify-content: center;
             align-items: center;
             border: 1px solid #4a4a4a;
-            background: rgb(230,147,67);
-            background: linear-gradient(288deg, rgba(230,147,67,1) 25%, rgba(232,149,65,1) 44%, rgba(234,151,63,1) 64%, rgba(235,153,62,1) 79%, rgba(237,156,60,1) 91%, rgba(253,175,46,1) 100%); 
+            background: rgba(255, 255, 255, 0.3);
+
             
         }
         .contact-form .input {
@@ -59,14 +61,12 @@
         .contact-form form>textarea {
             margin: 7px;
             border: 1px solid #4a4a4a;
-            background: rgb(230,147,67);
-            background: linear-gradient(288deg, rgba(230,147,67,1) 25%, rgba(232,149,65,1) 44%, rgba(234,151,63,1) 64%, rgba(235,153,62,1) 79%, rgba(237,156,60,1) 91%, rgba(253,175,46,1) 100%); 
+            background: rgba(255, 255, 255, 0.3);
         }
 
         .contact-form button {
             border: 1px solid #4a4a4a;
-            background: rgb(230,147,67);
-            background: linear-gradient(288deg, rgba(230,147,67,1) 25%, rgba(232,149,65,1) 44%, rgba(234,151,63,1) 64%, rgba(235,153,62,1) 79%, rgba(237,156,60,1) 91%, rgba(253,175,46,1) 100%); 
+            background: rgb(58, 56, 56);
             max-width: 30%;
             min-width: 20%;
             letter-spacing: 1px;
@@ -78,6 +78,5 @@
         }
         .contact-form button:hover {
             scale: 1.05;
-            background: rgb(230,147,67);
-            background: linear-gradient(288deg, rgba(230,147,67,1) 6%, rgba(237,112,60,1) 19%, rgba(241,130,57,1) 36%, rgba(231,247,52,1) 60%, rgba(253,46,46,1) 100%); 
+            background: rgb(154, 84, 18);
         }

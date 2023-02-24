@@ -1,8 +1,12 @@
 .projects-box {
     color: white;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.2);
+
+    /* margin-top: 200px; */
 }
     .projects {
-        height: 100vh;
+        /* margin-top: 200px; */
     }
     /* .info {
 

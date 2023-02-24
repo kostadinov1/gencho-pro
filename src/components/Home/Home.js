@@ -17,11 +17,11 @@ const Home = () => {
                     <div className='hero-right-links-box'>
                         {/* <h3>My Links</h3> */}
                         <ul>
-                            <li><CodeOutlined /><a href='https://www.softuni.bg/en'>SoftUni</a></li>
+                            <li><CodeOutlined></CodeOutlined><a href='https://www.softuni.bg/en'>SoftUni</a></li>
                             <li><LinkedinOutlined /> <a href='https://www.github.com/kostadinov1'>LinkedIn</a></li>
                             <li><GithubOutlined /> <a href='https://www.github.com/kostadinov1'>Github</a></li>
-                            <li><FontAwesomeIcon icon={['fa-doker']} /><a href='https://hub.docker.com/u/gencho'>DockerHub</a></li>
-                            <li><a href='https://monkeytype.com/profile/evgeni'>MonkeyType</a></li>
+                            <li><CodeOutlined></CodeOutlined><a href='https://hub.docker.com/u/gencho'>DockerHub</a></li>
+                            <li><CodeOutlined></CodeOutlined><a href='https://monkeytype.com/profile/evgeni'>MonkeyType</a></li>
                         </ul>
                     </div>
                 </div>

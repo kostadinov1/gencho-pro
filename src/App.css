@@ -22,9 +22,31 @@ Photo by <a href="https://unsplash.com/@marekpiwnicki?utm_source=unsplash&utm_me
     position: relative;
     font-family: Helvetica, Arial, sans-serif;
     /* height: 100%;   */
+    background-image: url('/public/images//backgrounds/background-pexels-1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; 
+
     
 }
+.icon {
+  width: 20px;
+}
+button {
+  border: 1px solid #4a4a4a;
+  background: rgb(58, 56, 56);
+  max-width: 30%;
+  min-width: 20%;
+  letter-spacing: 1px;
+  margin-left: 20px;
+  padding: 5px 20px;
+  text-align: center;
+  cursor: pointer;
 
+}
+button:hover {
+  scale: 1.05;
+  background: rgb(154, 84, 18);
+}
   .nav-bar {
       box-shadow: 7px 5px 5px 1px rgba(168, 40, 40, 0.3), 0 6px 20px 0 rgba(120, 5, 5, 0.19);
       display: flex;

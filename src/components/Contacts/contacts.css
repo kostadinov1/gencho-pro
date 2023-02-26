@@ -1,6 +1,5 @@
 .contacts {
     height: 100vh;
-    /* background-color: rgba(0,0,0,0.2); */ 
 } 
     .form-box {
         position: relative;
@@ -12,12 +11,11 @@
         max-width: 58vw;
         justify-content: center;
         margin: auto  auto;
-        background-color: rgba(213, 212, 194, 0.6);
-        border: 1px solid #807e7e74;
+        background-color: var(--cards-rgba);
+        border: 1px solid gray;
         border-radius: 10px;
         color: var(--ai-bluegray);
-        box-shadow: 4px 2px 32px 2px rgba(74, 74, 74, 0.572), 0 6px 20px 0 rgba(81, 81, 81, 0.509);
-
+        box-shadow: var(--box-shadow);
     }
     .form-box * {
         border-radius: 10px;
@@ -27,18 +25,14 @@
             padding: 10px 30px;
             font-size: 66px;
             letter-spacing: 1.8pt;
-            background-color: rgba(213, 212, 194, 0.6);
-            /* box-shadow: 4px 2px 32px 2px rgba(74, 74, 74, 0.572), 0 6px 20px 0 rgba(81, 81, 81, 0.509); */
-            /* max-width: 70%; */
+            background-color: var(--cards-rgba);
+            box-shadow: var(--box-shadow);
             margin-left: auto;
             margin-right: auto;
             text-align: center;            
             font-weight: bold;
             margin-bottom: 20px;
             
-        }
-        .contact-form * {
-            color: var(--sky);
         }
         .contact-form form{
             display: flex;
@@ -47,19 +41,14 @@
             overflow: hidden;
             color: var(--sky);
         }
-        
         .contact-form input {
             width: 100%;
             justify-content: center;
             align-items: center;
-            border: 1px solid #4a4a4a;
-            background: rgba(255, 255, 255, 0.8);
+            border: 1px solid gray;
+            background-color: var(--cards-rgba);
             padding: 10px 10px;
-            margin: 10px;
-            
-            color:  whitesmoke;
-
-            
+            margin: 10px;            
         }
         .contact-form .input {
 
@@ -71,9 +60,7 @@
         .contact-form textarea {
             margin: 20px;
             padding: 10px;
-            border: 1px solid #4a4a4a;
-            background: rgba(255, 255, 255, 0.8);
-            color: var(--sky);
+            border: 1px solid gray;
         }
 
         .contact-form button {

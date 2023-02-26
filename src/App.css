@@ -1,8 +1,3 @@
-
-/*
-Photo by <a href="https://unsplash.com/@marekpiwnicki?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Marek Piwnicki</a> on <a href="https://unsplash.com/t/wallpapers?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-
-*/
  
 #body {
     position: relative;
@@ -10,33 +5,26 @@ Photo by <a href="https://unsplash.com/@marekpiwnicki?utm_source=unsplash&utm_me
     background-image: url('/public/images/wallpapers/wallpaper-24.jpg');
     background-repeat: no-repeat;
     background-size: cover; 
-
-    
 }
 .icon {
   width: 20px;
 }
-
-.pacifico-title {
-  font-family: 'Pacifico', Arial, Helvetica, sans-serif;
+.pacifico-title.pacifico-title {
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
 }
-
-  .nav-bar {
-      
-      box-shadow: 4px 2px 32px 2px rgba(74, 74, 74, 0.572), 0 6px 20px 0 rgba(81, 81, 81, 0.509);
-      display: flex;
-      position: absolute;
-      margin-left: 25px;
-      margin-right: 25px;
-      top: 10px;    
-      left: 30px;
-      right: 30px;
-      z-index: 1;
-      background-color: rgba(213, 212, 194, 0.6);
-
-      border-radius: 10px;
-      overflow: hidden;
-      
+.nav-bar {
+    display: flex;
+    position: absolute;
+    margin-left: 25px;
+    margin-right: 25px;
+    top: 10px;    
+    left: 30px;
+    right: 30px;
+    z-index: 1;
+    background-color: var(--cards-rgba);
+    border-radius: var(--bradius);
+    box-shadow: var(--box-shadow);
+    overflow: hidden;      
     }
     #logo {
         width: 90px;
@@ -45,9 +33,8 @@ Photo by <a href="https://unsplash.com/@marekpiwnicki?utm_source=unsplash&utm_me
         padding: 0px;
     }
     .nav-bar h1 {
-        /* background-color: rgba(0, 0, 0, 0.02); */
         color: var(--ai-bluegray);
-        font-family: 'Gajraj One', cursive;
+        font-family: 'Gajraj One', Arial, Helvetica, cursive;
         font-weight: bold;
         font-size: 38px;
         letter-spacing: 3.9pt;
@@ -57,79 +44,71 @@ Photo by <a href="https://unsplash.com/@marekpiwnicki?utm_source=unsplash&utm_me
         padding-left: 0px;
         padding-right: 30px;
         border-radius: 20px;
-
       }
-
     .nav-bar-links {
         display: flex;
         margin-left: auto;
         margin-right: auto;
         overflow: hidden;
         font-size: 24px;
-        font-weight: bold;
-        
-
-      }
-    .nav-bar-links li>*{
-        
-        /* font-family: 'Gajraj One', Helvetica, sans-serif; */
+        font-weight: bold;  
+      }  
+    .nav-bar-link>* {
+        margin-left: 26px;
+    }
+    .nav-bar-link {
         font-weight: bold;
         color: var(--ai-bluegray);
-        letter-spacing: 2pt;
+        letter-spacing: 1.5pt;
         margin-top: auto;
         margin-bottom: auto;
-        margin-left: 8px;
-      }
-      .nav-bar-links li {
-        margin-right: 36px;
-      }
-
-
-    .nav-bar-links *:hover {
+    }
+    .nav-bar-link:hover {
         scale: 1.04;
         color: var(--embers);
         transition: 0.5s ease all;
 
       }
-    
+    .nav-bar-link span{
+        margin: 8px;
+    }
     #nav-bar-menu-icon {
-      margin: auto 30px;
-      font-size: 32px;
-      cursor: pointer;
-      color: var(--ai-bluegray);
+        margin: auto 30px;
+        font-size: 32px;
+        cursor: pointer;
+        color: var(--ai-bluegray);
     }
     #nav-bar-menu-icon:hover {
-      scale: 1.3;
-      transition: 0.5s ease all;
-      color: var(--embers);
-
+        scale: 1.3;
+        transition: 0.5s ease all;
+        color: var(--embers);
     }
-
 main {
-    height: auto;
+    /*   <-----  DIMMER LAYER ----->   */
+    background-color: rgba(198, 197, 180, 0.3);
+
 }
 footer {
+    /*   <-----  DIMMER LAYER ----->   */
     background-color: rgba(198, 197, 180, 0.8);
-
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
     color: var(--ai-bluegray);
     position: relative;
     bottom: 0px;
     padding: 20px;
-
 }
     .footer-list-box {
         display: flex;
         flex-direction: column;
         align-items: center;
         padding: 10px;
-        
     }
-        .footer-list-box h5 {
-            margin-bottom: 0px;
-            margin-top: 25px;
-        }
-        .footer-list-box * {
-          color: var(--ai-bluegray);
-        }
+    .footer-list-box h5 {
+        margin-bottom: 0px;
+        margin-top: 25px;
+    }
+    .footer-list-box * {
+        color: var(--ai-bluegray);
+    }

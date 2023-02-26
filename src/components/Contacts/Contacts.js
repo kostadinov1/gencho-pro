@@ -13,7 +13,7 @@ function Contacts() {
 						<input placeholder='Email'></input>
 						<input placeholder='Title'></input>
 					</div>
-					<textarea rows={6}></textarea>
+					<textarea rows={6} placeholder='Enter Your message here!'></textarea>
 					<button>Send Message</button>
 				</form>
 			</div>

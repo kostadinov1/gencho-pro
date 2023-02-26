@@ -3,7 +3,7 @@ import './projects.css'
 const Projects = () => {
 
     return (
-        <section>
+        <section className='projects-main'>
             <section className="projects">
                 <h1>Most Recent Projects</h1>
                 <div className='projects-container'>
@@ -43,6 +43,32 @@ const Projects = () => {
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                         </div>
                     </div>
+                    <div className='project-box'>
+                        <div className={'project-img'}>
+                        <img src='/images/backgrounds/AI-backgrounds/ai-background-2.png' alt=''></img>
+                        </div>
+                        <div className='project-desc'>
+                            <h3> Dentist - Project Defence</h3>
+                            <h5><a href='https://'></a></h5>
+                            <h5>Created on: April 2020</h5>
+                            <h5>Technologies: Django,Postgresql, CSS Bootstrap, Docker, Nginx, AWS</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        </div>
+                    </div>
+
+                    <div className='project-box'>
+                        <div className={'project-img'}>
+                        <img src='/images/backgrounds/AI-backgrounds/ai-background-2.png' alt=''></img>
+                        </div>
+                        <div className='project-desc'>
+                            <h3> Dentist - Project Defence</h3>
+                            <h5><a href='https://'></a></h5>
+                            <h5>Created on: April 2020</h5>
+                            <h5>Technologies: Django,Postgresql, CSS Bootstrap, Docker, Nginx, AWS</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        </div>
+                    </div>
+
                 </div>
             </section>
             <section className="projects upcoming">

@@ -1,62 +1,53 @@
 :root{
   --dark-blue: #060d23;
   --ai-bluegray: #1d4c67;
-  --ink: #337ab0;
-  --mist: #7a909d;
-  --sky: #cadae4;
-
-  
   --cards-bg: #d9dbd0;
   --embers: #b82601;
   --lemon: #feaf2e;
-}
 
+  --bradius: 10px;
+  --cards-rgba: rgba(213, 212, 194, 0.6);
+  --box-shadow: 4px 2px 32px 2px rgba(128, 128, 131, 0.752), 0 6px 20px 0 rgb(119, 119, 119);
+}
 
 * {
     box-sizing: border-box;
     font-family: 'Roboto Mono', monospace;
-
-
+    border-radius: var(--bradius);
 }
 
 button {
-  all: unset;
-  background-color: var(--ai-bluegray);
-  cursor: pointer;
-
-  border: 1px solid var(--ai-bluegray);
-  border-radius: 8px;
-
-  max-width: 30%;
-  min-width: 20%;
-  margin-left: 20px;
-  padding: 5px 20px;
-
-  letter-spacing: 1px;
-  text-align: center;
+    all: unset;
+    border-radius: var(--bradius);
+    background-color: var(--ai-bluegray);
+    cursor: pointer;
+    border: 1px solid var(--ai-bluegray);
+    max-width: 30%;
+    min-width: 20%;
+    margin-left: 20px;
+    padding: 5px 20px;
+    letter-spacing: 1px;
+    text-align: center;
+    color: var(--cards-bg);
 
 }
 button:hover {
-  scale: 1.05;
-  background-color: var(--ink);
+    scale: 1.05;
+    background-color: var(--ink);
 }
-
-
 
 a {
-  text-decoration: none;
-
-  color: var(--sky);
-  
+    text-decoration: none;
+    color: var(--cards-bg);
 }
 a:hover {
-  color: var(--embers);
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 1s ease;
+    color: var(--embers);
+    -webkit-transition: all 0.6s ease-in-out;
+    transition: all 1s ease;
 }
 
 li {
-  text-decoration: none;
-  list-style: none;
+    text-decoration: none;
+    list-style: none;
 
 }

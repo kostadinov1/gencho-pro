@@ -1,11 +1,11 @@
 import './home.css'
 import './home-responsive.css'
 import './education.css'
-// import imgFile from '/public/images/my_photos/profile_photo_2.jpg '
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { CodeOutlined, GithubOutlined, LinkedinOutlined } from '@ant-design/icons'
-import { faKeyboard } from '@fortawesome/free-solid-svg-icons'
+import { faAt, faKeyboard } from '@fortawesome/free-solid-svg-icons'
 import DockerIcon from '../../custom/DockerIcon'
+import { Link } from 'react-router-dom'
 
 
 const Home = () => {
@@ -13,6 +13,7 @@ const Home = () => {
         <section className="home">
             <section className='hero'>
                 <div className='hero-left'>
+                    <img src={'/images/wallpapers/wallpaper-24.jpg'} alt='no image'></img>
                     <div className='title-box'>
                         <h1><h1 id='hi'>Hi!</h1> I'm Evgeni.</h1>
                         <h2>web developer</h2>
@@ -31,10 +32,10 @@ const Home = () => {
                         </ul>
                     </div>
                 </div>
-                <div className='photo-credit-box'>
+                {/* <div className='photo-credit-box'>
                     <a href="https://unsplash.com/@marekpiwnicki?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Photo by Marek Piwnicki</a> 
                     <a href="https://unsplash.com/t/wallpapers?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">on Unsplash</a>
-                </div>
+                </div> */}
             </section>
 
             <section className='info'>
@@ -43,9 +44,11 @@ const Home = () => {
                     <p>
                         Hi! My name is Evgeni and this year I'm about to gradute web developement at <a href='https://www.softuni.bg'>SoftUni</a> Bulgaria.
                         For the last 10 years I live in London, Uk, working a construction related full time job. About 3 year ago I found programming.
-                        It started as a hobby, but now, I'm about to gratuate and go professional 
+                        It started as a hobby, but now, I'm about to gratuate and become a full time professional. Here You can find some basic info about,
+                        but if You want to ask me a question, You can do it <Link to={'/contacts'}>here</Link>. 
                     </p>
-
+                    <h3></h3>
+                    <p> </p>
                     <div className='skills-grid'>
                         <ul className='skills-ul'>
                             <li className='grid-li'>
@@ -57,7 +60,7 @@ const Home = () => {
                                 <span> DjangoREST</span>
                             </li>
                             <li className='grid-li'>
-                                {/* <FontAwesomeIcon icon={faReact}/> */}
+                                <FontAwesomeIcon icon={faAt}/>
                                 <span> React JS</span>
                             </li> 
                             <li className='grid-li'>
@@ -70,7 +73,7 @@ const Home = () => {
                             </li>
                         </ul>
                         <ul className='skills-ul'>
-                        <h2 className='pacifico-title'>Skills</h2>
+                        <h2 className='pacifico-title'>Tech Skills</h2>
                             <li className='grid-li'>
                                 <CodeOutlined/>
                                 <span> Python</span>
@@ -128,75 +131,99 @@ const Home = () => {
             </section>
             <section id='education'>
             <div className='info-left edu'>
-                    <h1 className='pacifico-title'>Education</h1>
+                    <h1 className='pacifico-title'>Certificates</h1>
 
                     <div className='skills-grid'>
                         <ul className='skills-ul'>
-                            <li className='grid-li'>
+                        <h2 className='pacifico-title'>Udemi</h2>
+                        <li className='grid-li edu-li'>
+                            <a href='#'>
                                 <CodeOutlined/>
-                                <span> Django</span>
+                                <span>Docker</span>
+                            </a>
                             </li>
                             <li className='grid-li'>
-                                <CodeOutlined/>
-                                <span> DjangoREST</span>
+                            <a href='#'><span>NGINX</span>
+                            </a>
                             </li>
                             <li className='grid-li'>
+                            <a href='#'>
                                 <CodeOutlined/>
-                                <span> React JS</span>
-                            </li> 
-                            <li className='grid-li'>
-                                <CodeOutlined/>
-                                <span> Postgresql</span>
-                            </li> 
-                            <li className='grid-li'>
-                                <CodeOutlined/>
-                                <span> SQL</span>
+                                <span>Python Advanced</span>
+                            </a>
                             </li>
                         </ul>
                         <ul className='skills-ul'>
-                        <h2 className='pacifico-title'>Certificates</h2>
-                            <li className='grid-li'>
+                        <h2 className='pacifico-title'>SoftUni</h2>
+                        <li className='grid-li'>
+                            <a href='https://softuni.bg/certificates/details/132409/e1a771d7'>
                                 <CodeOutlined/>
-                                <span> Python</span>
+                                <span>Python Web Framework</span>
+                            </a>
                             </li>
                             <li className='grid-li'>
+                            <a href='https://softuni.bg/certificates/details/133018/a77e1107'>
                                 <CodeOutlined/>
-                                <span> Javascript</span>
+                                <span>Python Web Basics</span>
+                            </a>
                             </li>
                             <li className='grid-li'>
+                            <a href='https://softuni.bg/certificates/details/110486/b3a92e3e'>
                                 <CodeOutlined/>
-                                <span> Node JS</span>
-                            </li> 
+                                <span>Pytho OOP</span>
+                            </a>
+                            </li>
                             <li className='grid-li'>
+                            <a href='#'>
                                 <CodeOutlined/>
-                                <span> HTML5</span>
-                            </li> 
+                                <span>Python Advanced</span>
+                            </a>
+                            </li>
                             <li className='grid-li'>
+                            <a href='https://softuni.bg/certificates/details/104716/f7731ca1'>
                                 <CodeOutlined/>
-                                <span> CSS3</span>
+                                <span>Python Fundamentals</span>
+                            </a>
+                            </li>
+                            <li className='grid-li'>
+                            <a href='https://softuni.bg/certificates/details/92282/d5c821a8'>
+                                <CodeOutlined/>
+                                <span>Python Basics</span>
+                            </a>
+                            </li>
+                            <li className='grid-li'>
+                            <a href='#'>
+                                <CodeOutlined/>
+                                <span>Python Algorithms</span>
+                            </a>
                             </li>
                         </ul>
 
                         <ul className='skills-ul'>
+                        <h2 className='pacifico-title'>SoftUni</h2>
                             <li className='grid-li'>
+                            <a href='https://softuni.bg/certificates/details/131663/42a7f1c8'>
                                 <CodeOutlined/>
-                                <span> Ubuntu</span>
+                                <span>Javascript Applications</span>
+                            </a>
                             </li>
                             <li className='grid-li'>
+                            <a href='#'>
                                 <CodeOutlined/>
-                                <span> BASH</span>
+                                <span>Javascript Advanced</span>
+                            </a>
                             </li>
                             <li className='grid-li'>
+                            <a href='#'>
                                 <CodeOutlined/>
-                                <span> Docker</span>
-                            </li> 
+                                <span>HTML and CSS</span>
+                            </a>
+                            </li>
                             <li className='grid-li'>
+                            <a href='#'>
                                 <CodeOutlined/>
-                                <span>NGINX</span>
-                            </li> 
-                            <li className='grid-li'>
-                                <CodeOutlined/>
-                                <span>AWS</span>
+                                <span>React JS</span>
+                            </a>
                             </li>
                         </ul>
                     </div>                      

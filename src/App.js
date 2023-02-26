@@ -1,30 +1,47 @@
-// import 'antd/dist/reset.css';
 import './App.css'
 import {Link, Route, Routes } from 'react-router-dom';
 import React from 'react';
-
 
 import Home from './components/Home/Home';
 import Projects from './components/Projects/Projects';
 import Contacts from './components/Contacts/Contacts'
 import PersonalZone from './components/PersonalZone/PersonalZone'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAt, faBars, faHouseChimney, faTerminal, faUserSecret } from '@fortawesome/free-solid-svg-icons';
+import { faAt, faBars, faHouseChimney, faTerminal, faUser, faUserSecret } from '@fortawesome/free-solid-svg-icons';
 import Login from './components/PersonalZone/Login';
 
 
 const App = () => {
-
-  return (
+    return (
         <section id='body'>
           <header className='nav-bar'>
               <img id='logo' alt='' src={'/images/logos/craiyon_logo_3.ico'}  />
               <h1>gencho</h1>
               <ul className='nav-bar-links'>
-                <li><FontAwesomeIcon icon={faHouseChimney} /><Link to={'/'}>Home</Link></li>
-                <li><FontAwesomeIcon icon={faTerminal} /><Link to={'/projects'}>Projects</Link></li>
-                <li><FontAwesomeIcon icon={faAt} /><Link to={'/contacts'}>Contacts</Link></li>
-                <li><FontAwesomeIcon icon={faUserSecret}/><Link to={'/login'}>Login</Link></li>
+                <li>
+                  <Link to={'/'} className={'nav-bar-link'}>
+                      <FontAwesomeIcon icon={faHouseChimney} className={'nav-bar-icon'}/>
+                        <span>Home</span>
+                  </Link>
+                </li>
+                <li>
+                <Link to={'/projects'} className={'nav-bar-link'}>
+                      <FontAwesomeIcon icon={faTerminal} className={'nav-bar-icon'}/>
+                        <span>Projects</span>
+                  </Link>
+                </li>
+                <li>
+                <Link to={'/contacts'} className={'nav-bar-link'}>
+                      <FontAwesomeIcon icon={faAt} className={'nav-bar-icon'}/>
+                        <span>Contacts</span>
+                  </Link>
+                </li>
+                <li>
+                <Link to={'/login'} className={'nav-bar-link'}>
+                      <FontAwesomeIcon icon={faUserSecret} className={'nav-bar-icon'}/>
+                        <span>Login</span>
+                  </Link>
+                </li>
               </ul>
               <FontAwesomeIcon icon={faBars} id='nav-bar-menu-icon'/>
           </header>
@@ -45,7 +62,6 @@ const App = () => {
                     <li><a href='https://www.github.com/kostadinov1'>LinkedIn</a></li>
                     <li><a href='https://www.github.com/kostadinov1'>DockerHub</a></li>
                     <li><a href='https://www.github.com/kostadinov1'>Github</a></li>
-                    <li><a href='https://www.github.com/kostadinov1'>Github</a></li>
                 </ul>             
             </div>
             <div className='footer-list-box'>
@@ -55,7 +71,6 @@ const App = () => {
                     <li><a href='https://www.github.com/kostadinov1'>LinkedIn</a></li>
                     <li><a href='https://www.github.com/kostadinov1'>DockerHub</a></li>
                     <li><a href='https://www.github.com/kostadinov1'>Github</a></li>
-                    <li><a href='https://www.github.com/kostadinov1'>Github</a></li>
                 </ul>
             </div>            
             <div className='footer-list-box'>
@@ -64,7 +79,6 @@ const App = () => {
                     <li><a href='https://www.github.com/kostadinov1'>Github</a></li>
                     <li><a href='https://www.github.com/kostadinov1'>LinkedIn</a></li>
                     <li><a href='https://www.github.com/kostadinov1'>DockerHub</a></li>
-                    <li><a href='https://www.github.com/kostadinov1'>Github</a></li>
                     <li><a href='https://www.github.com/kostadinov1'>Github</a></li>
                 </ul>             
             </div>

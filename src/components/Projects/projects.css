@@ -1,86 +1,85 @@
 .projects {
-    /* height: 100vh; */
-    /* background-color: rgba(0,0,0,0.2); */
-
+    position: relative;
+    top: 120px;
+    border-top: 42px dashed var(--sky);
 }
     .projects-container {
             display: flex;
-            margin: 40px;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            border-top: 42px dashed var(--sky);
+
         }
         .projects h1 {
-            position: relative;
-            top: 150px;
-            left: 190px;
-            font-size: 44px;
+            font-size: 34px;
             font-style: italic;
             letter-spacing: 1.8pt;
-            border-radius: 20px;
             border: 1px solid var(--ai-bluegray);
             padding: 8px 40px;
             max-width: 36%;
             text-align: center;
-            background-color: rgba(210, 209, 191, 0.42);
-            box-shadow: 4px 2px 32px 2px rgba(74, 74, 74, 0.572), 0 6px 20px 0 rgba(81, 81, 81, 0.509);
-
-
-            }
+            margin: auto auto;
+            box-shadow: var(--box-shadow);
+            background-color: var(--cards-rgba);
+         }
         .project-box {
-            box-shadow: 4px 2px 32px 2px rgba(74, 74, 74, 0.572), 0 6px 20px 0 rgba(81, 81, 81, 0.509);
-
-            max-width: 70vw;
             display: flex;
             flex-direction: column;
-            margin: 140px 30px 40px 30px;
+            justify-content: flex-end;
+            overflow: hidden;
+            max-width: 26rem;
+            margin: 40px 30px 40px 30px;
             padding: 20px;
-            background-color: rgba(210, 209, 191, 0.762);
-            border-radius: 20px;
-
+            background-color: var(--cards-rgba);
+            box-shadow: var(--box-shadow);
         }
         .projects-container div:hover {
             -webkit-transform: scale(1.04);
-        transition: 0.5s ease all;
+            transition: 0.5s ease all;
         }
-
-        .project-desc {
+        .project-img {
+            margin: 10px 0px;
+            padding: 16px ;
+            background-color: var(--ai-bluegray);
+            border: 4px solid gray;
             overflow: hidden;
+            box-shadow: var(--box-shadow);
+
+        }
+        .project-img img {
+            object-fit: cover;
+            height: 18rem;
+            width: 22rem;
+            box-shadow: var(--box-shadow);
+            overflow: hidden;
+        }    
+        .project-desc {
+            height: 66%;
+            overflow: hidden;
+            
             padding: 10px;
             margin: 14px ;
             border-radius: 8px;
         }
         .project-desc h3 {
             text-align: center;
-            font-size: 30px;
             border-bottom: 2px solid var(--ai-bluegray);
             border-top: 2px solid var(--ai-bluegray);
-
         }
-        .project-img {
-
-            /* margin: 10px auto; */
-            padding: 16px;
-            background-color: var(--ai-bluegray);
-            border: 4px solid gray;
-            border-radius: 20px;
+        .project-desc p {
+            font-size: smaller;
+/* 
+            white-space: nowrap;
             overflow: hidden;
+            text-overflow: ellipsis;
+            width: 20px; */
         }
-        .project-img img {
-            box-shadow: 4px 2px 32px 2px rgb(182, 182, 179), 0 6px 20px 0 rgb(180, 179, 177);
-
-            border-radius: 20px;
-            overflow: hidden;
-        }
-        /* .project-img img:hover {
-            -webkit-transform: scale(1.1)
-        transition: 0.5s ease all;
-        } */
-
-        .projects.upcoming .projects-container .project-box {
+    .upcoming{
             margin-top: 0px;
-        }
-
-        .projects.projects.upcoming h1{
-            /* position: absolute; */
-            top: -14px;
-            /* background-color: red; */
+            position: relative;
+            padding: 70px 50px;
+            bottom: 120px;
         }
 

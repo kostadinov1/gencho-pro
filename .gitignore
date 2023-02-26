@@ -24,12 +24,19 @@
 .env.test.local
 .env.production.local
 
+
+
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
 /public/images
 /nginx
-.dockerignore
+
 .gitignore
+
+.dockerignore
 Dockerfile
+.yml
+.yaml
+docker-compose.yml

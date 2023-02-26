@@ -1,43 +1,59 @@
 :root{
-  --ai-bluegray: #273c49;
-  --ink: #3392db;
-  --posy: #4d0c15;
+  --dark-blue: #060d23;
+  --ai-bluegray: #1d4c67;
+  --ink: #337ab0;
+  --mist: #7a909d;
+  --sky: #cadae4;
+
+  
+  --cards-bg: #d9dbd0;
   --embers: #b82601;
-  --morning-sky: #cae4db;
-  --honey: #dcae1d;
   --lemon: #feaf2e;
-  --cerulean: #00303f;
-  --mist: #7a9d96;
-  --dark-sunset: #130e13;
-  --shadow-sunset: #201615;
-  --sun-shadow: #a34314;
 }
 
 
 * {
     box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+
+
 }
 
 button {
-    all: unset;
-    background-color: var(--ai-bluegray);
-    border-radius: 8px;
-    border: 1px solid var(--ai-bluegray);
-    color: var(--morning-sky);
+  all: unset;
+  background-color: var(--ai-bluegray);
+  cursor: pointer;
+
+  border: 1px solid var(--ai-bluegray);
+  border-radius: 8px;
+
+  max-width: 30%;
+  min-width: 20%;
+  margin-left: 20px;
+  padding: 5px 20px;
+
+  letter-spacing: 1px;
+  text-align: center;
+
 }
+button:hover {
+  scale: 1.05;
+  background-color: var(--ink);
+}
+
+
 
 a {
   text-decoration: none;
-  color: var(--ink);
+
+  color: var(--sky);
+  
 }
 a:hover {
   color: var(--embers);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 1s ease;
 }
-
-/* ul {
-  text-decoration: none;
-  list-style: none;
-} */
 
 li {
   text-decoration: none;

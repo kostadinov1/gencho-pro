@@ -1,68 +1,61 @@
 .contacts {
     height: 100vh;
+    position: relative;
+    top: 180px;
 } 
-    .form-box {
-        position: relative;
-        top: 180px;
-        margin-top: 200px;
-        padding: 50px;
+    .form-box {   
         display: flex;
+        flex-wrap: wrap;
         flex-direction: column;
-        max-width: 58vw;
+        align-items: center;
+        align-content: center;
         justify-content: center;
-        margin: auto  auto;
+        padding: 50px;
+        width: 1000px;
+        margin: auto auto;
+        /*  */
+        color: var(--ai-bluegray);
         background-color: var(--cards-rgba);
         border: 1px solid gray;
-        border-radius: 10px;
-        color: var(--ai-bluegray);
         box-shadow: var(--box-shadow);
     }
-    .form-box * {
-        border-radius: 10px;
-        overflow: hidden;
-    }
+
         .form-box h1 {
-            padding: 10px 30px;
+            padding: 20px 70px;
+            margin: 10px;
             font-size: 66px;
             letter-spacing: 1.8pt;
             background-color: var(--cards-rgba);
             box-shadow: var(--box-shadow);
-            margin-left: auto;
-            margin-right: auto;
             text-align: center;            
             font-weight: bold;
-            margin-bottom: 20px;
-            
-        }
-        .contact-form form{
-            display: flex;
-            flex-direction: column;
-            padding: 10px;
-            overflow: hidden;
-            color: var(--sky);
-        }
-        .contact-form input {
-            width: 100%;
-            justify-content: center;
-            align-items: center;
-            border: 1px solid gray;
-            background-color: var(--cards-rgba);
-            padding: 10px 10px;
-            margin: 10px;            
-        }
-        .contact-form .input {
 
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-bottom: 10px;
         }
-        .contact-form textarea {
-            margin: 20px;
-            padding: 10px;
-            border: 1px solid gray;
-        }
-
-        .contact-form button {
-            margin: 0px auto;
-        }
+    .contact-form {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        width: 900px;
+        padding: 10px;
+        overflow: hidden;
+        color: var(--sky);
+    }
+    .contact-form input {
+        border: 1px solid gray;
+        background-color: whitesmoke;
+        padding: 10px;
+        margin: 10px;       
+        /* width: 50%;  */
+        flex-basis: 45%;    
+    }
+    .contact-form textarea {
+        flex-basis: 92%;    
+        padding: 10px;
+        margin: 10px;
+        border: 1px solid gray;
+    }
+    .contact-form button {
+        flex-basis: 45%;    
+    }

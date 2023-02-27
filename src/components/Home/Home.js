@@ -2,7 +2,7 @@ import './home.css'
 import './home-responsive.css'
 import './education.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { CodeOutlined, GithubOutlined, LinkedinOutlined } from '@ant-design/icons'
+import { CodeOutlined, GithubOutlined, Html5Outlined, LinkedinOutlined } from '@ant-design/icons'
 import { faAt, faKeyboard } from '@fortawesome/free-solid-svg-icons'
 import DockerIcon from '../../custom/DockerIcon'
 import { Link } from 'react-router-dom'
@@ -87,7 +87,7 @@ const Home = () => {
                                 <span> Node JS</span>
                             </li> 
                             <li className='grid-li'>
-                                <CodeOutlined/>
+                            <Html5Outlined />
                                 <span> HTML5</span>
                             </li> 
                             <li className='grid-li'>
@@ -213,9 +213,9 @@ const Home = () => {
                                 <span>Javascript Advanced</span>
                             </a>
                             </li>
-                            <li className='grid-li'>
+                            {/* <li className='grid-li'>
                             <a href='#'>
-                                <CodeOutlined/>
+                            <Html5Outlined />
                                 <span>HTML and CSS</span>
                             </a>
                             </li>
@@ -224,7 +224,7 @@ const Home = () => {
                                 <CodeOutlined/>
                                 <span>React JS</span>
                             </a>
-                            </li>
+                            </li> */}
                         </ul>
                     </div>                      
                 </div>

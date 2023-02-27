@@ -7,16 +7,12 @@ function Contacts() {
     <section className='contacts'>
 		<div className='form-box'>
 			<h1>Get in touch</h1>
-			<div className='contact-form'>
-				<form  action='' method=''>
-					<div className='input'>
-						<input placeholder='Email'></input>
-						<input placeholder='Title'></input>
-					</div>
-					<textarea rows={6} placeholder='Enter Your message here!'></textarea>
-					<button>Send Message</button>
-				</form>
-			</div>
+			<form  action='' className='contact-form'>
+				<input placeholder='Email'></input>
+				<input placeholder='Title'></input>
+				<textarea rows={6} placeholder='Enter Your message here!'></textarea>
+				<button>Send Message</button>
+			</form>
 		</div>
     </section>
   )

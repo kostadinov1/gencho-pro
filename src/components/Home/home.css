@@ -1,5 +1,6 @@
 .home {
     position: relative;
+
 }
     .hero {
         position: relative;
@@ -145,6 +146,8 @@
                 transition: 0.9s ease all;
             }
 .info {
+    display: flex;
+    flex-wrap: wrap;
     position: relative;
     top: 40px;
     display: flex;
@@ -163,9 +166,10 @@
     .info-left {
         position: relative;
         display: flex;
+        flex-wrap: wrap;
         flex-direction: column;
         align-items: center;
-        width: 65%;
+        width: clamp();
         margin: 10px;
         padding: 20px;
         line-height: 1.5;

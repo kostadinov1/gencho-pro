@@ -9,13 +9,14 @@ import PersonalZone from './components/PersonalZone/PersonalZone'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAt, faBars, faHouseChimney, faTerminal, faUser, faUserSecret } from '@fortawesome/free-solid-svg-icons';
 import Login from './components/PersonalZone/Login';
+import { CodeOutlined } from '@ant-design/icons';
 
 
 const App = () => {
     return (
         <section id='body'>
           <header className='nav-bar'>
-              <img id='logo' alt='' src={'/images/logos/craiyon_logo_3.ico'}  />
+              <img id='logo' alt='' src={'/images/icons/icon-0.svg'}  />
               <h1>gencho</h1>
               <ul className='nav-bar-links'>
                 <li>
@@ -26,7 +27,7 @@ const App = () => {
                 </li>
                 <li>
                 <Link to={'/projects'} className={'nav-bar-link'}>
-                      <FontAwesomeIcon icon={faTerminal} className={'nav-bar-icon'}/>
+                      <CodeOutlined className={'nav-bar-icon'}/>
                         <span>Projects</span>
                   </Link>
                 </li>

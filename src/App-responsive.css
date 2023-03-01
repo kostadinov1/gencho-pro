@@ -1,0 +1,39 @@
+@media (max-width:412px) {
+    
+    .nav-bar {
+        width: auto;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .nav-bar h1 {
+        display: none;
+    }
+    
+    .nav-bar-links {
+        width: auto;
+    }
+    .nav-bar-links:nth-child(4) {
+        display: none;
+    }
+
+    .nav-bar-link {
+        margin: 0px;
+        padding: 0px;
+        font-size: 10px;
+        width: auto;
+
+    }
+    
+    .nav-bar-icon {
+        display: none;
+    }
+    #nav-bar-menu-icon {
+        display: none ;
+    }
+    }
+    #logo {
+        width: 42px;
+        height: auto;
+    }

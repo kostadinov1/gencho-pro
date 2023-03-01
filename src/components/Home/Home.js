@@ -32,20 +32,22 @@ const Home = () => {
                         </ul>
                     </div>
                 </div>
-                {/* <div className='photo-credit-box'>
-                    <a href="https://unsplash.com/@marekpiwnicki?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Photo by Marek Piwnicki</a> 
-                    <a href="https://unsplash.com/t/wallpapers?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">on Unsplash</a>
-                </div> */}
+                <div className='photo-credit-box'>
+                    <a href="https://unsplash.com/pt-br/@goumbik?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Photo by Lukas Blazek</a>
+                    <a href="https://unsplash.com/photos/mcSDtbWXUZU?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">on Unsplash</a>
+                </div>
             </section>
 
             <section className='info'>
                 <div className='info-left'>
                     <h1 className='pacifico-title'>About Me</h1>
                     <p>
-                        Hi! My name is Evgeni and this year I'm about to gradute web developement at <a href='https://www.softuni.bg'>SoftUni</a> Bulgaria.
-                        For the last 10 years I live in London, Uk, working a construction related full time job. About 3 year ago I found programming.
-                        It started as a hobby, but now, I'm about to gratuate and become a full time professional. Here You can find some basic info about,
-                        but if You want to ask me a question, You can do it <Link to={'/contacts'}>here</Link>. 
+                        Hi! My name is Evgeni. I study web developement at <a href='https://www.softuni.bg'>SoftUni</a> Bulgaria.
+                        For the last 10 years I live in London, Uk, working a construction
+                         related full time job. About 3 year ago I found programming.
+                        It started as a hobby, but now, I'm about to gratuate and become a full 
+                        time professional. Here You can find some basic info about me,
+                        but if You feel like asking me a question, You can do it <Link to={'/contacts'}>here</Link>. 
                     </p>
                     <h3></h3>
                     <p> </p>
@@ -129,9 +131,10 @@ const Home = () => {
                     </div>
                 </div>
             </section>
-            <section id='education'>
+
+            <section className='education'>
             <div className='info-left edu'>
-                    <h1 className='pacifico-title'>Certificates</h1>
+                    <h1 className='pacifico-title' >Education</h1>
 
                     <div className='skills-grid'>
                         <ul className='skills-ul'>
@@ -191,12 +194,12 @@ const Home = () => {
                                 <span>Python Basics</span>
                             </a>
                             </li>
-                            <li className='grid-li'>
+                            {/* <li className='grid-li'>
                             <a href='#'>
                                 <CodeOutlined/>
                                 <span>Python Algorithms</span>
                             </a>
-                            </li>
+                            </li> */}
                         </ul>
 
                         <ul className='skills-ul'>
@@ -209,9 +212,11 @@ const Home = () => {
                             </li>
                             <li className='grid-li'>
                             <a href='#'>
-                                <CodeOutlined/>
-                                <span>Javascript Advanced</span>
+                                <CodeOutlined/>        
+                           
+                            <span>Javascript Advanced</span>
                             </a>
+                    
                             </li>
                             {/* <li className='grid-li'>
                             <a href='#'>

@@ -10,7 +10,7 @@
 }
 .pacifico-title {
     font-family: Montserrat, Arial, Helvetica, sans-serif;
-    background-color: rgba(213, 210, 194, 0.1);
+    background-color: var(--cards-rgba);
     padding: 10px 20px;
 }
 
@@ -18,11 +18,15 @@
     display: flex;
     flex-wrap: wrap;
     position: absolute;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
     margin-left: 25px;
     margin-right: 25px;
     top: 10px;    
     left: 30px;
     right: 30px;
+    width: 94vw;
     z-index: 1;
     background-color: var(--cards-rgba);
     border-radius: var(--bradius);
@@ -39,7 +43,7 @@
         color: var(--ai-bluegray);
         font-family: 'Gajraj One', Arial, Helvetica, cursive;
         font-weight: bold;
-        font-size: 38px;
+        font-size: clamp(2rem, 3rem, 3px);
         letter-spacing: 3.9pt;
         margin-top: auto;
         margin-bottom: auto;
@@ -74,6 +78,9 @@
       }
     .nav-bar-link span{
         margin: 8px;
+    }
+    .nav-bar-link:nth-child() {
+        display: none;
     }
     #nav-bar-menu-icon {
         margin: auto 30px;

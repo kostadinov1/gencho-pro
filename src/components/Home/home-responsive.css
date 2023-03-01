@@ -1,14 +1,23 @@
-/* @media (max-width:600px) {
+@media (max-width:600px) {
     
-    .nav-bar {
-        width: 100vw;
+    .hero-left img {
+
     }
-    
-    .nav-bar h1 {
-        font-size: 32px;
+    .hero-left h1 {
+        display: none;
     }
-    
-    .nav-bar-links {
-        display: hidden;
+    .hero-right {
+        display: none;
     }
-    } */
+    .title-box  h2{
+        display: none;
+    }
+
+
+    .info {
+        flex-direction: column;
+    }
+    .skills-box {
+        flex-direction: column;
+    }
+    }

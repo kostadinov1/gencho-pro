@@ -70,11 +70,15 @@
         }
         .project-desc p {
             font-size: smaller;
+
 /* 
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
             width: 20px; */
+        }
+        .project-desc a {
+            color: var(--ai-bluegray);
         }
     .upcoming{
             /* margin-top: 0px; */

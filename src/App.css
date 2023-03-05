@@ -1,4 +1,75 @@
- 
+:root{
+    --dark-blue: #060d23;
+    --ai-bluegray: #1d4c67;
+    --cards-bg: #d9dbd0;
+    --embers: #b82601;
+    --lemon: #feaf2e;
+    --smoke: rgba(255, 255, 255, 0.672);
+    
+    --bradius: 10px;
+    --cards-rgba: rgba(213, 210, 194, 0.193);
+    --box-shadow: 4px 2px 32px 2px rgba(70, 97, 117, 0.752), 0 6px 20px 0 rgba(116, 185, 214, 0.43);
+  }
+  
+  html {
+      font-size: 16px;
+      font-family: 'Roboto Mono', monospace;
+  }
+  
+  * {
+      box-sizing: border-box;
+      border-radius: var(--bradius);
+  }
+  
+  
+  button {
+      all: unset;
+      cursor: pointer;
+      background-color: var(--ai-bluegray);
+      max-width: 30%;
+      min-width: 20%;
+      margin-left: 20px;
+      padding: 5px 20px;
+      
+      border: 1px solid gray;
+      border-radius: var(--bradius);
+      letter-spacing: 1px;
+      text-align: center;
+      color: var(--cards-bg);
+  
+  }
+  button:hover {
+      scale: 1.02;
+      background-color: var(--smoke);
+      border: 1px solid gray;
+      color: var(--ai-bluegray);
+      transition: all 300ms ease-in-out;
+  }
+  
+  a {
+      text-decoration: none;
+      color: var(--cards-bg);
+  }
+  a:hover {
+      color: var(--embers);
+      transition: all 300ms ease-in-out;
+  
+  }
+  input {
+      background-color: var(--smoke);
+      border: 1px solid gray;
+      padding: 10px;
+      margin: 10px;
+  }
+  
+  
+  li {
+      text-decoration: none;
+      list-style: none;
+  
+  }
+  
+
 #body {
     position: relative;
     background-image: url('/public/images/wallpapers/wallpaper-24.jpg');

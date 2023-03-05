@@ -9,7 +9,7 @@ import Contacts from './components/Contacts/Contacts'
 import PersonalZone from './components/PersonalZone/PersonalZone'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAt, faBars, faHouseChimney, faTerminal, faUser, faUserSecret } from '@fortawesome/free-solid-svg-icons';
-import Login from './components/PersonalZone/Login';
+import Login from './components/Login/Login';
 import { CodeOutlined } from '@ant-design/icons';
 
 

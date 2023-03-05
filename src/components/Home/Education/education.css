@@ -1,36 +1,4 @@
 .education {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    background-color: var(--blue-3);
+    /* min-height: 100vh; */
 }
-.info-left.edu {
-    width: clamp(400px, 100%, 2800px);
-
-    padding: 20px; 
-    margin: 30px;
-    align-items: center;
-    color: var(--ai-bluegray);
-}
-.info-left.edu .skills-grid {
-    margin-bottom: 40px;
-    width: 100%;
-}
-.info-left.edu .skills-grid:nth-child(2) {
-    margin-bottom: 40px;
-    width: 70%;
-}
-
-.education .grid-li:hover {
-    background-color: var(--cards-bg);
-    
-    transition: 0.9s ease all;
-    z-index: 1;
-}
-
-.education .grid-li span{
-    color: var(--ai-bluegray);
-    
-}
-/* 
-.education .grid-li.edu-li span:hover {
-}        */

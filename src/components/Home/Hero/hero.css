@@ -21,16 +21,11 @@
             flex-direction: column;
             align-items: center;
             position: relative;
-            top: 10vh;
-            left: 2.4vw;
-            background-color: var(--cards-rgba);
+            top: 14vh;
+            left: 4vw;
+            background-color: var(--blue-3);
             background-repeat: no-repeat;
             background-size: cover;
-            /* max-width: 60%; */
-            /* max-height: 75vh; */
-            /* align-items: center;
-            justify-content: space-around; */
-            /* text-align: center; */
             box-shadow: var(--box-shadow);
             margin: 10px;
             padding: 30px;

@@ -2,14 +2,16 @@
 .cube_box {
     height: 60vh;
     width: 30vw;
-    position: absolute;
-    top: 50vh;
-    left: 50vw;
+    position: relative;
+    top: 30vh;
+    left: 48vw;
     transform: translate(-50%, -50%);
     perspective: 1000px;
+    /* background-color: red; */
 }
 
 .cube {
+    z-index: 1;
     height: 250px;
     width: 250px;
     position: absolute;

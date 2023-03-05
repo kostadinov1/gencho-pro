@@ -3,17 +3,19 @@ import { faKeyboard } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
 import './hero.css'
+import Cube from '../../Custom/Cube/Cube'
 
 function Hero() {
   return (
     <div>
        <section className='hero'>
                 <div className='hero-left'>
-                    <img src={'/images/wallpapers/wallpaper-24.jpg'} alt='no image'></img>
                     <div className='title-box'>
                         <h1><h1 id='hi'>Hi!</h1> I'm Evgeni.</h1>
                         <h2>web developer</h2>
                     </div>
+                    <Cube />
+
                 </div>
                 <div className='hero-right'>
                     <div className='hero-right-links-box'>

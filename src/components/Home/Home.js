@@ -1,20 +1,17 @@
 import './home.css'
 import './home-responsive.css'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { CodeOutlined, GithubOutlined, Html5Outlined, LinkedinOutlined } from '@ant-design/icons'
-import { faAt, faKeyboard } from '@fortawesome/free-solid-svg-icons'
-import DockerIcon from '../../custom/DockerIcon'
-import { Link } from 'react-router-dom'
 import Hero from './Hero/Hero'
 import Education from './Education/Education'
 import AboutMe from './AboutMe/AboutMe'
+import Canvas3D from '../Custom/Canvas3D/Canvas3D'
 
 const Home = () => {
     return (
         <section className="home">
            <Hero />
            <Education />
-           <AboutMe></AboutMe>
+           <AboutMe />
+           {/* <Canvas3D /> */}
         </section>
     )
 }

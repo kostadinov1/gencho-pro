@@ -1,0 +1,67 @@
+.nav-bar {
+    position: fixed;
+    top: 10px;    
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    width: 100vw;
+    z-index: 1;
+
+    background-color: var(--blue-3);
+    border: 0.14em solid var(--blue-1);
+    border-radius: var(--bradius);
+    /* box-shadow: var(--box-shadow); */
+    overflow: hidden;      
+    }
+
+    #logo {
+        width: 90px;
+        height: 90px;
+        margin: 0px;
+        padding: 0px;
+    }
+    .nav-bar h1 {
+        color: var(--ai-bluegray);
+        font-family: 'Gajraj One', Arial, Helvetica, cursive;
+        font-size: clamp(2rem, 3rem, 4rem);
+        letter-spacing: 3pt;
+      }
+    .nav-bar-links {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        gap: 2em;
+        margin-left: auto;
+        margin-right: auto;
+        overflow: hidden;
+        font-size: clamp(12px, 1.5rem, 24px);
+        font-weight: bold;  
+    }  
+    
+    .nav-bar-link {
+        font-weight: bold;
+        letter-spacing: 1.5pt;
+        color: var(--ai-bluegray);
+    }
+    .nav-bar-link:hover {
+        scale: 1.04;
+        color: var(--embers);
+        transition: 0.5s ease all;
+
+      }
+    #nav-bar-menu-icon {
+        margin: auto 30px;
+        font-size: 32px;
+        cursor: pointer;
+        color: var(--ai-bluegray);
+    }
+    #nav-bar-menu-icon:hover {
+        scale: 1.3;
+        transition: 0.5s ease all;
+        color: var(--embers);
+    }

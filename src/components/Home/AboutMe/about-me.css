@@ -5,7 +5,7 @@
     position: relative;
     top: 40px;
     display: flex;
-    background-color: var(--cards-rgba);
+    /* background-color: var(--cards-rgba); */
     padding: 30px 30px;
     margin: 30px auto;
     color: var(--ai-bluegray);
@@ -28,7 +28,7 @@
         padding: 20px;
         overflow: hidden;
         line-height: 1.5;
-        background-color: var(--cards-rgba);
+        background-color: var(--blue-4);
         box-shadow: var(--box-shadow);
     }
         .info-left h2 {

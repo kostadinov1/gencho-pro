@@ -1,13 +1,18 @@
 :root{
+    --blue-1: rgb(27, 38, 44);
+    --blue-2: rgb(15, 76, 117);
+    --blue-3: rgb(50, 130, 184);
+    --blue-4: rgb(187, 225, 250);
+
     --dark-blue: #060d23;
-    --ai-bluegray: #1d4c67;
+    --ai-bluegray: #0d3045;
     --cards-bg: #d9dbd0;
     --embers: #b82601;
     --lemon: #feaf2e;
     --smoke: rgba(255, 255, 255, 0.672);
     
     --bradius: 10px;
-    --cards-rgba: rgba(213, 210, 194, 0.193);
+    --cards-rgba: rgb(213, 210, 194);
     --box-shadow: 4px 2px 32px 2px rgba(70, 97, 117, 0.752), 0 6px 20px 0 rgba(116, 185, 214, 0.43);
   }
   
@@ -18,14 +23,13 @@
   
   * {
       box-sizing: border-box;
-      border-radius: var(--bradius);
   }
   
   
   button {
       all: unset;
       cursor: pointer;
-      background-color: var(--ai-bluegray);
+      background-color: var(--blue-3);
       max-width: 30%;
       min-width: 20%;
       margin-left: 20px;
@@ -35,7 +39,7 @@
       border-radius: var(--bradius);
       letter-spacing: 1px;
       text-align: center;
-      color: var(--cards-bg);
+      color: var(--blue-4);
   
   }
   button:hover {
@@ -48,7 +52,8 @@
   
   a {
       text-decoration: none;
-      color: var(--cards-bg);
+      color: var(--blue-4);
+
   }
   a:hover {
       color: var(--embers);
@@ -72,124 +77,23 @@
 
 #body {
     position: relative;
-    background-image: url('/public/images/wallpapers/wallpaper-24.jpg');
+    background-color: var(--blue-1);
+    /* background-image: url('/public/images/wallpapers/wallpaper-24.jpg');
     background-repeat: no-repeat;
-    background-size: cover; 
+    background-size: cover;  */
 }
 .icon {
   width: 20px;
 }
 .pacifico-title {
     font-family: Montserrat, Arial, Helvetica, sans-serif;
-    background-color: var(--cards-rgba);
+    background-color: var(--blue-4);
     padding: 10px 20px;
 }
 
-.nav-bar {
-    display: flex;
-    flex-wrap: wrap;
-    position: absolute;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
-    margin-left: 25px;
-    margin-right: 25px;
-    top: 10px;    
-    left: 30px;
-    right: 30px;
-    width: 94vw;
-    z-index: 1;
-    background-color: var(--cards-rgba);
-    border-radius: var(--bradius);
-    box-shadow: var(--box-shadow);
-    overflow: hidden;      
-    }
-    #logo {
-        width: 90px;
-        height: 90px;
-        margin: 0px;
-        padding: 0px;
-    }
-    .nav-bar h1 {
-        color: var(--ai-bluegray);
-        font-family: 'Gajraj One', Arial, Helvetica, cursive;
-        font-weight: bold;
-        font-size: clamp(2rem, 3rem, 3px);
-        letter-spacing: 3.9pt;
-        margin-top: auto;
-        margin-bottom: auto;
-        margin-left: 0px;
-        padding-left: 0px;
-        padding-right: 30px;
-        border-radius: 20px;
-      }
-    .nav-bar-links {
-        display: flex;
-        margin-left: auto;
-        margin-right: auto;
-        overflow: hidden;
-        font-size: 24px;
-        font-weight: bold;  
-      }  
-    .nav-bar-link>* {
-        margin-left: 26px;
-    }
-    .nav-bar-link {
-        font-weight: bold;
-        color: var(--ai-bluegray);
-        letter-spacing: 1.5pt;
-        margin-top: auto;
-        margin-bottom: auto;
-    }
-    .nav-bar-link:hover {
-        scale: 1.04;
-        color: var(--embers);
-        transition: 0.5s ease all;
 
-      }
-    .nav-bar-link span{
-        margin: 8px;
-    }
-    .nav-bar-link:nth-child() {
-        display: none;
-    }
-    #nav-bar-menu-icon {
-        margin: auto 30px;
-        font-size: 32px;
-        cursor: pointer;
-        color: var(--ai-bluegray);
-    }
-    #nav-bar-menu-icon:hover {
-        scale: 1.3;
-        transition: 0.5s ease all;
-        color: var(--embers);
-    }
 main {
     /*   <-----  DIMMER LAYER ----->   */
-    background-color: rgba(198, 197, 180, 0.3);
+    /* background-color: rgba(198, 197, 180, 0.3); */
 
 }
-footer {
-    /*   <-----  DIMMER LAYER ----->   */
-    background-color: rgba(198, 197, 180, 0.8);
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    color: var(--ai-bluegray);
-    position: relative;
-    bottom: 0px;
-    padding: 20px;
-}
-    .footer-list-box {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 10px;
-    }
-    .footer-list-box h5 {
-        margin-bottom: 0px;
-        margin-top: 25px;
-    }
-    .footer-list-box * {
-        color: var(--ai-bluegray);
-    }

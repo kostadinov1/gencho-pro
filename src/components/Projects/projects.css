@@ -1,6 +1,6 @@
 .projects {
     position: relative;
-    top: 120px;
+    top: 100px;
     border-top: 42px dashed var(--sky);
 }
     .projects-container {
@@ -22,7 +22,7 @@
             text-align: center;
             margin: auto auto;
             box-shadow: var(--box-shadow);
-            background-color: var(--cards-rgba);
+            background-color: var(--blue-3);
          }
         .project-box {
             display: flex;
@@ -30,9 +30,10 @@
             justify-content: flex-end;
             overflow: hidden;
             max-width: 26rem;
+            max-height: 70vh;
             margin: 40px 30px 40px 30px;
             padding: 20px;
-            background-color: var(--cards-rgba);
+            background-color: var(--blue-3);
             box-shadow: var(--box-shadow);
         }
         .projects-container div:hover {
@@ -43,7 +44,7 @@
             margin: 10px 0px;
             padding: 16px ;
             background-color: var(--ai-bluegray);
-            border: 4px solid gray;
+            border: 4px solid var(--blue-4);
             overflow: hidden;
             box-shadow: var(--box-shadow);
 

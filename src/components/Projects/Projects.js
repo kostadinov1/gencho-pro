@@ -9,7 +9,7 @@ const Projects = () => {
                 <div className='projects-container'>
                     <div className='project-box'>
                         <div className={'project-img'}>
-                            <img src='/images/backgrounds/AI-backgrounds/ai-background-8.png' alt=''></img>
+                            <img src='/images/projects-screenshots/dogramavarna-screenshot.png' alt=''></img>
                         </div>
                         <div className='project-desc'>
                             <h3> Dograma Varna</h3>
@@ -38,7 +38,7 @@ const Projects = () => {
                     </div>
                     <div className='project-box'>
                         <div className={'project-img'}>
-                        <img src='/images/backgrounds/AI-backgrounds/ai-background-2.png' alt=''></img>
+                        <img src='/images/projects-screenshots/dentist-screenshot.png' alt=''></img>
                         </div>
                         <div className='project-desc'>
                             <h3> Dentist - Project Defence</h3>

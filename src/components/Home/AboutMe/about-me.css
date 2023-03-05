@@ -2,7 +2,7 @@
 
 .about-me {
     margin: 4em;
-    padding: 2em;
+    padding: 0em;
     min-height: 100vh;
     display: grid;
     gap: 2em;
@@ -71,8 +71,18 @@
 
 
 .about-card {
+    border: 0.3em solid var(--blue-3);
+    border-radius: var(--bradius);
+    overflow: hidden;
+    /* color: var(--blue-1); */
+    background-color: var(--blue-3);
 }
+.about-card:hover {
+    -webkit-transform: scale(1.2);
+}
+
 .about-card img {
+    object-fit: cover;
     height: 100%;
     width: 100%;
 }

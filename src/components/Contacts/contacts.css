@@ -2,6 +2,7 @@
     height: 100vh;
     position: relative;
     top: 180px;
+    border-radius: var(--b-radius);
 } 
     .form-box {   
         display: flex;
@@ -14,10 +15,10 @@
         width: 1000px;
         margin: auto auto;
         /*  */
-        color: var(--ai-bluegray);
-        background-color: var(--cards-rgba);
-        border: 1px solid gray;
-        box-shadow: var(--box-shadow);
+        color: var(--blue-1);
+        background-color: var(--blue-3);
+        border: 1px solid var(--blue-4);
+        /* box-shadow: var(--box-shadow); */
     }
 
         .form-box h1 {
@@ -25,8 +26,6 @@
             margin: 10px;
             font-size: 66px;
             letter-spacing: 1.8pt;
-            background-color: var(--cards-rgba);
-            box-shadow: var(--box-shadow);
             text-align: center;            
             font-weight: bold;
 
@@ -40,11 +39,11 @@
         width: 900px;
         padding: 10px;
         overflow: hidden;
-        color: var(--sky);
+        color: var(--blue-4);
     }
     .contact-form input {
-        border: 1px solid gray;
-        background-color: whitesmoke;
+        border: 1px solid var(--blue-4);
+        background-color: var(--blue-4);
         padding: 10px;
         margin: 10px;       
         /* width: 50%;  */
@@ -52,10 +51,13 @@
     }
     .contact-form textarea {
         flex-basis: 92%;    
+        background-color: var(--blue-4);
         padding: 10px;
         margin: 10px;
-        border: 1px solid gray;
+        border: 1px solid var(--blue-4);
     }
     .contact-form button {
-        flex-basis: 45%;    
+        flex-basis: 45%;  
+        font-size: large;
+        font-weight: bold;  
     }

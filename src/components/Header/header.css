@@ -1,6 +1,6 @@
 .nav-bar {
     position: fixed;
-    top: 10px;    
+    /* top: 10px;     */
 
     display: flex;
     flex-wrap: wrap;

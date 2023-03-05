@@ -19,17 +19,17 @@
         
         overflow: hidden;
         color: var(--ai-bluegray);
-        border: 1px solid gray;
-        background-color: var(--cards-rgba);
-        box-shadow: var(--box-shadow);
+        border: 1px solid var(--blue-2);
+        background-color: var(--blue-3);
+        border-radius: var(--bradius);
+        /* box-shadow: var(--box-shadow); */
     }
     .login-form-box h1 {
         padding: 20px 70px;
         margin: 10px;
         font-size: 66px;
         letter-spacing: 1.8pt;
-        background-color: var(--cards-rgba);
-        box-shadow: var(--box-shadow);
+        /* box-shadow: var(--box-shadow); */
         text-align: center;            
         font-weight: bold;
              
@@ -40,7 +40,7 @@
     }
     .login-form-box button {
         margin: 20px auto 20px 0%;
-        box-shadow: var(--box-shadow);
+        /* box-shadow: var(--box-shadow); */
         
     }
     h1 {

@@ -6,7 +6,7 @@ function Contacts() {
   return (
     <section className='contacts'>
 		<div className='form-box'>
-			<h1>Page in progress</h1>
+			<h1>Coming Soon...</h1>
 			<h1>Get in touch</h1>
 			<form  action='' className='contact-form'>
 				<input placeholder='Email'></input>

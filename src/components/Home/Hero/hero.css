@@ -2,9 +2,10 @@
     position: relative;
     display: flex;
     height: 100vh;
-    background-image: url('/public/images/backgrounds/background-7.jpg'); 
+    background-image: url('/public/images/backgrounds/background-.jpg'); 
     background-repeat: no-repeat;
     background-size: cover;
+    border-bottom: 2em solid var(--blue-2);
 }
     .hero-left {
 
@@ -22,16 +23,16 @@
             flex-direction: column;
             align-items: center;
             position: relative;
-            top: 12vh;
-            left: -12vw;
+            top: 16vh;
+            left: -8vw;
             /* background-color: var(--blue-3); */
             background-repeat: no-repeat;
             background-size: cover;
             /* box-shadow: var(--box-shadow); */
-            /* margin: 10px;
-            padding: 30px; */
         }   
-            .hero-left h1, h2 {
+        .hero-left h1, h2 {
+                margin: 0.1em;
+                padding: 0.2em 0.4em;
                 --c: var(--blue-4); /* the color */
               --b: .1em;    /* border length*/
               --d: 20px;    /* the cube depth */
@@ -69,6 +70,7 @@
             .hero-left h1:hover, h2:hover {
                 z-index: 1;
                 transform: translate(0,0);
+                color: var(--blue-2);
                 clip-path: 
                   polygon(
                    0% var(--d), 

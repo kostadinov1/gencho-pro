@@ -11,7 +11,7 @@
     z-index: 1;
 
     background-color: var(--blue-3);
-    border: 0.14em solid var(--blue-1);
+    border: 0.14em solid var(--blue-3);
     border-radius: var(--bradius);
     /* box-shadow: var(--box-shadow); */
     overflow: hidden;      
@@ -39,21 +39,29 @@
         margin-left: auto;
         margin-right: auto;
         overflow: hidden;
-        font-size: clamp(12px, 1.5rem, 24px);
         font-weight: bold;  
+        list-style: none;
+        
     }  
     
     .nav-bar-link {
+        font-size: 1.8rem;
         font-weight: bold;
         letter-spacing: 1.5pt;
-        color: var(--ai-bluegray);
+        color: var(--blue-4);
+        transition: all 0.5s ease-in-out;
+
+        
     }
     .nav-bar-link:hover {
-        scale: 1.04;
-        color: var(--embers);
+        -webkit-transform: scale(1.2);
         transition: 0.5s ease all;
+        color: var(--blue-1);
 
       }
+    .nav-bar-link span {
+        margin-left: 0.2em;
+    }
     #nav-bar-menu-icon {
         margin: auto 30px;
         font-size: 32px;

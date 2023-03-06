@@ -9,7 +9,8 @@ function Hero() {
        <section className='hero'>
                 <div className='hero-left'>
                     <div className='title-box'>
-                        <h1><h1 id='hi'>Hi!</h1> I'm Evgeni.</h1>
+                        <h1>Hi!</h1>
+                        <h1> I'm Evgeni.</h1>
                         <h2>web developer</h2>
                     </div>
                 </div>
@@ -17,9 +18,9 @@ function Hero() {
                 </div>
                     <Cube />
                 <div className='photo-credit-box'>
-                    <a href="https://unsplash.com/pt-br/@goumbik?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Photo by Lukas Blazek</a>
-                    <a href="https://unsplash.com/photos/mcSDtbWXUZU?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">on Unsplash</a>
-                </div>
+                <a href="https://pixabay.com/users/tungnguyen0905-17946924/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=6701504">Image by Tung Nguyen</a>
+                <a href="https://pixabay.com//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=6701504">at Pixabay</a>
+                    </div>
             </section>
 
     </div>

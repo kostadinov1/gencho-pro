@@ -1,88 +1,80 @@
 
-
 .about-me {
     margin: 4em;
     padding: 0em;
     min-height: 100vh;
     display: grid;
-    gap: 2em;
+    gap: 1.6em;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(4, 1fr);
     grid-template-areas: 
                 "six three four four five five"
                 "six one one two two seven"
                 "six one one two two seven"
-                "eight eight nine nine ten seven"
-                ;
-
+                "eight eight nine nine ten seven";
 }
-
 .card-1 {
     grid-area: one;
     max-height: 60vh;
-
 }
 .card-2 {
-    background-color: green;
     grid-area: two;
     max-height: 60vh;
-
 }
 .card-3 {
     grid-area: three;
     max-height: 30vh;
-
 }
 .card-4 {
     grid-area: four;
     max-height: 30vh;
-
 }
 .card-5 {
     grid-area: five;
     max-height: 30vh;
-
 }
 .card-6 {
     grid-area: six;
-    /* max-height: 60vh; */
-
 }
 .card-7 {
     grid-area: seven;
-    /* max-height: 60vh; */
-
 }
 .card-8 {
     grid-area: eight;
     max-height: 30vh;
-
 }
 .card-9 {
     grid-area: nine;
     max-height: 30vh;
-
 }
 .card-10 {
     grid-area: ten;
     max-height: 30vh;
-
 }
-
 
 .about-card {
-    border: 0.3em solid var(--blue-3);
+    padding: 2em;
+    border: 0.3em solid var(--blue-4);
     border-radius: var(--bradius);
     overflow: hidden;
-    /* color: var(--blue-1); */
+    color: var(--blue-4);
     background-color: var(--blue-3);
+    transition-duration: 400ms;
 }
 .about-card:hover {
-    -webkit-transform: scale(1.2);
+    -webkit-transform: scale(1.1);
+    transition: all 700ms ease-in-out;
 }
-
+.about-card p {
+    padding: 1em;
+}
 .about-card img {
+    border: 0.3em solid var(--blue-4);
+    border-radius: var(--bradius);
     object-fit: cover;
     height: 100%;
     width: 100%;
+    }
+.about-card li {
+    font-size: 1.1rem;
 }

@@ -6,7 +6,6 @@ import './hero-responsive.css'
 
 function Hero() {
   return (
-    <div>
        <section className='hero'>
                 <div className='hero-left'>
                     <div className='title-box'>
@@ -23,8 +22,6 @@ function Hero() {
                 <a href="https://pixabay.com//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=6701504">at Pixabay</a>
                     </div>
             </section>
-
-    </div>
   )
 }
 

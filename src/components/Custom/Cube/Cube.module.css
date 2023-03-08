@@ -93,12 +93,13 @@
         width: 50vw;
         position: relative;
         top: 56vh;
-        left: 14vw;
+        left: -35vw;
         transform: translate(-50%, -50%);
         perspective: 1000px;
     }
-
+    
     .cube {
+        background-color: transparent;
         z-index: 1;
         height: 250px;
         width: 250px;
@@ -129,16 +130,16 @@
     }
 
     .card {
-        display: none;
+        /* display: none; */
         position: absolute;
-        height: 50px;
-        width: 50px;
+        height: 250px;
+        width: 250px;
         text-align: center;
-        /* padding: 100px 0px; */
+        padding: 100px 0px;
         color: var(--blue-1);
         background-color: var(--blue-3);
         border: 2px solid var(--blue-1);
-        font-size: 32px;
+        font-size: 22px;
         border-radius: var(--bradius);
 
         

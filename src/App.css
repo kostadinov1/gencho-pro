@@ -35,7 +35,7 @@
       margin-left: 20px;
       padding: 5px 20px;
       
-      border: 1px solid gray;
+      border: 1px solid var(--blue-2);
       border-radius: var(--bradius);
       letter-spacing: 1px;
       text-align: center;
@@ -45,7 +45,7 @@
   button:hover {
       scale: 1.02;
       background-color: var(--smoke);
-      border: 1px solid gray;
+      border: 1px solid var(--blue-2);
       color: var(--ai-bluegray);
       transition: all 300ms ease-in-out;
   }
@@ -62,7 +62,7 @@
   }
   input {
       background-color: var(--smoke);
-      border: 1px solid gray;
+      border: 1px solid var(--blue-2);
       padding: 10px;
       margin: 10px;
   }

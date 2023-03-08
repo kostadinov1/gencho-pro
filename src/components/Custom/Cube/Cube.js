@@ -24,7 +24,7 @@ function Cube() {
             <a href='https://monkeytype.com/profile/evgeni'><FontAwesomeIcon icon={faKeyboard}/>MonkeyType</a>
             </div>
             <div className={`${styles.card} ${styles.bottom}`}>
-            <a href='https://www.softuni.bg'><CodeOutlined />SoftUni</a>
+                <h3>Welcome</h3>
             </div>
         </div>
     </div>

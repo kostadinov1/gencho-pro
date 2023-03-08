@@ -14,20 +14,19 @@
         width: 100vw;
     }
         .hero-left .title-box {
-            /* display: flex;
-            flex-direction: column;
-            align-items: center;
-            position: fixed;
-            top: -50px;
-            left: 150px;
-            background-repeat: no-repeat;
-            background-size: cover; */
+            z-index: 3;
+            /* display: flex; */
+            /* flex-direction: column; */
+            /* align-items: center; */
+            position: absolute;
+            top: 56vh;
+            left: -35vw;
             background-color: red;
         }   
         .hero-left h1, h2 {
               }
             .hero-left h2 {
-                font-size: 1em;
+                /* font-size: 2em; */
             }
 
     .hero-right {

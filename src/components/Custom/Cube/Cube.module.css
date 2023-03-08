@@ -82,4 +82,67 @@
         transform: rotateX(-90deg);
         
     }
+
+
+/*   ----- RESPONSIVE ----- */
+
+@media screen and (max-width:600px) {
+        
+    .cube_box {
+        height: 30vh;
+        width: 50vw;
+        position: relative;
+        top: 56vh;
+        left: 14vw;
+        transform: translate(-50%, -50%);
+        perspective: 1000px;
+    }
+
+    .cube {
+        z-index: 1;
+        height: 250px;
+        width: 250px;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        /* transform: rotate(-90deg); */
+        transform-style: preserve-3d;
+        animation: animate 15s infinite;
+        /* transform: rotateY(30deg); */
+    }
+    @keyframes animate {
+        0% {
+            transform: rotateX(45deg) rotateY(-45deg);
+        }
+        25% {
+            transform: rotateX(-45deg) rotateY(-45deg);
+        }
+        50% {
+            transform: rotateX(45deg) rotateY(45deg);
+        }
+        75% {
+            transform: rotateX(-45deg) rotateY(45deg);
+        }
+        100% {
+            transform: rotateX(45deg) rotateY(-45deg);
+        }
+    }
+
+    .card {
+        display: none;
+        position: absolute;
+        height: 50px;
+        width: 50px;
+        text-align: center;
+        /* padding: 100px 0px; */
+        color: var(--blue-1);
+        background-color: var(--blue-3);
+        border: 2px solid var(--blue-1);
+        font-size: 32px;
+        border-radius: var(--bradius);
+
+        
+    }   
+    
+    }
     

@@ -2,6 +2,7 @@ import { HomeOutlined, PhoneOutlined, ProjectOutlined, UserOutlined } from '@ant
 import React from 'react'
 import { Link } from 'react-router-dom'
 import './header.css'
+import './header-responsive.css'
 
 
 function Header() {

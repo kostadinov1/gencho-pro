@@ -1,0 +1,53 @@
+@media screen and (max-width:600px) {
+
+.hero {
+    position: relative;
+    display: flex;
+    height: 100vh;
+    background-image: url('/public/images/backgrounds/background-.jpg'); 
+    background-repeat: round;
+    background-size: cover;
+    border-bottom: 2em solid var(--blue-2);
+}
+    .hero-left {
+        position: relative;
+        width: 100vw;
+    }
+        .hero-left .title-box {
+            /* display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: fixed;
+            top: -50px;
+            left: 150px;
+            background-repeat: no-repeat;
+            background-size: cover; */
+            background-color: red;
+        }   
+        .hero-left h1, h2 {
+              }
+            .hero-left h2 {
+                font-size: 1em;
+            }
+
+    .hero-right {
+        display: none;
+    }       
+    .photo-credit-box {
+        display: flex;
+        position: absolute;
+        bottom: 20px;
+        right: 0px;
+    }
+        .photo-credit-box *{
+            font-size: 14px;
+            margin-right: 20px;
+            color: var(--cards-bg);
+            list-style: none;
+            text-decoration: none;
+        }
+        .photo-credit *:hover {
+            color: var(--embers);
+            transition: 0.9s ease all;
+        }
+    }

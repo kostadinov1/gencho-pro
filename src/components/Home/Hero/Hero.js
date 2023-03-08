@@ -1,7 +1,8 @@
 
 import React from 'react'
-import './hero.css'
 import Cube from '../../Custom/Cube/Cube'
+import './hero.css'
+import './hero-responsive.css'
 
 function Hero() {
   return (
@@ -16,7 +17,7 @@ function Hero() {
                 </div>
                 <div className='hero-right'>                
                 </div>
-                    <Cube />
+                    <Cube className='hero-cube' />
                 <div className='photo-credit-box'>
                 <a href="https://pixabay.com/users/tungnguyen0905-17946924/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=6701504">Image by Tung Nguyen</a>
                 <a href="https://pixabay.com//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=6701504">at Pixabay</a>

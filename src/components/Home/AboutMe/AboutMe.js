@@ -2,6 +2,8 @@ import { CodeOutlined } from '@ant-design/icons'
 import React from 'react'
 import { Link } from 'react-router-dom'
 import './about-me.css'
+import './about-me-responsive.css'
+
 
 function AboutMe() {
   return (

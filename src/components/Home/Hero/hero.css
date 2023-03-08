@@ -13,10 +13,6 @@
         width: 70%;
         display: flex;
         flex-direction: column;
-        /* flex-wrap: wrap;
-        align-items: flex-start;
-        justify-content: center; */
-
     }
         .hero-left .title-box {
             display: flex;
@@ -25,10 +21,8 @@
             position: relative;
             top: 16vh;
             left: -8vw;
-            /* background-color: var(--blue-3); */
             background-repeat: no-repeat;
             background-size: cover;
-            /* box-shadow: var(--box-shadow); */
         }   
         .hero-left h1, h2 {
                 margin: 0.1em;
@@ -82,61 +76,15 @@
                  );
                 --_t: var(--h);
                 --_p: 105%;
-
             }
             .hero-left h2 {
                 font-size: 2.4em;
             }
 
-
-
     .hero-right {
         position: relative;
         width: 30%;
     }
-        /* .hero-right-links-box {
-            background-color: var(--ai-bluegray);
-            position: relative;
-            right:60px;
-            top: 520px;
-            max-width: 48%;
-            
-            padding: 20px; 
-            box-shadow: var(--box-shadow);
-            border: 1px solid gray;
-            border-radius: 50px 10px 50px 10px;
-            
-            font-style: italic;
-            font-weight: bold;
-            font-size: 16px;
-            letter-spacing: 1.2pt;
-            
-            transform:
-            perspective(1300px)
-            rotateY(324deg) scale(1)
-            rotateX(16deg);
-            transition: 0.5s ease all;
-        }
-        .hero-right-links-box:hover {
-            transform:
-                perspective(800px)
-                rotateY(0deg)
-                translateY(0px)
-                rotateX(0deg)
-                scale(1.8);
-                font-weight: bold;
-        }
-        .hero-right-links-box h2 {
-            font-family: 'Gajraj One', cursive;
-            text-align: center;
-        }
-        .hero-right-links-box * {
-            color: var(--cards-bg);
-        }
-        .hero-right-links-box *:hover {
-            transition: 0.5s ease all;
-            color: var(--embers);
-        } */
     .photo-credit-box {
         display: flex;
         position: absolute;

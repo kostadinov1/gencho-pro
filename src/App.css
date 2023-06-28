@@ -4,96 +4,73 @@
     --blue-3: rgb(50, 130, 184);
     --blue-4: rgb(187, 225, 250);
 
-    --dark-blue: #060d23;
-    --ai-bluegray: #0d3045;
-    --cards-bg: #d9dbd0;
-    --embers: #b82601;
-    --lemon: #feaf2e;
-    --smoke: rgba(255, 255, 255, 0.672);
+    --prime-1: #263138;
+    --prime-2: #3d5d71;
+    --sec-1: #8b98a2;
+    --sec-2: #303436;
+    --acc-1: #f00f08;
+    --acc-2: #ff4500;
+    --acc-3: rgb(230, 177, 31);
+    --text: #bdc4ca;
     
-    --bradius: 10px;
+    --bg: #cfd8dc;
+    --dimmer: rgba(0, 0, 0, 0.90);
+    --dimmer-2: rgba(0, 0, 0, 0.75);
+    --dimmer-3: rgba(0, 0, 0, 0.55);
+    /* --- Values --- */
+    --bradius: 4px;
     --cards-rgba: rgb(213, 210, 194);
-    --box-shadow: 4px 2px 32px 2px rgb(4, 31, 51), 0 6px 20px 0 rgb(27, 69, 87);
-  }
-  
-  html {
-      font-size: 16px;
-      font-family: 'Roboto Mono', monospace;
-  }
-  
-  * {
-      box-sizing: border-box;
-  }
-  
-  
-  button {
-      all: unset;
-      cursor: pointer;
-      background-color: var(--blue-3);
-      max-width: 30%;
-      min-width: 20%;
-      margin-left: 20px;
-      padding: 5px 20px;
-      
-      border: 1px solid var(--blue-2);
-      border-radius: var(--bradius);
-      letter-spacing: 1px;
-      text-align: center;
-      color: var(--blue-4);
-  
-  }
-  button:hover {
-      scale: 1.02;
-      background-color: var(--smoke);
-      border: 1px solid var(--blue-2);
-      color: var(--ai-bluegray);
-      transition: all 300ms ease-in-out;
-  }
-  
-  a {
-      text-decoration: none;
-      color: var(--blue-4);
 
-  }
-  a:hover {
-      color: var(--embers);
-      transition: all 300ms ease-in-out;
-  
-  }
-  input {
-      background-color: var(--smoke);
-      border: 1px solid var(--blue-2);
-      padding: 10px;
-      margin: 10px;
-  }
-  
-  
-  li {
-      text-decoration: none;
-      list-style: none;
-  
+    
+    font-family: 'Roboto Mono', monospace;
+    /* font-family: 'Montserrat', monospace; */
   }
   
 
-#body {
+.body {
     position: relative;
     background-color: var(--blue-1);
-    /* background-image: url('/public/images/wallpapers/wallpaper-24.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;  */
-}
-.icon {
-  width: 20px;
-}
-.pacifico-title {
-    font-family: Montserrat, Arial, Helvetica, sans-serif;
-    background-color: var(--blue-4);
-    padding: 10px 20px;
+
 }
 
+.main {
 
-main {
-    /*   <-----  DIMMER LAYER ----->   */
-    /* background-color: rgba(198, 197, 180, 0.3); */
+}
+
+a {
+    text-decoration: none;
+    color: var(--blue-4);
+}
+a:hover {
+    color: var(--embers);
+}
+
+.section_title {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: .2em;
+    width: 80%;
+    margin: .2em auto;
+    margin-bottom: .4em;
+    border-bottom: 2px solid var(--acc-2);
+    border-top: 2px solid var(--acc-2);
+    clip-path: polygon(4% 0, 96% 0, 100% 100%, 0% 100%);
+  
+  }
+    
+  .active {
+    background-color: var(--dimmer-2);
+    color: red;
+
+  }
+
+
+/* Media Query */
+
+@media (max-width:900px) {
+
+}
+@media (max-width:600px) {
 
 }

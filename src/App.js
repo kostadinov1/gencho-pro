@@ -8,9 +8,10 @@ import Projects from './components/Projects/Projects';
 import Contacts from './components/Contacts/Contacts'
 // import PersonalZone from './components/PersonalZone/PersonalZone'
 import Login from './components/Login/Login';
-import Header from './components/Header/Header';
-import Footer from './components/Footer/Footer';
+import Header from './components/Main/Header/Header'; 
+import Footer from './components/Main/Footer/Footer';
 
+import './i18n.js'
 
 const App = () => {
     return (

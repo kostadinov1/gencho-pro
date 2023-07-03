@@ -2,7 +2,7 @@ import styles from './Header.module.css'
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { NavLink } from "react-router-dom";
-import { HomeFilled, PhoneFilled, ScheduleFilled} from '@ant-design/icons';
+import { HomeFilled, PhoneFilled, ScheduleFilled, UserOutlined} from '@ant-design/icons';
 
 import { useTranslation } from 'react-i18next'
  
@@ -29,16 +29,15 @@ function Header() {
                     className={styles.link}>
                     <ScheduleFilled className={`${styles.icon}`}/> {t('projects')}
                 </NavLink>
-                {/* <NavLink to={'/services'} 
-                    activeClassName={'active'} 
-                    className={styles.link}>
-                    <ToolFilled className={`${styles.icon}`}/> {t('services')}
-
-                </NavLink> */}
                 <NavLink to={'/contacts'} 
                     activeClassName={'active'} 
                     className={styles.link}>
                     <PhoneFilled className={`${styles.icon}`}/> {t('contacts')}
+                </NavLink>
+                <NavLink to={'/login'} 
+                    activeClassName={'active'} 
+                    className={styles.link}>
+                    <UserOutlined className={`${styles.icon}`}/> {t('login')}
                 </NavLink>
             </nav>    
         </div>

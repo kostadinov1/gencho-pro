@@ -1,7 +1,7 @@
 import styles from './Home.module.css'
-import Hero from './Hero/Hero'
-import AboutMe from './AboutMe/AboutMe'
-import Canvas3D from '../Custom/Canvas3D/Canvas3D'
+import Hero from '../Hero/Hero'
+import AboutMe from '../AboutMe/AboutMe'
+
 
 const Home = () => {
     return (

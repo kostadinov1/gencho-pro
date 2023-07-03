@@ -1,12 +1,10 @@
 import './App.css'
-import './App-responsive.css'
 import {Route, Routes } from 'react-router-dom';
 import React from 'react';
 
-import Home from './components/Home/Home';
+import Home from './components/Home/Home/Home';
 import Projects from './components/Projects/Projects';
 import Contacts from './components/Contacts/Contacts'
-// import PersonalZone from './components/PersonalZone/PersonalZone'
 import Login from './components/Login/Login';
 import Header from './components/Main/Header/Header'; 
 import Footer from './components/Main/Footer/Footer';
@@ -15,9 +13,9 @@ import './i18n.js'
 
 const App = () => {
     return (
-        <section id='body'>
+        <section className='body'>
           <Header />
-          <main>
+          <main className='main'>
             <Routes >
               <Route path='/' element={<Home />}/>
               <Route path='/projects' element={<Projects/>}/>

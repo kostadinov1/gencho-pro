@@ -17,6 +17,7 @@ i18next
                 projects: "Проекти",
                 services: "Услуги",
                 contacts: "Контакти",
+                login: "Вход"
 
         },},
         en: {
@@ -26,6 +27,7 @@ i18next
             projects: "Projects",
             services: "Services",
             contacts: "Contacts",
+            login: "Login"
 
             }
         },
@@ -36,6 +38,7 @@ i18next
                 projects: "Проекты",
                 services: "Услуги",
                 contacts: "Контакты",
+                login: "Вход"
             }
         }
         }

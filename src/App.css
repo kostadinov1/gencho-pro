@@ -29,20 +29,20 @@
 
 .body {
     position: relative;
-    background-color: var(--blue-1);
 
 }
 
 .main {
-
+  background-color: var(--prime-1);
+  min-height: 100vh;
 }
 
 a {
     text-decoration: none;
-    color: var(--blue-4);
+    color: var(--acc-2);
 }
 a:hover {
-    color: var(--embers);
+    /* color: var(--embers); */
 }
 
 .section_title {

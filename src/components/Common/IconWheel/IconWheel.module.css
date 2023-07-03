@@ -1,25 +1,47 @@
 .icon_wheel {
     position: absolute;
-    top: 5em;
-    left: 0em;
+    top: 8em;
+    left: 3em;
     display: grid;
     grid-template-areas:
          "one . . two . . three"
+         ". . . . . . . "
          "four . . nine . . five"
+         ". . . . . . . "
          "six . . seven . . eight"
         ;
     gap: 1.2em;
     align-items: center;
     justify-content: center;
-    width: 30vw;
-    height: 30vh;
+    /* width: 30vw;
+    height: 30vh; */
     /* background-color: red; */
     padding: 2em;
+
+    -webkit-animation: icon_wheel 8s linear infinite;
+    -moz-animation: icon_wheel 8s linear infinite;
+    -ms-animation: icon_wheel 8s linear infinite;
+    -o-animation: icon_wheel 8s linear infinite;
+    animation: icon_wheel 8s linear infinite;
+    transition: all ease-in-out 400ms;
+
 }
+
+.icon_wheel:hover {
+    transition: all ease-in-out 400ms;
+
+    -webkit-animation: icon_wheel 2s linear infinite;
+    -moz-animation: icon_wheel 2s linear infinite;
+    -ms-animation: icon_wheel 2s linear infinite;
+    -o-animation: icon_wheel 2s linear infinite;
+    animation: icon_wheel 2s linear infinite;
+  }
 
 .icon {
     color: var(--blue-3);
-    font-size: 2rem;
+    max-width: 4em;
+    max-height: 4em;
+    /* font-size: 2rem; */
 
 }
 
@@ -106,10 +128,5 @@
       transform: rotate(360deg);
     }
   }
-  .icon_wheel {
-    -webkit-animation: icon_wheel 8s linear infinite;
-    -moz-animation: icon_wheel 8s linear infinite;
-    -ms-animation: icon_wheel 8s linear infinite;
-    -o-animation: icon_wheel 8s linear infinite;
-    animation: icon_wheel 8s linear infinite;
-  }
+
+

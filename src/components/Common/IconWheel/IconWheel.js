@@ -7,31 +7,39 @@ const IconWheel = () => {
   return (
     <div className={`${styles.icon_wheel}`}>
         <div className={`${styles.icon} ${styles.icon_1}`}>
-            <HomeFilled></HomeFilled>1
+            <img alt='' src='/images/icons/node-js.png'></img>
         </div>
         <div className={`${styles.icon} ${styles.icon_2}`}>
-            <HomeFilled></HomeFilled>2
+            <img alt='' src='/images/icons/js.png'></img>
+            
         </div>
         <div className={`${styles.icon} ${styles.icon_3}`}>
-            <HomeFilled></HomeFilled>3
+            <img alt='' src='/images/icons/django.png'></img>
+            
         </div>
         <div className={`${styles.icon} ${styles.icon_4}`}>
-            <HomeFilled></HomeFilled>4
+            <img alt='' src='/images/icons/python.png'></img>
+            
         </div>
         <div className={`${styles.icon} ${styles.icon_5}`}>
-            <HomeFilled></HomeFilled>5
+            <img alt='' src='/images/icons/social.png'></img>
+            
         </div>
         <div className={`${styles.icon} ${styles.icon_6}`}>
-            <HomeFilled></HomeFilled>6
+            <img alt='' src='/images/icons/docker.png'></img>
+            
         </div>
         <div className={`${styles.icon} ${styles.icon_7}`}>
-            <HomeFilled></HomeFilled>7
+            <img alt='' src='/images/icons/nginx.png'></img>
+            
         </div>
         <div className={`${styles.icon} ${styles.icon_8}`}>
-            <HomeFilled></HomeFilled>8
+            <img alt='' src='/images/icons/science.png'></img>
+            
         </div>
         <div className={`${styles.icon} ${styles.icon_9}`}>
-            <HomeFilled></HomeFilled>9</div>
+            <img alt='' src='/images/icons/web.png'></img>
+            </div>
     </div>
   )
 }

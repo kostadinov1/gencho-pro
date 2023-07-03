@@ -8,12 +8,20 @@
     background: linear-gradient(315deg, rgba(0,22,43,1) 10%, rgba(0,22,43,1) 51%, rgba(0,34,87,1) 83%, rgba(0,212,255,1) 91%, rgba(0,212,255,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00162b",endColorstr="#00d4ff",GradientType=1);     border: 1px solid var(--sec-3);
     letter-spacing: 1.1pt;
+    font-family: 'Orbitron', sans-serif;
+
 }
 .logo {
     display: flex;
     gap: .2em;
     max-height: 120px;
     max-width: 51px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    font-family: 'Orbitron', sans-serif;
+    
+
+
 }
 .logo_image {
     object-fit: cover;
@@ -29,13 +37,14 @@
 }
 .li {
 }
-.link:hover {
-    background-color: black;
-    color: var(--acc-2);
-}
 .link {
     font-size: 1rem;
     padding: .7em .9em;
+}
+.link:hover {
+    background-color: black;
+    color: var(--acc-2);
+
 }
 
 @media (max-width:900px) {

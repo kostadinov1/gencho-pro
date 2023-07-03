@@ -8,34 +8,44 @@
 }
 
 .welcome {
-    /* background-color: var(--dimmer-3); */
     position: absolute;
-    top: 10em;
+    top: 6em;
     right: 12em;
     padding: 2em;
     text-align: center;
+    
+}
+.hi_box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
 
+.hi {
+    font-weight: bold;
+    font-size: 3rem;
+    font-family: 'Shantell Sans', cursive;
+    color: var(--blue-3);
 }
 
 .welcome h1 {
-    font-size: 4.5rem;
-    /* scale: 1.6; */
-    font-family: 'Slackside One', cursive;
-    line-height: 1;
-
+    font-size: 5.5rem;
+    font-family: 'Shantell Sans', cursive;
+    color: var(--blue-3);
 }
 .welcome h2 {
-    font-family: 'Slackside One', cursive;
     font-size: 2.5rem;
+    color: var(--blue-3);
+        font-family: 'Orbitron', sans-serif;
+
 
 }
 
 .welcome h3 {
-    line-height: 1;
     font-size: 2rem;
-
-    font-family: 'Slackside One', cursive;
-
+    font-family: 'Shantell Sans', cursive;
+    
 }
 
 .welcome p {

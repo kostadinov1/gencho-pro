@@ -7,9 +7,12 @@ function Hero() {
   return (
     <div className={`${styles.hero}`}>
         <div className={`${styles.welcome}`}>
-            <h3>Hi! My name is</h3>
+            <div className={`${styles.hi_box}`}>
+                <div className={`${styles.hi}`}>Hi!</div>
+                <h3>My name is</h3>
+            </div>
             <h1>Evgeni Kostadinov</h1>
-            <h2>I'm a Web Developer</h2>
+            <h2>Web Developer</h2>
             <p>I create Web Application with React JS and Django REST.</p>
             <Link to={'/projects'}>Projects</Link>
         </div>

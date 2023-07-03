@@ -1,18 +1,11 @@
 import React from 'react'
-import './login.css'
+import styles from './Login.module.css'
 
 function Login() {
   return (
-    <section className='login'>
-        <div className='login-form-box'>
-            <h1>Login here</h1>
-            <form>
-                <input type={'email'} placeholder='Email'></input>
-                <input type={'password'} placeholder='Password'></input>
-                <button>login</button>
-            </form>
-        </div>
-    </section>
+      <div className={`${styles.login}`}>
+
+      </div>
   )
 }
 

@@ -1,10 +1,10 @@
 :root{
-    --blue-1: rgb(27, 38, 44);
+    --blue-1: rgb(0, 23, 43);
     --blue-2: rgb(15, 76, 117);
     --blue-3: rgb(50, 130, 184);
     --blue-4: rgb(187, 225, 250);
 
-    --prime-1: #263138;
+    --prime-1: #00172b;
     --prime-2: #3d5d71;
     --sec-1: #8b98a2;
     --sec-2: #303436;
@@ -23,6 +23,8 @@
 
     
     font-family: 'Roboto Mono', monospace;
+    /* font-family: 'Cormorant', serif; */
+    /* font-family: 'Slackside One', cursive; */
     /* font-family: 'Montserrat', monospace; */
   }
   
@@ -33,7 +35,12 @@
 }
 
 .main {
+  color: var(--text);
   background-color: var(--prime-1);
+  /* background-image: url('./../public/images/backgrounds/background.jpg'); */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   min-height: 100vh;
 }
 
@@ -43,6 +50,13 @@ a {
 }
 a:hover {
     /* color: var(--embers); */
+}
+
+.credit_image {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: .8rem;
 }
 
 .section_title {

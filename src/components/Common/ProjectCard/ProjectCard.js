@@ -2,7 +2,7 @@
 import React from 'react'
 import styles from './ProjectCard.module.css'
 
-export const ProjectCard = () => {
+export const ProjectCard = ({project}) => {
   return (
     
 <div className={`${styles.flip_card_container} ${styles.hue_220}`} >
@@ -12,7 +12,7 @@ export const ProjectCard = () => {
       <figure className={`${styles.figure}`}>
         <div className={`${styles.img_bg}`}></div>
         <img className={`${styles.img}`}  src="/images/backgrounds/background-.jpg" alt=""/>
-        <figcaption className={`${styles.figcaption}`}>Design Card</figcaption>
+        <figcaption className={`${styles.figcaption}`}>{project.name}</figcaption>
       </figure>
 
       <ul className={`${styles.ul}`}>
@@ -27,7 +27,7 @@ export const ProjectCard = () => {
         <img className={`${styles.img}`}  src="/images/backgrounds/background-.jpg" alt=""/>
       </figure>
 
-      <button className={`${styles.button}`}>Book</button>
+      <button className={`${styles.button}`}>Go There</button>
 
       <div className={`${styles.design_container}`}>
         <span className={`${styles.design} ${styles.design_1}`} ></span>

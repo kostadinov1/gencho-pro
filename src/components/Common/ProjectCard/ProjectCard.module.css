@@ -1,7 +1,7 @@
 
 /* .flip_card_container */
 .flip_card_container {
-  --hue: 150;
+  --hue: 10;
   --primary: hsl(var(--hue), 50%, 50%);
   --white-1: hsl(0, 0%, 90%);
   --white-2: hsl(0, 0%, 80%);

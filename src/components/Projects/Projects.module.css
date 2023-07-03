@@ -1,3 +1,7 @@
 .projects {
 
 }
+
+.projects {
+    display:  grid;
+}

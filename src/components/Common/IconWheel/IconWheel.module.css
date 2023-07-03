@@ -1,0 +1,115 @@
+.icon_wheel {
+    position: absolute;
+    top: 5em;
+    left: 0em;
+    display: grid;
+    grid-template-areas:
+         "one . . two . . three"
+         "four . . nine . . five"
+         "six . . seven . . eight"
+        ;
+    gap: 1.2em;
+    align-items: center;
+    justify-content: center;
+    width: 30vw;
+    height: 30vh;
+    /* background-color: red; */
+    padding: 2em;
+}
+
+.icon {
+    color: var(--blue-3);
+    font-size: 2rem;
+
+}
+
+.icon_1 {
+    grid-area: one;
+    transform: rotate(-45deg);
+
+}
+.icon_2 {
+    grid-area: two;
+    position: relative;
+    position: relative;
+    bottom: 40px;
+}
+.icon_3 {
+    grid-area: three;
+    transform: rotate(45deg);
+
+}
+.icon_4 {
+    grid-area: four;
+    transform: rotate(-90deg);
+    position: relative;
+    right: 20px;
+
+}
+.icon_5 {
+    grid-area: five;
+    transform: rotate(90deg);
+    position: relative;
+    left: 20px;
+
+
+}
+.icon_6 {
+    grid-area: six;
+    transform: rotate(-125deg);
+
+}
+.icon_7 {
+    grid-area: seven;
+    transform: rotate(180deg);
+    position: relative;
+    top: 40px;
+}
+.icon_8 {
+    grid-area: eight;
+    transform: rotate(125deg);
+
+}
+.icon_9 {
+    grid-area: nine;
+    /* transform: rotate(125deg); */
+    scale: 2;
+
+}
+
+
+@-webkit-keyframes icon_wheel /* Safari and Chrome */ {
+    from {
+      -webkit-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    to {
+      -webkit-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes icon_wheel {
+    from {
+      -ms-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -webkit-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    to {
+      -ms-transform: rotate(360deg);
+      -moz-transform: rotate(360deg);
+      -webkit-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  .icon_wheel {
+    -webkit-animation: icon_wheel 8s linear infinite;
+    -moz-animation: icon_wheel 8s linear infinite;
+    -ms-animation: icon_wheel 8s linear infinite;
+    -o-animation: icon_wheel 8s linear infinite;
+    animation: icon_wheel 8s linear infinite;
+  }

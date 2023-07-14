@@ -1,3 +1,36 @@
 .contacts {
 
-} 
+}
+
+.form_box {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--blue-2);
+    max-width: 60vw;
+    margin: auto auto;
+    padding: 2em;
+
+}
+
+.form {
+
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    padding: 2em;
+    background-color: var(--dimmer-3);
+}
+
+.input {
+    padding: .6em;
+    margin: .2em;
+}
+
+.button {
+    padding: .6em;
+    width: 20em;
+    position: relative;
+    left: 2em;
+    top: .2em;
+}

@@ -7,7 +7,37 @@ const projectCards = [
         link: "dogramavarna.net",
         gitLink: "",
         imgUrl: "",
-    }
+    },
+    {
+        name: "DogramaVarna.net",
+        link: "dogramavarna.net",
+        gitLink: "",
+        imgUrl: "",
+    },
+    {
+        name: "DogramaVarna.net",
+        link: "dogramavarna.net",
+        gitLink: "",
+        imgUrl: "",
+    },
+    {
+        name: "DogramaVarna.net",
+        link: "dogramavarna.net",
+        gitLink: "",
+        imgUrl: "",
+    },
+    {
+        name: "DogramaVarna.net",
+        link: "dogramavarna.net",
+        gitLink: "",
+        imgUrl: "",
+    },
+    {
+        name: "DogramaVarna.net",
+        link: "dogramavarna.net",
+        gitLink: "",
+        imgUrl: "",
+    },
 ]
 
 

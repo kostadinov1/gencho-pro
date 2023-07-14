@@ -14,16 +14,16 @@ import './i18n.js'
 const App = () => {
     return (
         <section className='body'>
-          <Header />
-          <main className='main'>
-            <Routes >
-              <Route path='/' element={<Home />}/>
-              <Route path='/projects' element={<Projects/>}/>
-              <Route path='/contacts' element={<Contacts/>}/>
-              <Route path='/login' element={<Login />}/>
-            </Routes>
-          </main>
-          <Footer />
+			<Header />
+			<main className='main'>
+				<Routes >
+				<Route path='/' element={<Home />}/>
+				<Route path='/projects' element={<Projects/>}/>
+				<Route path='/contacts' element={<Contacts/>}/>
+				<Route path='/login' element={<Login />}/>
+				</Routes>
+			</main>
+			<Footer />
         </section>
 
   

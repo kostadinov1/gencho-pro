@@ -18,9 +18,16 @@
     max-width: 51px;
     font-size: 1.3rem;
     font-weight: bold;
-    font-family: 'Orbitron', sans-serif;
     
 
+
+}
+.logo_title {
+    font-size: 2rem;
+    font-family: 'Zen Dots', cursive;
+    scale: 1.1;
+    text-shadow: var(--blue-3) 1px 0 10px;
+    padding: 0em 1em;
 
 }
 .logo_image {
@@ -62,6 +69,12 @@
     gap: .2em;
     max-height: 40px;
     max-width: 32px;
+    
+}
+.logo_title {
+    font-size: 1rem;
+    font-family: 'Zen Dots', cursive;
+
 }
 .logo_image {
     object-fit: cover;

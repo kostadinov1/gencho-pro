@@ -8,9 +8,7 @@
   --dark: hsl(var(--hue), 25%, 10%);
   --grey: hsl(0, 0%, 50%);
 
-  width: 310px;
-  height: 500px;
-  margin: 40px;
+  height: 40vh;
 
   perspective: 1000px;
 }
@@ -36,7 +34,7 @@
 .card_back {
   width: 100%;
   height: 100%;
-  border-radius: 24px;
+  border-radius:4px;
 
   background: var(--dark);
   position: absolute;
@@ -82,7 +80,7 @@
 /* img */
 .img {
   height: 100%;
-  border-radius: 24px;
+  border-radius:4px;
 }
 
 /* figcaption */
@@ -103,17 +101,17 @@
   top: 0;
   right: 12px;
 
-  color: var(--white-1);
+  color: var(--blue-3);
   background: hsla(var(--hue), 25%, 10%, .5);
 }
 
 /* .img_bg */
 .img_bg {
-  background: hsla(var(--hue), 25%, 10%, .5);
+  background: hsla(var(--hue), 25%, 10%, .2);
 }
 
 .card_front .img_bg {
-  clip-path: polygon(0 20%, 100% 40%, 100% 100%, 0 100%);
+  clip-path: polygon(0 0%, 100% 0%, 100% 100%, 0 100%);
 }
 
 .card_front .img_bg::before {
@@ -134,14 +132,14 @@
 }
 
 .card_back .img_bg {
-  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 60%);
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
 }
 
 /* hover state */
 .flip_card_container:hover .card_front .img_bg::before {
   width: 6px;
-  border-left-color: var(--primary);
-  border-right-color: var(--primary);
+  border-left-color: var(--blue-3);
+  border-right-color: var(--blue-3);
 }
 
 /* ul */
@@ -152,7 +150,7 @@
   height: 100%;
 
   list-style: none;
-  color: var(--white-1);
+  color: red;
 
   display: flex;
   justify-content: center;
@@ -166,14 +164,15 @@
   margin-top: 12px;
   padding-bottom: 12px;
 
-  font-size: 14px;
+  font-size: 1.2rem;
+  font-weight: bold;
   text-align: center;
 
   position: relative;
 }
 
 .li:nth-child(2n) {
-  color: var(--white-2);
+  color: var(--acc-3);
 }
 
 .li:not(:last-child)::after {
@@ -194,24 +193,27 @@
 .button {
   font-family: inherit;
   font-weight: bold;
-  color: var(--white-1);
+  color: var(--blue-3);
 
   letter-spacing: 2px;
 
   padding: 9px 20px;
   border: 1px solid var(--grey);
-  border-radius: 1000px;
+  border-radius: 1px;
   background: transparent;
   transition: .3s;
+  border-color: var(--blue-3);
 
+  background-color: var(--dimmer);
   cursor: pointer;
 }
 
 .button:hover,
 .button:focus {
-  color: var(--primary);
+  color: var(--acc-2);
   background: hsla(var(--hue), 25%, 10%, .2);
-  border-color: currentColor;
+  border-color: var(--acc-2);
+  background-color: var(--dimmer);
 }
 
 .button:active {
@@ -238,7 +240,7 @@
 .design {
   display: block;
 
-  background: var(--grey);
+  background: var(--blue-3);
   position: absolute;
 
   opacity: var(--op);

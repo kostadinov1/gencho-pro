@@ -36,6 +36,8 @@
 }
 
 .main {
+  position: relative;
+  top: 3em;
   color: var(--text);
   background-color: var(--prime-1);
   /* background-image: url('./../public/images/backgrounds/background.jpg'); */
@@ -79,6 +81,7 @@ a:hover {
     color: red;
 
   }
+
 
 
 /* Media Query */

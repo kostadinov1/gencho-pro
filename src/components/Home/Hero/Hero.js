@@ -27,7 +27,7 @@ function Hero() {
               <li className={`${styles.web_dev_li} ${styles.li_12}`}>E</li>
               <li className={`${styles.web_dev_li} ${styles.li_13}`}>R</li>
             </ul>
-            <p>I create Web Application with React JS and Django REST.</p>
+            <p>I create Web Application using React JS and Django.</p>
             <Link to={'/projects'}>Projects</Link>
         </div>
         <div className='credit_image'>

@@ -20,26 +20,36 @@ function Header() {
                 <div className={`${styles.logo_title}`}>Gencho</div>
             </div>
             <nav className={styles.ul}>
-                <NavLink to={'/'} 
-                    activeClassName={'active'} 
-                    className={styles.link}> 
-                    <HomeFilled className={`${styles.icon}`}/> {t('home')}
-                </NavLink>
-                <NavLink to={'/projects'} 
-                    activeClassName={'active'} 
-                    className={styles.link}>
-                    <ScheduleFilled className={`${styles.icon}`}/> {t('projects')}
-                </NavLink>
-                <NavLink to={'/contacts'} 
-                    activeClassName={'active'} 
-                    className={styles.link}>
-                    <PhoneFilled className={`${styles.icon}`}/> {t('contacts')}
-                </NavLink>
-                <NavLink to={'/login'} 
-                    activeClassName={'active'} 
-                    className={styles.link}>
-                    <UserOutlined className={`${styles.icon}`}/> {t('login')}
-                </NavLink>
+                <li className={styles.li}>
+                    <NavLink to={'/'} 
+                        activeClassName={'active'} 
+                        className={styles.link}> 
+                        <HomeFilled className={`${styles.icon}`}/> {t('home')}
+                    </NavLink>
+                </li>
+                <li className={styles.li}>
+                    <NavLink to={'/projects'} 
+                        activeClassName={'active'} 
+                        className={styles.link}>
+                        <ScheduleFilled className={`${styles.icon}`}/> {t('projects')}
+                    </NavLink>
+                </li>
+                <li className={styles.li}>
+                    <NavLink to={'/contacts'} 
+                        activeClassName={'active'} 
+                        className={styles.link}>
+                        <PhoneFilled className={`${styles.icon}`}/> {t('contacts')}
+                    </NavLink>
+                </li>
+                <li className={styles.li}>
+                    <NavLink to={'/login'} 
+                        activeClassName={'active'} 
+                        className={styles.link}>
+                        <UserOutlined className={`${styles.icon}`}/> {t('login')}
+                    </NavLink>
+                </li>
+
+
             </nav>    
         </div>
     )

@@ -20,8 +20,6 @@
     font-size: 1.3rem;
     font-weight: bold;
     
-
-
 }
 .logo_title {
     font-size: 2rem;
@@ -35,6 +33,7 @@
     object-fit: cover;
 }
 .ul {
+    position: relative;
     margin: auto auto;
     display: flex;
     align-items: center;
@@ -42,9 +41,13 @@
     flex-wrap: wrap;
     list-style: none;
     gap: 2em;
+    padding: 0;
 }
+
 .li {
+    position: relative;
 }
+
 .link {
     font-size: 1rem;
     padding: .7em .9em;
@@ -52,52 +55,85 @@
 .link:hover {
     background-color: black;
     color: var(--acc-2);
+}
+
+
+.li::before {
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: #00bcd4;
+    position: absolute;
+    top: 120%;
+    left: 0;
+    transition: all 0.5s;
+}
+.li::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: var(--acc-2);
+    position: absolute;
+    top: 120%;
+    right: 0;
+    transition: all 0.5s;
 
 }
+.li:hover:before {
+    background-color: black;
+    color: var(--acc-2);
+    width: 50%;
+    transform: translateX(100%);
+}
+.li:hover:after {
+    width: 50%;
+    transform: translateX(-100%);
+}
+
+
+    /* MEDIA QUERY  TABLET*/
 
 @media (max-width:900px) {
+    .header {
+        display: flex;
+        gap: .2em;
+        background-color: var(--prime);
+        border: 1px solid var(--sec-3);
+        letter-spacing: 1.1pt;
+    }
+    .logo {
+        display: flex;
+        gap: .2em;
+        max-height: 40px;
+        max-width: 32px;
+    }
+    .logo_title {
+        font-size: 1rem;
+        font-family: 'Zen Dots', cursive;
 
-
-.header {
-    display: flex;
-    gap: .2em;
-    background-color: var(--prime);
-    border: 1px solid var(--sec-3);
-    letter-spacing: 1.1pt;
-}
-.logo {
-    display: flex;
-    gap: .2em;
-    max-height: 40px;
-    max-width: 32px;
-    
-}
-.logo_title {
-    font-size: 1rem;
-    font-family: 'Zen Dots', cursive;
-
-}
-.logo_image {
-    object-fit: cover;
-}
-.ul {
-    margin: auto auto;
-    display: flex;
-    list-style: none;
-    gap: 2em;
-}
-.li {
-}
-.link:hover {
-    background-color: black;
-    color: var(--acc-2);
-}
-.link {
-    font-size: 0.9rem;
-    padding: .7em .9em;
-}
+    }
+    .logo_image {
+        object-fit: cover;
+    }
+    .ul {
+        margin: auto auto;
+        display: flex;
+        list-style: none;
+        gap: 2em;
+    }
+    .li {
+    }
+    .link:hover {
+        background-color: black;
+        color: var(--acc-2);
+    }
+    .link {
+        font-size: 0.9rem;
+        padding: .7em .9em;
+    }
 }
 
+    /* MEDIA QUERY  MOBILE*/
 
 @media (max-width:600px) {
  
@@ -134,7 +170,6 @@
     .icon {
         display: none;
     }
-    
 }
 
 

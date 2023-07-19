@@ -5,6 +5,7 @@ import { NavLink } from "react-router-dom";
 import { HomeFilled, PhoneFilled, ScheduleFilled, UserOutlined} from '@ant-design/icons';
 
 import { useTranslation } from 'react-i18next'
+import LanguageSwitcher from '../../LanguageSwitcher/LanguageSwitcher';
  
   
 function Header() {
@@ -51,6 +52,9 @@ function Header() {
 
 
             </nav>    
+            <div className={`${styles.langswitcher}`}>
+                <LanguageSwitcher></LanguageSwitcher>
+            </div>
         </div>
     )
     }

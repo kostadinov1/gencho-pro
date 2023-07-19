@@ -3,7 +3,7 @@
     position: fixed;
     top: 0px;
     z-index: 10;
-    width: 100%;
+    width: 100vw;
     display: flex;
     gap: .2em;
     background-color: var(--prime-1);
@@ -88,6 +88,10 @@
 .li:hover:after {
     width: 50%;
     transform: translateX(-100%);
+}
+
+.langswitcher {
+    width: 6em;
 }
 
 

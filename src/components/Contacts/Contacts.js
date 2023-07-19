@@ -3,6 +3,7 @@ import React, { useRef } from 'react'
 import styles from './Contacts.module.css'
 import  EmailJSResponseStatus  from '@emailjs/browser'
 import ReCAPTCHA from 'react-google-recaptcha';
+import Mail from '../Common/Mail/Mail';
 
 function Contacts() {
 	const form = useRef();
@@ -45,6 +46,7 @@ function Contacts() {
 
         </form>
       </div>
+	  <Mail></Mail>
     </div>
   )
 }

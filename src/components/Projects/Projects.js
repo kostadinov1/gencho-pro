@@ -4,47 +4,61 @@ import styles from './Projects.module.css'
 const projectCards = [
     {
         name: "DogramaVarna.net",
-        link: "dogramavarna.net",
-        gitLink: "",
+        status: "active",
+        description: "Window Glazing Company",
+        technologies: "Django Rest, React JS, AWS, Docker, Nginx, Postgres,",
+        link: "https://www.dogramavarna.net",
+        gitBackLink: "",
+        gitFrontLink: "",
         imgUrl: "",
     },
     {
-        name: "DogramaVarna.net",
-        link: "dogramavarna.net",
-        gitLink: "",
+        name: "Dental Cabinet",
+        status: "not active",
+        description: "",
+        technologies: "Django, Bootstrap, ",
+        link: "",
+        gitBackLink: "",
+        gitFrontLink: "",
         imgUrl: "",
     },
     {
-        name: "DogramaVarna.net",
-        link: "dogramavarna.net",
-        gitLink: "",
+        name: "Gencho.pro",
+        status: "active",
+        description: "",
+        technologies: "React JS, AWS, Docker, Nginx, Postgres,",
+        link: "https://www.gencho.pro",
+        gitBackLink: "",
+        gitFrontLink: "",
         imgUrl: "",
     },
     {
-        name: "DogramaVarna.net",
-        link: "dogramavarna.net",
-        gitLink: "",
+        name: "Periodization ",
+        status: "not active",
+        description: "",
+        technologies: "Django Rest, React JS, AWS, Docker, Nginx, Postgres,",
+        link: "https://www.periodization.fit",
+        gitBackLink: "",
+        gitFrontLink: "",
         imgUrl: "",
     },
-    {
-        name: "DogramaVarna.net",
-        link: "dogramavarna.net",
-        gitLink: "",
-        imgUrl: "",
-    },
-    {
-        name: "DogramaVarna.net",
-        link: "dogramavarna.net",
-        gitLink: "",
-        imgUrl: "",
-    },
+    // {
+    //     name: "DogramaVarna.net",
+    //     link: "dogramavarna.net",
+    //     gitBackLink: "",
+    //     gitFrontLink: "",
+    //     imgUrl: "",
+    // },
+    // {
+    //     name: "DogramaVarna.net",
+    //     link: "dogramavarna.net",
+    //     gitBackLink: "",
+    //     gitFrontLink: "",
+    //     imgUrl: "",
+    // },
 ]
 
-
 const Projects = () => {
-
-
-
 
     return (
         <div className={`${styles.projects}`}>

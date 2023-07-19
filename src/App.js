@@ -11,7 +11,9 @@ import Footer from './components/Main/Footer/Footer';
 
 import './i18n.js'
 
+
 const App = () => {
+
     return (
         <section className='body'>
 			<Header />
@@ -26,7 +28,6 @@ const App = () => {
 			<Footer />
         </section>
 
-  
   );
 };
 export default App;

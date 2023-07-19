@@ -1,12 +1,13 @@
 
 .header {
+    position: fixed;
+    top: 0px;
+    z-index: 10;
+    width: 100%;
     display: flex;
     gap: .2em;
-    background: rgb(0,22,43);
-    background: -moz-linear-gradient(315deg, rgba(0,22,43,1) 10%, rgba(0,22,43,1) 51%, rgba(0,34,87,1) 83%, rgba(0,212,255,1) 91%, rgba(0,212,255,1) 100%);
-    background: -webkit-linear-gradient(315deg, rgba(0,22,43,1) 10%, rgba(0,22,43,1) 51%, rgba(0,34,87,1) 83%, rgba(0,212,255,1) 91%, rgba(0,212,255,1) 100%);
-    background: linear-gradient(315deg, rgba(0,22,43,1) 10%, rgba(0,22,43,1) 51%, rgba(0,34,87,1) 83%, rgba(0,212,255,1) 91%, rgba(0,212,255,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00162b",endColorstr="#00d4ff",GradientType=1);     border: 1px solid var(--sec-3);
+    background-color: var(--prime-1);
+    border: 1px solid var(--sec-3);
     letter-spacing: 1.1pt;
     font-family: 'Orbitron', sans-serif;
 

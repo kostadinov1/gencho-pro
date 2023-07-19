@@ -26,6 +26,9 @@
     padding: .6em;
     margin: .2em;
 }
+.recaptcha {
+    padding: .4em;
+}
 
 .button {
     padding: .6em;

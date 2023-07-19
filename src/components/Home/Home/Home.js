@@ -8,7 +8,7 @@ const Home = () => {
     return (
         <section className={`${styles.home}`}>
            <Hero />
-           <IconWheel></IconWheel>
+           {/* <IconWheel></IconWheel> */}
            {/* <AboutMe /> */}
            {/* <Canvas3D /> */}
         </section>

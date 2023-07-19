@@ -6,7 +6,7 @@
     width: 100vw;
     min-height: 16vh;
     padding: 1em;
-    background-color: var(--prime);
+    background-color: var(--prime-2);
     border-top: 1px solid var(--text);
 
 }

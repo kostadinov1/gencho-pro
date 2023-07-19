@@ -35,7 +35,10 @@ function Contacts() {
 
                 <textarea  placeholder='Message' name='message' className={`${styles.input}`} />
 				<ReCAPTCHA
-					sitekey={`${process.env.REACT_APP_EMAILJS_SITE_KEY}`}
+					className={`${styles.recaptcha}`}
+					size='normal'
+					theme='dark'
+					sitekey={process.env.REACT_APP_RECAPTCHA_SITE_KEY}
 					/>
 
             <button className={`${styles.button}`} >Send</button>

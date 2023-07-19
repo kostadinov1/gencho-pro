@@ -16,9 +16,8 @@ export const ProjectCard = ({project}) => {
       </figure>
 
       <ul className={`${styles.ul}`}>
-        <li className={`${styles.li}`}>Detail 1</li>
-        <li className={`${styles.li}`}>Detail 2</li>
-        <li className={`${styles.li}`}>Detail 2</li>
+        <li className={`${styles.li}`}>{project.description}</li>
+        <li className={`${styles.li}`}>{project.technologies}</li>
       </ul>
     </div>
 

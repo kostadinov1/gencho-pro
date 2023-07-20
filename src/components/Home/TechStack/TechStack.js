@@ -23,8 +23,12 @@ const TechStack = () => {
   
     return (
       <div className={`${styles.techstack}`} ref={ref}>
-
         <div className={`${styles.child_1} ${styles.child} ${isIntersecting ? styles.slide_in : ''}`}>
+            <h2 className={`${styles.child_title}`}>Teck Stack</h2>
+            <p></p>
+ 
+        </div>
+        <div className={`${styles.child_2} ${styles.child} ${isIntersecting ? styles.slide_in : ''}`}>
             <h2 className={`${styles.child_title}`}>Front-End Development</h2>
             <ul className={`${styles.child_ul}`}>
                 <li className={`${styles.child_li}`}> icon React JS</li>
@@ -33,7 +37,7 @@ const TechStack = () => {
                 <li> </li>
             </ul>
         </div>
-        <div className={`${styles.child_2} ${styles.child} ${isIntersecting ? styles.slide_in : ''}`}>
+        <div className={`${styles.child_3} ${styles.child} ${isIntersecting ? styles.slide_in : ''}`}>
         <h2 className={`${styles.child_title}`}>Back-End Development</h2>
             <ul className={`${styles.child_ul}`}>
                 <li className={`${styles.child_li}`}> icon Django</li>
@@ -41,7 +45,7 @@ const TechStack = () => {
                 <li className={`${styles.child_li}`}> icon </li>
             </ul>
         </div>
-        <div className={`${styles.child_3} ${styles.child} ${isIntersecting ? styles.slide_in : ''}`}>
+        <div className={`${styles.child_4} ${styles.child} ${isIntersecting ? styles.slide_in : ''}`}>
         <h2 className={`${styles.child_title}`}>Back-End Development</h2>
             <ul className={`${styles.child_ul}`}>
                 <li className={`${styles.child_li}`}> icon Django</li>

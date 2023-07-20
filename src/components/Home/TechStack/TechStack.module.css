@@ -1,26 +1,42 @@
 .techstack {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
     padding: .6em;
     height: 100vh;
+    background: url('/public/images/placeholders/software.jpeg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .child {
-    width: 100%;
+    width: 80%;
+    height: 20vh;
     background-color: var(--blue-2);
     text-align: center;
 }
 .child_1 {
     transition: all ease-in 1s;
-    transform: translateX(-150%);
+    transform: translateY(-150%);
     opacity: 0;
   }
-.child_2 {
-    transition: all ease-in 1s;
+  .child_2 {
+    transition: all ease-in 1.4s;
     transform: translateX(150%);
     opacity: 0;
   }
 .child_3 {
-    transition: all ease-in 1s;
+    transition: all ease-in 1.4s;
     transform: translateX(-150%);
+    opacity: 0;
+  }
+  .child_4 {
+    transition: all ease-in 1.4s;
+    transform: translateX(150%);
     opacity: 0;
   }
 .slide_in {

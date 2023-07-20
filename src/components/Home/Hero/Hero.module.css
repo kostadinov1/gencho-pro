@@ -2,7 +2,7 @@
     position: relative;
     height: 100vh;
     width: 100vw;
-    background-image: url('./../../../../public/images/backgrounds/hero-background.jpg');
+    background-image: url('./../../../../public/images/backgrounds/hero-background-compressed.jpg');
     background-size: cover;
     background-position: center;
 }

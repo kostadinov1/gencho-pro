@@ -10,7 +10,7 @@ const projectCards = [
         link: "https://www.dogramavarna.net",
         gitBackLink: "",
         gitFrontLink: "",
-        imgUrl: "",
+        imgUrl: "/images/projects/dogramavarna.png",
     },
     {
         name: "Dental Cabinet",
@@ -30,7 +30,7 @@ const projectCards = [
         link: "https://www.gencho.pro",
         gitBackLink: "",
         gitFrontLink: "",
-        imgUrl: "",
+        imgUrl: "/images/projects/gencho.png",
     },
     {
         name: "Periodization ",
@@ -42,20 +42,6 @@ const projectCards = [
         gitFrontLink: "",
         imgUrl: "",
     },
-    // {
-    //     name: "DogramaVarna.net",
-    //     link: "dogramavarna.net",
-    //     gitBackLink: "",
-    //     gitFrontLink: "",
-    //     imgUrl: "",
-    // },
-    // {
-    //     name: "DogramaVarna.net",
-    //     link: "dogramavarna.net",
-    //     gitBackLink: "",
-    //     gitFrontLink: "",
-    //     imgUrl: "",
-    // },
 ]
 
 const Projects = () => {

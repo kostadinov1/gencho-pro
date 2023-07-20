@@ -8,8 +8,7 @@
   --dark: hsl(var(--hue), 25%, 10%);
   --grey: hsl(0, 0%, 50%);
 
-  height: 40vh;
-
+  height: 50vh;
   perspective: 1000px;
 }
 

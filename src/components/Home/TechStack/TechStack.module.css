@@ -5,46 +5,92 @@
     align-items: center;
     justify-content: center;
     gap: 1em;
+
     padding: .6em;
-    height: 100vh;
+    min-height: 100vh;
+
     background: url('/public/images/placeholders/software.jpeg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
+
 .child {
-    width: 80%;
-    height: 20vh;
+    width: 90%;
+    height: 30vh;
     background-color: var(--blue-2);
     text-align: center;
 }
+.tech_title {
+  font-size: 6rem;
+  font-family: 'Orbitron', sans-serif;
+  letter-spacing: 1.2pt;
+  padding: .2em;
+}
+.child_title {
+  font-size: 2rem;
+  letter-spacing: 1.2pt;
+  padding: .2em;
+}
+
 .child_1 {
+    height: 20vh;
     transition: all ease-in 1s;
     transform: translateY(-150%);
     opacity: 0;
+    clip-path: polygon(5% 3%, 20% 34%, 5% 0, 96% 0, 80% 34%, 96% 3%, 100% 99%, 90% 80%, 100% 100%, 0 100%, 9% 79%, 0 99%); 
+
   }
   .child_2 {
     transition: all ease-in 1.4s;
     transform: translateX(150%);
     opacity: 0;
+    clip-path: polygon(0 6%, 15% 15%, 3% 1%, 98% 0, 85% 15%, 100% 4%, 100% 96%, 85% 85%, 97% 100%, 3% 100%, 15% 85%, 0 98%);
   }
 .child_3 {
     transition: all ease-in 1.4s;
     transform: translateX(-150%);
     opacity: 0;
+    clip-path: polygon(0 6%, 15% 15%, 3% 1%, 98% 0, 85% 15%, 100% 4%, 100% 96%, 85% 85%, 97% 100%, 3% 100%, 15% 85%, 0 98%);
   }
   .child_4 {
     transition: all ease-in 1.4s;
     transform: translateX(150%);
     opacity: 0;
+    clip-path: polygon(0 6%, 15% 15%, 3% 1%, 98% 0, 85% 15%, 100% 4%, 100% 96%, 85% 85%, 97% 100%, 3% 100%, 15% 85%, 0 98%);
   }
 .slide_in {
     transform: translateX(0) !important;
     opacity: 1 !important;
   }
 
-.child_ul {
+  
+  .child_ul {
     list-style-type: none;
-}
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1em;
+    padding: 1em;
     
+  }
+  .child_li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    padding: .4em;
+
+
+    font-size: 1rem;
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 1.2pt;
+    background-color: var(--dimmer-3);
+    clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+  
+  }
+  .child_li_img {
+    width: 5em;
+    height: 5em;
+  }
+  

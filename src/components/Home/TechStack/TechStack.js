@@ -31,6 +31,18 @@ const TechStack = () => {
         <div className={`${styles.child_2} ${styles.child} ${isIntersecting ? styles.slide_in : ''}`}>
             <h2 className={`${styles.child_title}`}>Frontend Development</h2>
             <ul className={`${styles.child_ul}`}>
+            <li className={`${styles.child_li}`}>
+                    <img 
+                        className={`${styles.child_li_img}`}
+                        alt='' src='/images/icons/node-js.png' />
+                     Node JS
+                </li>
+                <li className={`${styles.child_li}`}>
+                    <img 
+                        className={`${styles.child_li_img}`}
+                        alt='' src='/images/icons/js.png' />
+                     Javascript
+                </li>
                 <li className={`${styles.child_li}`}>
                     <img 
                         className={`${styles.child_li_img}`}
@@ -47,7 +59,7 @@ const TechStack = () => {
                     <img 
                         className={`${styles.child_li_img}`}
                         alt='' src='/images/icons/css-3.png' />
-                     React JS
+                     CSS 3
                 </li>
                 <li> </li>
             </ul>

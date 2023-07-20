@@ -1,0 +1,49 @@
+.credits {
+    position: relative;
+    min-width: 100vh;
+}
+.credit_title {
+    font-size: 6rem;
+    padding: .2em;
+    text-align: center;
+    color: var(--acc-2);
+    background-color: var(--blue-2);
+}
+.credit_subtitle {
+
+    padding: .2em 3em;
+    text-align: center;
+    background-color: var(--blue-2);
+}
+
+.credits_grid {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1em;
+    padding: 1em;
+
+}
+
+.credit_box {
+    position: relative;
+    max-height: 30vh;
+    max-width: 40vw;
+}
+.credit_img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.credit_message_box {
+    position: absolute;
+    bottom: 1em;
+    left: 1em;
+    transition: all ease-in-out 0.5s;
+    
+}
+.credit_message_box:hover {
+    scale: 1.05;
+    z-index: 1;
+}

@@ -87,7 +87,10 @@
     letter-spacing: 1.2pt;
     background-color: var(--dimmer-3);
     clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
-  
+    transition: all ease-in-out 0.5s;
+  }
+  .child_li:hover {
+    scale: 1.2;
   }
   .child_li_img {
     width: 5em;

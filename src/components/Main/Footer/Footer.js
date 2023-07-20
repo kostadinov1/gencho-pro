@@ -18,7 +18,7 @@ function Footer() {
             <li className={styles.li}><Link to={`/projects`}>{t('projects')}</Link></li>
             <li className={styles.li}><Link to={'/contacts'}> {t('contacts')}</Link></li>
         </ul>
-        <Link>IMAGE USED IN THIS WEBSITE - THANK YOU!!!</Link>
+        <Link to={'/credits'}>IMAGE USED IN THIS WEBSITE - THANK YOU!!!</Link>
         <FooterBanner ></FooterBanner>
         <LanguageSwitcher></LanguageSwitcher>
 

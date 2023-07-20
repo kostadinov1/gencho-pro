@@ -10,6 +10,7 @@ import Header from './components/Main/Header/Header';
 import Footer from './components/Main/Footer/Footer';
 
 import './i18n.js'
+import Credits from './components/Credits/Credits';
 
 
 const App = () => {
@@ -23,6 +24,7 @@ const App = () => {
 				<Route path='/projects' element={<Projects/>}/>
 				<Route path='/contacts' element={<Contacts/>}/>
 				<Route path='/login' element={<Login />}/>
+				<Route path='/credits' element={<Credits />}/>
 				</Routes>
 			</main>
 			<Footer />

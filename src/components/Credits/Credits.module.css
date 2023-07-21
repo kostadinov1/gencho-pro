@@ -1,9 +1,11 @@
 .credits {
     position: relative;
     min-width: 100vh;
+    letter-spacing: 1.1pt;
 }
 .credit_title {
     font-size: 6rem;
+    font-weight: bold;
     padding: .2em;
     text-align: center;
     color: var(--acc-2);
@@ -11,7 +13,7 @@
 }
 .credit_subtitle {
 
-    padding: .2em 3em;
+    padding: 1em 3em;
     text-align: center;
     background-color: var(--blue-2);
 }

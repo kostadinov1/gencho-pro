@@ -1,8 +1,8 @@
 import { CodeOutlined } from '@ant-design/icons'
 import React from 'react'
 import { Link } from 'react-router-dom'
-import './about-me.css'
-import './about-me-responsive.css'
+import styles from'./AboutMe.module.css'
+
 
 
 function AboutMe() {
@@ -27,30 +27,13 @@ function AboutMe() {
                 do not hesitate to send me a message from <Link to={'/contacts'}><i>HERE</i></Link>.
             </p>
         </div>
+
         <div className='card-3 about-card'>
-        <h2>Info</h2>
-        <ul>
-            <li>Male, age: mid 30's</li>
-            <li>Languages: English, Bulgarian</li>
-            <li>London UK</li>
-        </ul>
         </div>
+
         <div className='card-4 about-card'>
-
-        <h2>Education</h2>
-        <ul>
-            <li>University: <a href='https://www.softuni.bg'>SoftUni</a></li>
-            <li>High School: Aleko Konstantinov</li>
-        </ul>
         </div>
-        <div className='card-5 about-card'>
 
-        <h2>Fields of Study</h2>
-        <ul>
-            <li>Computer Science</li>
-            <li>Web Development</li>
-        </ul>
-        </div>
         <div className='card-6 about-card'>
         <h2>Tech Stack </h2>
         <ul type='list'>

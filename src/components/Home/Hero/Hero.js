@@ -8,7 +8,7 @@ function Hero() {
     <div className={`${styles.hero}`}>
         <div className={`${styles.welcome}`}>
             <div className={`${styles.hi_box}`}>
-                <div className={`${styles.hi}`}></div>
+                <div className={`${styles.hi}`}>Hi</div>
                 <h3>My name is</h3>
             </div>
             <h1>Evgeni Kostadinov</h1>

@@ -8,11 +8,16 @@ import styles from'./AboutMe.module.css'
 function AboutMe() {
   return (
 
-    <section className='about-me'>
-        <div className='card-1 about-card'>
+    <section className={`${styles.about_me}`}>
+
+        <div className={`${styles.card_1} ${styles.about_card}`}>
+            <div className={`${styles.title}`} >About Me</div>
+        </div>
+        <div className={`${styles.card_2} ${styles.about_card}`}>
             <img src='./images/my_photos/profile_photo_2.jpg' alt=''></img>
         </div>
-        <div className='card-2 about-card'>
+
+        <div className={`${styles.card_3} ${styles.about_card}`}>
             <h2>Hi! </h2>
             <p>My name is Evgeni Kostadinov. I am bulgarian, living in London for the last 10 years.
                 about 4 years ago I started programming as a hobby, but now, I am looking forward to become
@@ -28,77 +33,27 @@ function AboutMe() {
             </p>
         </div>
 
-        <div className='card-3 about-card'>
-        </div>
-
-        <div className='card-4 about-card'>
-        </div>
-
-        <div className='card-6 about-card'>
-        <h2>Tech Stack </h2>
-        <ul type='list'>
-            <li>Python</li>
-            <li>Javascript</li>
-            <li>Node JS</li>
-            <li>Django</li>
-            <li>Django REST</li>
-            <li>React JS</li>
-            <li>HTML5</li>
-            <li>CSS3</li>
-            <li>SQL</li>
-            <li>Postgres</li>
-            <li>Ubuntu</li>
-            <li>Bash</li>
-            <li>Docker</li>
-            <li>Docker-Compose</li>
-            <li>NGINX</li>
-            <li>AWS</li>
-            <li>Unit Testing</li>
-            <li>Integration Testing</li>
-            <li>Ant Design</li>
-        </ul>
-        </div>
-        <div className='card-7 about-card'>
-            <h2>Certificates</h2>
-            <ul>
-                <li>Python Basics</li>
-                <li>Python Fundamentals</li>
-                <li>Python Advanced</li>
-                <li>Python OOP</li>
-                <li>Python Web Basics</li>
-                <li>Python Web Framework (Django)</li>
-                <li>Javascript Advanced</li>
-                <li>Javascript Applications</li>
-                <li>HTML and CSS</li>
-                <li>React JS</li>
+        <div className={`${styles.card_4} ${styles.about_card}`}>
+        <div className={`${styles.title}`} >Education</div>
+            <ul className={`${styles.about_card_ul}`}>
+                <li><a href='link'>DIPLOMA</a></li>
+                <li><a href='link'>Python Basics</a></li>
+                <li><a href='link'>Python Fundamentals</a></li>
+                <li><a href='link'>Python Advanced</a></li>
+                <li><a href='link'>Python OOP</a></li>
+                <li><a href='link'>Python Web Basics</a></li>
+                <li><a href='link'>Python Web Framework (Django)</a></li>
+                <li><a href='link'>Javascript Advanced</a></li>
+                <li><a href='link'>Javascript Applications</a></li>
+                <li><a href='link'>HTML and CSS</a></li>
+                <li><a href='link'>React JS</a></li>
             </ul>
         </div>
-        <div className='card-8 about-card'>
-        <h2>Soft Skills </h2>
-        <ul>
-            <li>Growth Mindset</li>
-            <li>Good Time Management</li>
-            <li>Calm</li>
-            <li>Disciplined</li>
-            <li>Experimenter</li>
-        </ul>
-        </div>
-        <div className='card-9 about-card'>
-        <h2>Projects </h2>
-        <ul>
+{/* 
             <li><a href='http://www.gencho.pro'>gencho.pro</a></li>
             <li><a href='https://www.dogramavarna.net'>dogramavarna.net</a></li>
-            <li><a href='http://ec2-35-179-75-79.eu-west-2.compute.amazonaws.com:8000/'>dentist.aws</a></li>
-        </ul>
-        </div>
-        <div className='card-10 about-card'>
-        <h2>Grades</h2>
-        <ul>
-            <li>Heading towards A
-                1st
-            </li>
-        </ul>
-        </div>
+            <li><a href='http://ec2-35-179-75-79.eu-west-2.compute.amazonaws.com:8000/'>dentist.aws</a></li> */}
+
   </section>
   )
 }

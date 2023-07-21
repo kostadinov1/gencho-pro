@@ -1,80 +1,83 @@
 
-.about-me {
+.about_me {
     margin: 4em;
     padding: 0em;
-    min-height: 100vh;
     display: grid;
     gap: 1.6em;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(4, 1fr);
     grid-template-areas: 
-                "six three four four five five"
-                "six one one two two seven"
-                "six one one two two seven"
-                "eight eight nine nine ten seven";
+                "one one one one one one"
+                "two two three three three three"
+                "two two three three three three"
+                "two two three three three three"
+                "four four four four four four"
+                "four four four four four four";
+    padding: 2em;
 }
-.card-1 {
+.title {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 1.2pt;
+    padding: .2em;
+
+}
+.card_1 {
     grid-area: one;
-    max-height: 60vh;
+    max-height: 20vh;
 }
-.card-2 {
+.card_2 {
     grid-area: two;
-    max-height: 60vh;
+    min-height: 60vh;
 }
-.card-3 {
+.card_3 {
     grid-area: three;
-    max-height: 30vh;
+    min-height: 60vh;
 }
-.card-4 {
+.card_4 {
     grid-area: four;
-    max-height: 30vh;
-}
-.card-5 {
-    grid-area: five;
-    max-height: 30vh;
-}
-.card-6 {
-    grid-area: six;
-}
-.card-7 {
-    grid-area: seven;
-}
-.card-8 {
-    grid-area: eight;
-    max-height: 30vh;
-}
-.card-9 {
-    grid-area: nine;
-    max-height: 30vh;
-}
-.card-10 {
-    grid-area: ten;
-    max-height: 30vh;
+    /* max-height: 40vh; */
+
 }
 
-.about-card {
+.about_card {
     padding: 2em;
     border: 0.3em solid var(--blue-4);
     border-radius: var(--bradius);
     overflow: hidden;
     color: var(--blue-4);
-    background-color: var(--blue-3);
+    background-color: var(--blue-2);
     transition-duration: 400ms;
 }
-.about-card:hover {
-    -webkit-transform: scale(1.1);
-    transition: all 700ms ease-in-out;
-}
-.about-card p {
+.about_card p {
     padding: 1em;
 }
-.about-card img {
+.about_card img {
     border: 0.3em solid var(--blue-4);
     border-radius: var(--bradius);
     object-fit: cover;
     height: 100%;
     width: 100%;
-    }
-.about-card li {
+}
+
+.about_card_ul {
+    grid-area: four;
+    max-height: 30vh;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: .4em;
+    padding: 2em;
+    background-color: var(--dimmer-3);
+}
+.about_card li {
     font-size: 1.1rem;
+    list-style-type: none;
+    padding: .6em;
+    background-color: var(--dimmer-3);
+
+    text-align: center;
+
 }

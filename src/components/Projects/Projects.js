@@ -48,7 +48,7 @@ const Projects = () => {
 
     return (
         <div>
-            <div className={`${styles.title}`} >CONTACTS</div>
+            <div className={`${styles.title}`} >PROJECTS</div>
             
             <div className={`${styles.projects}`}>
 

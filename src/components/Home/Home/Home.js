@@ -10,8 +10,8 @@ const Home = () => {
         <section className={`${styles.home}`}>
            <Hero />
            <TechStack />
-           {/* <IconWheel></IconWheel> */}
-           {/* <AboutMe /> */}
+           <IconWheel></IconWheel>
+           <AboutMe />
            {/* <Canvas3D /> */}
         </section>
     )

@@ -19,6 +19,7 @@
 }
 
 .title {
+    color: var(--text);
     border-radius: var(--b-radius);
     border-top: .1em solid var(--acc-2);
     border-bottom: .1em solid var(--acc-2);
@@ -26,9 +27,11 @@
 }
 
 .subtitle {
+    color: var(--text);
 
 }
 .pdiv {
+    color: var(--text);
 
     border-radius: var(--b-radius);
 }

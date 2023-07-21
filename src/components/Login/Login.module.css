@@ -2,7 +2,46 @@
     padding: 4em;
     position: relative;
     display: flex;
-    align-items: center;
+    align-items: start;
+    justify-content: center;
     height: 100vh;
     
+}
+.form_box {
+    background-color: var(--dimmer-3);
+    padding: 2em 4em;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--dimmer-3);
+    padding: 2em;
+    width: 40vw;
+}
+
+.input_box {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--dimmer-3);
+    padding: 2em;
+    width: 100%;
+}
+.label {
+    font-size: 1.3rem;
+    color: var(--acc-2);   
+    padding: .2em;
+
+}
+.input {
+    font-size: .9rem;
+    padding: .4em;
+}
+.button {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-top: .6em;
+    padding: .2em .8em;
+    border: 2px solid var(--blue-3);
 }

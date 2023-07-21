@@ -8,3 +8,11 @@
     gap: 2em;
     padding: 2em;
 }
+.title {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 1.2pt;
+    padding: .2em;
+}

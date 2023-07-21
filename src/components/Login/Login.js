@@ -28,6 +28,8 @@ function Login() {
       <div className={`${styles.login}`}>
 
         <div className={`${styles.form_box}`}>
+		<div className={`${styles.title}`} >LOGIN</div>
+
 			<form onSubmit={onSubmitHandler} className={`${styles.form}`}>
 
 			<div className={`${styles.input_box}`}>

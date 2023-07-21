@@ -47,10 +47,15 @@ const projectCards = [
 const Projects = () => {
 
     return (
-        <div className={`${styles.projects}`}>
-           {projectCards ?
-            projectCards.map((project) => <ProjectCard project={project} />) 
-           : <p>no projects</p>}
+        <div>
+            <div className={`${styles.title}`} >CONTACTS</div>
+            
+            <div className={`${styles.projects}`}>
+
+            {projectCards ?
+                projectCards.map((project) => <ProjectCard project={project} />) 
+            : <p>no projects</p>}
+            </div>
         </div>
     )
 }

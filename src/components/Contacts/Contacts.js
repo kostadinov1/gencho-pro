@@ -1,5 +1,5 @@
 
-import React, { useRef } from 'react'
+import React, { useRef, useState } from 'react'
 import styles from './Contacts.module.css'
 import  EmailJSResponseStatus  from '@emailjs/browser'
 import ReCAPTCHA from 'react-google-recaptcha';
@@ -7,7 +7,18 @@ import Mail from '../Common/Mail/Mail';
 
 function Contacts() {
 	const form = useRef();
+	const [formData, setFormData] = useState({
+		name: "",
+		email: "",
+		message: "",
+	})
+	
 
+	const onChangeHandler = (e) => {
+		e.preventDefault()
+		setFormData((state) => ({...state, [e.target.name]: e.target.value}))
+
+	}
 	const onSubmitHandler = (e) => {
 		e.preventDefault()
 		EmailJSResponseStatus.sendForm(
@@ -26,15 +37,42 @@ function Contacts() {
     <div className={`${styles.contacts}`}>
 
       <div className={`${styles.form_box}`} >
-        <h1>Contacts</h1>
+      <div className={`${styles.title}`} >CONTACTS</div>
 
         <form ref={form} onSubmit={onSubmitHandler}  className={`${styles.form}`} >
 
-                <input  type='text' placeholder='Name' name='name' className={`${styles.input}`} />
+              
+			<div className={`${styles.input_box}`}>
+				<label className={`${styles.label}`}>Name</label>
+				<input 
+					type='text'
+					value={formData.name}
+					onChange={onChangeHandler}
+					className={`${styles.input}`} 
+					placeholder='Enter Your Name'  />
+			</div>
 
-                <input  type='email' placeholder='Email' name='email' className={`${styles.input}`} />
+			<div className={`${styles.input_box}`}>
+				<label className={`${styles.label}`}>Email</label>
+				<input 
+					type='email'
+					value={formData.email}
+					onChange={onChangeHandler}
+					className={`${styles.input}`} 
+					placeholder='Enter Your Email'  />
+			</div>
 
-                <textarea  placeholder='Message' name='message' className={`${styles.input}`} />
+			<div className={`${styles.input_box}`}>
+				<label className={`${styles.label}`}>Message</label>
+                <textarea 
+					value={formData.message}
+					onChange={onChangeHandler}
+					 placeholder='Message'
+					 name='message'	
+					 className={`${styles.input}`} 
+					 />
+			</div>
+
 				<ReCAPTCHA
 					className={`${styles.recaptcha}`}
 					size='normal'

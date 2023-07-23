@@ -4,31 +4,30 @@ import styles from './Contacts.module.css'
 import  EmailJSResponseStatus  from '@emailjs/browser'
 import ReCAPTCHA from 'react-google-recaptcha';
 import Mail from '../Common/Mail/Mail';
+import { useNavigate } from 'react-router-dom';
+import { Button, message } from 'antd';
+
 
 function Contacts() {
 	const form = useRef();
-	const [formData, setFormData] = useState({
-		name: "",
-		email: "",
-		message: "",
-	})
-	
+	const navigate = useNavigate()
+	const [messageApi, contextHolder] = message.useMessage();
 
-	const onChangeHandler = (e) => {
-		e.preventDefault()
-		setFormData((state) => ({...state, [e.target.name]: e.target.value}))
-
-	}
 	const onSubmitHandler = (e) => {
 		e.preventDefault()
+
 		EmailJSResponseStatus.sendForm(
 			process.env.REACT_APP_EMAILJS_SERVICE_ID,
 			'contact_form',
 			form.current,
 			process.env.REACT_APP_EMAILJS_PUBLIC_KEY)
 		.then((result) => {
+			messageApi.success('MESSAGE SENT!');
+			setTimeout(5000)
+			navigate('/');
 			console.log(result.text, 'FORM SENT');
 		}, (error) => {
+			messageApi.error('ERROR SENDING MESSAGE!');
 			console.log(error.text, 'ERROR SENDING FORM');
 		});
 	}
@@ -38,53 +37,44 @@ function Contacts() {
 
       <div className={`${styles.form_box}`} >
       <div className={`${styles.title}`} >CONTACTS</div>
+		<div className={`${styles.form_box}`}>
 
         <form ref={form} onSubmit={onSubmitHandler}  className={`${styles.form}`} >
+		<label className={`${styles.label}`}>Name</label>
 
-              
-			<div className={`${styles.input_box}`}>
-				<label className={`${styles.label}`}>Name</label>
-				<input 
-					type='text'
-					value={formData.name}
-					onChange={onChangeHandler}
-					className={`${styles.input}`} 
-					placeholder='Enter Your Name'  />
-			</div>
-
-			<div className={`${styles.input_box}`}>
+			<input
+				type='text'
+				placeholder='Enter Your Name'
+				name='name'
+				className={`${styles.input}`}
+				/>
 				<label className={`${styles.label}`}>Email</label>
-				<input 
-					type='email'
-					value={formData.email}
-					onChange={onChangeHandler}
-					className={`${styles.input}`} 
-					placeholder='Enter Your Email'  />
-			</div>
 
-			<div className={`${styles.input_box}`}>
-				<label className={`${styles.label}`}>Message</label>
-                <textarea 
-					value={formData.message}
-					onChange={onChangeHandler}
-					 placeholder='Message'
-					 name='message'	
-					 className={`${styles.input}`} 
-					 />
-			</div>
-
-				<ReCAPTCHA
+			<input
+				type='email'
+				placeholder='Enter Your Email'
+				name='email'
+				className={`${styles.input}`}
+				/>
+			<label className={`${styles.label}`}>Message</label>
+			<textarea
+				ows={7}
+				placeholder='Enter Your Message'
+				name='message'
+				className={`${styles.input}`}
+				/>
+			<ReCAPTCHA
 					className={`${styles.recaptcha}`}
 					size='normal'
 					theme='dark'
 					sitekey={process.env.REACT_APP_RECAPTCHA_SITE_KEY}
 					/>
-
+      		{contextHolder}
             <button className={`${styles.button}`} >Send</button>
-
         </form>
+		</div>
       </div>
-	  <Mail></Mail>
+	  <Mail  className={`${styles.mail_icon}`} ></Mail>
     </div>
   )
 }

@@ -23,29 +23,29 @@
 .form {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
     justify-content: center;
+    gap: 2em;
     background-color: var(--dimmer-3);
     padding: 2em;
     width: 40vw;
-}
+    position: relative;
 
-.input_box {
-    display: flex;
-    flex-direction: column;
-    background-color: var(--dimmer-3);
-    padding: 2em;
-    width: 100%;
+
 }
 .label {
     font-size: 1.3rem;
     color: var(--acc-2);   
-    padding: .2em;
+    position: relative;
+    bottom: -25px;
+    /* padding: .2em; */
 
 }
 .input {
     font-size: .9rem;
     padding: .4em;
+    width: 100%;
+    
 }
 .button {
     font-size: 1.3rem;

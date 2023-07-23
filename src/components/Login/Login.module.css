@@ -25,7 +25,7 @@
 .form {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
     justify-content: center;
     background-color: var(--dimmer-3);
     padding: 2em;
@@ -49,10 +49,19 @@
     font-size: .9rem;
     padding: .4em;
 }
+.recaptcha {
+    width: 100%;
+}
 .button {
     font-size: 1.3rem;
     font-weight: bold;
     margin-top: .6em;
+    /* margin-left: auto;
+    margin-right: auto; */
     padding: .2em .8em;
     border: 2px solid var(--blue-3);
+}
+.mail_icon {
+    position: relative;
+    left: 320px;
 }

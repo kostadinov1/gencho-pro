@@ -1,9 +1,8 @@
 
 .about_me {
-    margin: 4em;
     padding: 0em;
     display: grid;
-    gap: 1.6em;
+    gap: 2em;
     grid-template-columns: repeat(6, 1fr);
     grid-template-areas: 
                 "one one one one one one"

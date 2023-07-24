@@ -14,27 +14,28 @@ function AboutMe() {
             <div className={`${styles.title}`} >About Me</div>
         </div>
         <div className={`${styles.card_2} ${styles.about_card}`}>
-            <img src='./images/my_photos/profile_photo_2.jpg' alt=''></img>
+            <img className={`${styles.about_img}`} src='/images/placeholders/software.jpeg' alt=''></img>
         </div>
 
         <div className={`${styles.card_3} ${styles.about_card}`}>
-            <h2>Hi! </h2>
-            <p>My name is Evgeni Kostadinov. I am bulgarian, living in London for the last 10 years.
-                about 4 years ago I started programming as a hobby, but now, I am looking forward to become
+            <div className={`${styles.card_3_title}`}>Hi! </div>
+            <p>My name is Evgeni Kostadinov. I am bulgarian, living Varna,Bulgaria.
+                About 3 years ago I started programming as a hobby, but now, I am looking forward to become
                 a full time professional and master it. 
             </p>
-            <p>I am graduating this year, April 2023, and I am looking for a team and a place where
+            <p>I this year (2023), and I am looking for a team and a place where
                 to improve my skills and knowledge.
                 Currently I am using Django Rest, React JS, Vanilla HTML5 and CSS3, Postgres, Docker, NGINX and AWS EC2 instances
                 to serve my applications. Web Development is what I enjoy doing, but I do not stay away from challanges as well.
                 There are also a few great projects on my mind for future.
                 If You need more info about me,
                 do not hesitate to send me a message from <Link to={'/contacts'}><i>HERE</i></Link>.
+                You can also check out my <Link to={'/contacts'}><i>Projects</i></Link>. Thanks for visiting my website!
             </p>
         </div>
 
         <div className={`${styles.card_4} ${styles.about_card}`}>
-        <div className={`${styles.title}`} >Education</div>
+        <div className={`${styles.card_4_title}`} >Education</div>
             <ul className={`${styles.about_card_ul}`}>
                 <li><a href='link'>DIPLOMA</a></li>
                 <li><a href='link'>Python Basics</a></li>

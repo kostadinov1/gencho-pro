@@ -5,60 +5,99 @@
     gap: 2em;
     grid-template-columns: repeat(6, 1fr);
     grid-template-areas: 
-                "one one one one one one"
+    "one one one one one one"
                 "two two three three three three"
                 "two two three three three three"
                 "two two three three three three"
                 "four four four four four four"
                 "four four four four four four";
-    padding: 2em;
-}
+                padding: 2em;
+            }
 .title {
     text-align: center;
     font-size: 3rem;
     font-weight: bold;
     font-family: 'Orbitron', sans-serif;
     letter-spacing: 1.2pt;
-    padding: .2em;
-
+    padding: .6em;
+    background-color: var(--dimmer-3);
+    clip-path: polygon(5% 3%, 20% 34%, 5% 0, 96% 0, 80% 34%, 96% 3%, 100% 99%, 90% 80%, 100% 100%, 0 100%, 9% 79%, 0 99%); 
+    width: 90vw;
+    margin: auto auto;
 }
-.card_1 {
-    grid-area: one;
-    max-height: 20vh;
-}
-.card_2 {
-    grid-area: two;
-    min-height: 60vh;
-}
-.card_3 {
-    grid-area: three;
-    min-height: 60vh;
-}
-.card_4 {
-    grid-area: four;
-    /* max-height: 40vh; */
-
-}
-
 .about_card {
     padding: 2em;
-    border: 0.3em solid var(--blue-4);
-    border-radius: var(--bradius);
+    /* border: 0.3em solid var(--blue-4); */
+    /* border-radius: var(--bradius); */
     overflow: hidden;
     color: var(--blue-4);
     background-color: var(--blue-2);
     transition-duration: 400ms;
 }
-.about_card p {
-    padding: 1em;
+.card_1 {
+    grid-area: one;
+    max-height: 20vh;
+    /* height: 20vh; */
+    transition: all ease-in 1s;
+    /* transform: translateY(-150%); */
+    /* opacity: 0; */
+    clip-path: polygon(5% 3%, 20% 34%, 5% 0, 96% 0, 80% 34%, 96% 3%, 100% 99%, 90% 80%, 100% 100%, 0 100%, 9% 79%, 0 99%); 
+
 }
-.about_card img {
-    border: 0.3em solid var(--blue-4);
-    border-radius: var(--bradius);
+.card_2 {
+    grid-area: two;
+    min-height: 60vh;
+    clip-path: polygon(0 2%, 5% 40%, 0 0, 100% 0, 94% 40%, 100% 2%, 100% 100%, 97% 71%, 99% 100%, 1% 100%, 2% 71%, 0 100%);  
+
+}
+.about_img {
+
     object-fit: cover;
     height: 100%;
     width: 100%;
+    opacity: 0.8;
 }
+.card_3 {
+    grid-area: three;
+    min-height: 60vh;
+    clip-path: polygon(0 2%, 5% 40%, 0 0, 100% 0, 94% 40%, 100% 2%, 100% 100%, 97% 71%, 99% 100%, 1% 100%, 2% 71%, 0 100%);  
+
+}
+.card_3_title {
+    text-align: start;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-left: 2em;
+    letter-spacing: 1.2pt;
+
+}
+.about_card p {
+    font-size: 1.2rem;
+    letter-spacing: 1.1pt;
+
+
+    padding: 2em;
+}
+.card_4 {
+    grid-area: four;
+    /* max-height: 40vh; */
+    clip-path: polygon(0 2%, 5% 40%, 0 0, 100% 0, 94% 40%, 100% 2%, 100% 100%, 97% 71%, 99% 100%, 1% 100%, 2% 71%, 0 100%);  
+
+
+}
+.card_4_title {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 1.2pt;
+    padding: .2em;
+    clip-path: polygon(5% 3%, 20% 34%, 5% 0, 96% 0, 80% 34%, 96% 3%, 100% 99%, 90% 80%, 100% 100%, 0 100%, 9% 79%, 0 99%); 
+    background-color: var(--dimmer-3);
+
+}
+
+
 
 .about_card_ul {
     grid-area: four;
@@ -76,6 +115,7 @@
     list-style-type: none;
     padding: .6em;
     background-color: var(--dimmer-3);
+    clip-path: polygon(0 2%, 5% 40%, 0 0, 100% 0, 94% 40%, 100% 2%, 100% 100%, 97% 71%, 99% 100%, 1% 100%, 2% 71%, 0 100%);  
 
     text-align: center;
 

@@ -6,9 +6,15 @@ import { Link } from 'react-router-dom'
 function Hero() {
   return (
     <div className={`${styles.hero}`}>
+        <div className={`${styles.blob} ${styles.blob_1}`}></div>
+        <div className={`${styles.blob} ${styles.blob_2}`}></div>
+        <div className={`${styles.blob} ${styles.blob_3}`}></div>
+        <div className={`${styles.blob} ${styles.blob_4}`}></div>
+        <div className={`${styles.blob} ${styles.blob_5}`}></div>
+        <div className={`${styles.blob} ${styles.blob_6}`}></div>
         <div className={`${styles.welcome}`}>
             <div className={`${styles.hi_box}`}>
-                <div className={`${styles.hi}`}>Hi</div>
+                <div className={`${styles.hi}`}>Hi!</div>
                 <h3>My name is</h3>
             </div>
             <h1>Evgeni Kostadinov</h1>
@@ -27,8 +33,14 @@ function Hero() {
               <li className={`${styles.web_dev_li} ${styles.li_12}`}>E</li>
               <li className={`${styles.web_dev_li} ${styles.li_13}`}>R</li>
             </ul>
-            <p>I create Web Application using React JS and Django.</p>
-            <Link to={'/projects'}>Projects</Link>
+            <p className={`${styles.hi_box_p}`}>I create Web Application using React JS and Django.</p>
+
+                <Link 
+                  to={'/projects'} 
+                  className={`${styles.button}`}>
+                  <div className={`${styles.wave}`}></div>
+                  Projects
+                </Link>
         </div>
         <div className='credit_image'>
             <a href="https://www.freepik.com/free-vector/composed-particles-swirling-abstract-graphics-background-sense-science-technology_14803660.htm?query=web%20tech&collectionId=309&&position=5&from_view=collections#position=5">Image by liuzishan</a> on Freepik

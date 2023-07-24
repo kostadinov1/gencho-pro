@@ -14,7 +14,10 @@
     align-items: center;
     justify-content: center;
     padding: 2em;
-
+    background-image: url('/public/images/placeholders/blobanimation.svg');
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
     -webkit-animation: icon_wheel 8s linear infinite;
     -moz-animation: icon_wheel 8s linear infinite;
     -ms-animation: icon_wheel 8s linear infinite;
@@ -88,7 +91,7 @@
 .icon_9 {
     grid-area: nine;
     /* transform: rotate(125deg); */
-    scale: 2;
+    scale: 2.5;
 
     transition: all ease-in-out 1400ms;
     -webkit-animation: icon_wheel_reverse 5s linear infinite;

@@ -24,14 +24,17 @@
     border-top: .1em solid var(--acc-2);
     border-bottom: .1em solid var(--acc-2);
     background-color: var(--dimmer-2);
+    font-size: 1.2rem;
 }
 
 .subtitle {
     color: var(--text);
+    font-size: 1.2rem;
 
 }
 .pdiv {
     color: var(--text);
+    font-size: 1.2rem;
 
     border-radius: var(--b-radius);
 }

@@ -9,10 +9,11 @@
     padding: .6em;
     min-height: 100vh;
 
-    background: url('/public/images/placeholders/software.jpeg');
-    background-position: center;
-    background-size: cover;
+    background-color: var(--prime-1);
+    background-image: url('/public/images/placeholders/stacked-waves-haikei(1).svg');
     background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; 
 }
 
 

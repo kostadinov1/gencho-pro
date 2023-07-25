@@ -5,6 +5,12 @@
     align-items: start;
     justify-content: center;
     height: 100vh;
+
+    background-color: var(--prime-1);
+    background-image: url('/public/images/placeholders/stacked-waves-haikei.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     
 }
 .form_box {

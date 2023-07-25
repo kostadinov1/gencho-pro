@@ -12,7 +12,13 @@
                 "four four four four four four"
                 "four four four four four four";
                 padding: 2em;
-            }
+
+                background-color: var(--prime-1);
+                background-image: url('/public/images/placeholders/stacked-waves-haikei(1).svg');
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+   }
 .title {
     text-align: center;
     font-size: 3rem;
@@ -74,9 +80,10 @@
 .about_card p {
     font-size: 1.2rem;
     letter-spacing: 1.1pt;
+    line-height: 1.6;
 
 
-    padding: 2em;
+    padding: .6em 2em;
 }
 .card_4 {
     grid-area: four;

@@ -19,18 +19,17 @@ function AboutMe() {
 
         <div className={`${styles.card_3} ${styles.about_card}`}>
             <div className={`${styles.card_3_title}`}>Hi! </div>
-            <p>My name is Evgeni Kostadinov. I am bulgarian, living Varna,Bulgaria.
+            <p>My name is Evgeni Kostadinov. I am bulgarian, living near Varna, Bulgaria.
                 About 3 years ago I started programming as a hobby, but now, I am looking forward to become
                 a full time professional and master it. 
             </p>
-            <p>I this year (2023), and I am looking for a team and a place where
-                to improve my skills and knowledge.
+            <p>I graduated this year (2023), and I really want to improve my skills and knowledge.
                 Currently I am using Django Rest, React JS, Vanilla HTML5 and CSS3, Postgres, Docker, NGINX and AWS EC2 instances
                 to serve my applications. Web Development is what I enjoy doing, but I do not stay away from challanges as well.
                 There are also a few great projects on my mind for future.
                 If You need more info about me,
                 do not hesitate to send me a message from <Link to={'/contacts'}><i>HERE</i></Link>.
-                You can also check out my <Link to={'/contacts'}><i>Projects</i></Link>. Thanks for visiting my website!
+                You can also check out my <Link to={'/projects'}><i>Projects</i></Link>. Thanks for visiting my website!
             </p>
         </div>
 

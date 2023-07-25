@@ -5,31 +5,58 @@
     width: 100vw;
     min-height: 16vh;
     padding: 1em;
-    background-color: var(--prime-2);
-    border-top: 1px solid var(--text);
+    background-color: var(--prime-1);
+    background-image: url('/public/images/placeholders/stacked-waves-haikei(1).svg');
+    background-repeat: no-repeat;
+    background-size: cover;
 
 }
 
 .ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    gap: .2em;
     list-style: none;
-    font-size: .8rem;
+    font-size: 1rem;
     font-weight: 500;
-    /* text-align: center; */
-    border-radius: var(--b-radius);
+    padding: .4em;
     letter-spacing: .4pt;
+    background-color: var(--dimmer-3);
+    border-radius: var(--b-radius);
+    border-top: .1em solid var(--text);
+    border-bottom: .1em solid var(--text);
 }
 
 .li {
-    padding: .1em .6em;
+    padding: .3em 1em;
     border-radius: var(--b-radius);
     background-color: var(--prime-2);
     border: 1px solid var(--sec-2);
     transition: all ease-in-out 400ms;
+    text-align: center;
 
+}
+.credits {
+    background-color: var(--dimmer-3);
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 1.2pt;
+    padding: .8em 1.2em;
+    max-width: 15em;
+    max-height: 10em;
+    border-radius: var(--b-radius);
+    border-top: .1em solid var(--text);
+    border-bottom: .1em solid var(--text);
+}
+.credits:hover {
+    scale: 1.05;
+    color: var(--acc-2);
 }
 
 .li:hover {
-    scale: 1.2;
+    scale: 1.08;
 }
 @media (max-width:900px) {
     .footer {

@@ -79,7 +79,9 @@ function Login() {
 					theme='dark'
 					sitekey={process.env.REACT_APP_RECAPTCHA_SITE_KEY}
 					/>
-				<button className={`${styles.button}`}>LOGIN</button>
+				<button className={`${styles.button}`}>LOGIN
+				<div className={`${styles.wave}`}></div>
+				</button>
 			</form>
         	{/* <WaveButton></WaveButton> */}
         </div>

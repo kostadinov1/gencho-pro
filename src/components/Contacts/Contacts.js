@@ -70,7 +70,10 @@ function Contacts() {
 					sitekey={process.env.REACT_APP_RECAPTCHA_SITE_KEY}
 					/>
       		{contextHolder}
-            <button className={`${styles.button}`} >Send</button>
+            <button className={`${styles.button}`} >
+				Send
+				<div className={`${styles.wave}`}></div>
+				</button>
         </form>
 		</div>
       </div>

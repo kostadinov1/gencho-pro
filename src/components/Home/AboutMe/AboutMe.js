@@ -36,23 +36,19 @@ function AboutMe() {
         <div className={`${styles.card_4} ${styles.about_card}`}>
         <div className={`${styles.card_4_title}`} >Education</div>
             <ul className={`${styles.about_card_ul}`}>
-                <li><a href='link'>DIPLOMA</a></li>
-                <li><a href='link'>Python Basics</a></li>
-                <li><a href='link'>Python Fundamentals</a></li>
-                <li><a href='link'>Python Advanced</a></li>
-                <li><a href='link'>Python OOP</a></li>
-                <li><a href='link'>Python Web Basics</a></li>
-                <li><a href='link'>Python Web Framework (Django)</a></li>
-                <li><a href='link'>Javascript Advanced</a></li>
-                <li><a href='link'>Javascript Applications</a></li>
-                <li><a href='link'>HTML and CSS</a></li>
-                <li><a href='link'>React JS</a></li>
+                <li><a href='https://softuni.bg/certificates/details/169749/e86f2042'>DIPLOMA</a></li>
+                <li><a href='https://softuni.bg/certificates/details/92282/d5c821a8'>Python Web Basics</a></li>
+                <li><a href='https://softuni.bg/certificates/details/104716/f7731ca1'>Python Fundamentals</a></li>
+                {/* <li><a href='link'>Python Advanced</a></li> */}
+                <li><a href='https://softuni.bg/certificates/details/110486/b3a92e3e'>Python OOP</a></li>
+                <li><a href='https://softuni.bg/certificates/details/133018/a77e1107'>Python Web Basics</a></li>
+                <li><a href='https://softuni.bg/certificates/details/132409/e1a771d7'>Python Web Framework (Django)</a></li>
+                {/* <li><a href='link'>Javascript Advanced</a></li> */}
+                <li><a href='https://softuni.bg/certificates/details/131663/42a7f1c8'>Javascript Applications</a></li>
+                <li><a href='https://softuni.bg/certificates/details/163376/ee189260'>HTML and CSS</a></li>
+                <li><a href='https://softuni.bg/certificates/details/168632/24f8bfa8'>React JS</a></li>
             </ul>
         </div>
-{/* 
-            <li><a href='http://www.gencho.pro'>gencho.pro</a></li>
-            <li><a href='https://www.dogramavarna.net'>dogramavarna.net</a></li>
-            <li><a href='http://ec2-35-179-75-79.eu-west-2.compute.amazonaws.com:8000/'>dentist.aws</a></li> */}
 
   </section>
   )

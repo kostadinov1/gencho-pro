@@ -328,3 +328,72 @@
   --tr: 20;
   --op: .7;
 }
+
+
+
+/* <========== Media Query ================> */
+
+/* TABLET */
+
+@media (max-width:900px) {
+
+}
+/* MOBILE */
+
+@media (max-width:600px) {
+
+  .figcaption {
+    display: block;
+  
+    width: auto;
+    margin-top: 12%;
+    padding: 8px 22px;
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 1.6;
+    letter-spacing: 2px;
+    word-spacing: 6px;
+    text-align: right;
+  
+    position: absolute;
+    top: 0;
+    right: 12px;
+  
+    color: var(--acc-2);
+    background: var(--dimmer);
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+  }
+/* ul */
+.ul {
+  padding-top: 30%;
+  margin: 0 auto;
+  width: 70%;
+  height: 100%;
+
+  list-style: none;
+  color: var(--blue-3);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* li */
+.li {
+  width: 100%;
+  margin-top: 12px;
+  padding-bottom: 12px;
+
+  font-size: .8rem;
+  text-align: center;
+  background-color: var(--dimmer);
+  width: 100rem;
+  position: relative;
+}
+.button {
+
+  width: 100%;
+
+}
+}

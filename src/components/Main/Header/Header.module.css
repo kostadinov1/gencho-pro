@@ -110,7 +110,7 @@
         z-index: 100;
         width: 100vw;
         display: flex;
-        gap: 0em;
+        gap: .1em;
         background-color: var(--prime-1);
         border: 1px solid var(--sec-3);
         letter-spacing: 1.1pt;
@@ -118,32 +118,23 @@
     
     }
     .logo {
-        display: flex;
-        gap: .2em;
-        max-height: 120px;
-        max-width: 51px;
-        font-size: 1.3rem;
-        font-weight: bold;
-        
-    }
-    .logo_title {
-        display: none;    
+        display: none; 
     }
     .ul {
         position: relative;
         margin: auto auto;
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: space-evenly;
         flex-wrap: wrap;
         list-style: none;
-        gap: .2em;
+        gap: .1em;
         padding: 0;
     }
     
     .link {
         font-size: .7rem;
-        padding: .7em .9em;
+        padding: .3em .5em;
     }
 
     

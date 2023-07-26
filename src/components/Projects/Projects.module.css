@@ -27,3 +27,46 @@
     width: 90vw;
     margin: auto auto;
 }
+
+
+/* <========== Media Query ================> */
+
+/* TABLET */
+
+@media (max-width:900px) {
+
+}
+/* MOBILE */
+
+@media (max-width:600px) {
+    .projects {
+        padding: .6em;
+    
+           background-color: var(--prime-1);
+        background-image: url('/public/images/placeholders/stacked-waves-haikei.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover; 
+    }
+    .projects_grid {
+        display:  grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: .4em;
+        padding: .2em;
+    
+    
+    }
+    .title {
+        text-align: center;
+        font-size: 1.6rem;
+        font-weight: bold;
+        font-family: 'Orbitron', sans-serif;
+        letter-spacing: 1.2pt;
+        padding: .6em;
+        background-color: var(--dimmer-3);
+        clip-path: polygon(5% 3%, 20% 34%, 5% 0, 96% 0, 80% 34%, 96% 3%, 100% 99%, 90% 80%, 100% 100%, 0 100%, 9% 79%, 0 99%); 
+        width: 90vw;
+        margin: auto auto;
+    }
+    
+}

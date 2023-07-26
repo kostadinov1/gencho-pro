@@ -119,3 +119,86 @@
     100% { background-position-x: 118px; }
   }
   
+
+
+
+
+/* <========== Media Query ================> */
+
+/* TABLET */
+
+@media (max-width:900px) {
+
+}
+/* MOBILE */
+
+@media (max-width:600px) {
+.login {
+    padding: .4em;
+    position: relative;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+
+    background-color: var(--prime-1);
+    background-image: url('/public/images/placeholders/stacked-waves-haikei.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.form_box {
+  background-color: var(--dimmer-3);
+  padding: .2em .4em;
+  width: 100%;
+}
+.title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: 'Orbitron', sans-serif;
+  letter-spacing: 1.2pt;
+  padding: .2em;
+
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: .8em;
+  background-color: var(--dimmer-3);
+  padding: 2em;
+  width: 100%;
+  position: relative;
+
+
+}
+
+.input_box {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--dimmer-3);
+    padding: 1.6em;
+    width: 100%;
+}
+.label {
+    font-size: 1.3rem;
+    color: var(--acc-2);   
+    padding: .2em;
+
+}
+.input {
+    font-size: .9rem;
+    padding: .4em;
+}
+.recaptcha {
+    width: 100%;
+}
+
+.mail_icon {
+    position: relative;
+    left: 320px;
+}
+
+
+}

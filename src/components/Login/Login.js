@@ -13,6 +13,8 @@ function Login() {
 		password: "",
 		secret_phrase: "",
 	})
+
+	// TODO FORM VALIDATIONS
 	
 	const onSubmitHandler = (e) => {
 		e.preventDefault()

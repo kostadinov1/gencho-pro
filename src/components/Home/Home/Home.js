@@ -8,10 +8,10 @@ import TechStack from '../TechStack/TechStack'
 const Home = () => {
     return (
         <section className={`${styles.home}`}>
-           <Hero />
-           <TechStack />
-           <IconWheel></IconWheel>
-           <AboutMe />
+           <Hero className={`${styles.hero}`} />
+           <TechStack  className={`${styles.techstack}`} />
+           <IconWheel className={`${styles.iconwheel}`} />
+           <AboutMe  className={`${styles.aboutme}`} />
            {/* <Canvas3D /> */}
         </section>
     )

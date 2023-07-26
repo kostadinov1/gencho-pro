@@ -127,3 +127,147 @@
     text-align: center;
 
 }
+
+
+
+
+/* <========== Media Query ================> */
+
+/* TABLET */
+
+@media (max-width:900px) {
+
+}
+/* MOBILE */
+
+@media (max-width:600px) {
+
+    .about_me {
+        padding: 0em;
+        display: grid;
+        gap: 2em;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas: 
+                    "one "
+                    "two "
+                    "three "
+                    "four ";
+                    padding: 2em;
+    
+                    background-color: var(--prime-1);
+                    background-image: url('/public/images/placeholders/stacked-waves-haikei(1).svg');
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: cover;
+       }
+    .title {
+        text-align: center;
+        font-size: 1.8rem;
+        font-weight: bold;
+        font-family: 'Orbitron', sans-serif;
+        letter-spacing: 1.2pt;
+        /* padding: .4em; */
+        background-color: var(--dimmer-3);
+        clip-path: polygon(5% 3%, 20% 34%, 5% 0, 96% 0, 80% 34%, 96% 3%, 100% 99%, 90% 80%, 100% 100%, 0 100%, 9% 79%, 0 99%); 
+        width: 10em;
+        margin: auto auto;
+    }
+    .about_card {
+        padding: .2em;
+        /* border: 0.3em solid var(--blue-4); */
+        /* border-radius: var(--bradius); */
+        overflow: hidden;
+        color: var(--blue-4);
+        background-color: var(--blue-2);
+        transition-duration: 400ms;
+    }
+    .card_1 {
+        grid-area: one;
+        max-height: 20vh;
+        /* height: 20vh; */
+        transition: all ease-in 1s;
+        /* transform: translateY(-150%); */
+        /* opacity: 0; */
+        clip-path: polygon(5% 3%, 20% 34%, 5% 0, 96% 0, 80% 34%, 96% 3%, 100% 99%, 90% 80%, 100% 100%, 0 100%, 9% 79%, 0 99%); 
+    
+    }
+    .card_2 {
+        grid-area: two;
+        min-height: 60vh;
+        clip-path: polygon(0 2%, 5% 40%, 0 0, 100% 0, 94% 40%, 100% 2%, 100% 100%, 97% 71%, 99% 100%, 1% 100%, 2% 71%, 0 100%);  
+    
+    }
+    .about_img {
+    
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+        opacity: 0.8;
+    }
+    .card_3 {
+        grid-area: three;
+        min-height: 20vh;
+        clip-path: polygon(0 2%, 5% 40%, 0 0, 100% 0, 94% 40%, 100% 2%, 100% 100%, 97% 71%, 99% 100%, 1% 100%, 2% 71%, 0 100%);  
+    
+    }
+    .card_3_title {
+        text-align: start;
+        font-size: 2rem;
+        font-weight: bold;
+        margin-left: 2em;
+        letter-spacing: 1.2pt;
+    
+    }
+    .about_card p {
+        font-size: 1rem;
+        letter-spacing: 1.1pt;
+        line-height: 1.6;
+    
+    
+        padding: .1em 1em;
+    }
+    .card_4 {
+        grid-area: four;
+        /* max-height: 40vh; */
+        clip-path: polygon(0 2%, 5% 40%, 0 0, 100% 0, 94% 40%, 100% 2%, 100% 100%, 97% 71%, 99% 100%, 1% 100%, 2% 71%, 0 100%);  
+    
+    
+    }
+    .card_4_title {
+        text-align: center;
+        font-size: 2rem;
+        font-weight: bold;
+        font-family: 'Orbitron', sans-serif;
+        letter-spacing: 1.2pt;
+        padding: .2em;
+        clip-path: polygon(5% 3%, 20% 34%, 5% 0, 96% 0, 80% 34%, 96% 3%, 100% 99%, 90% 80%, 100% 100%, 0 100%, 9% 79%, 0 99%); 
+        background-color: var(--dimmer-3);
+    
+    }
+    
+    
+    
+    .about_card_ul {
+        grid-area: four;
+        max-height: 100vh;
+    
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: .4em;
+        padding: 2em;
+        background-color: var(--dimmer-3);
+    }
+    .about_card li {
+        font-size: 1.1rem;
+        list-style-type: none;
+        padding: .6em;
+        background-color: var(--dimmer-3);
+        clip-path: polygon(0 2%, 5% 40%, 0 0, 100% 0, 94% 40%, 100% 2%, 100% 100%, 97% 71%, 99% 100%, 1% 100%, 2% 71%, 0 100%);  
+    
+        text-align: center;
+    
+    }
+    
+    
+}

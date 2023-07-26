@@ -99,84 +99,57 @@
 
 @media (max-width:900px) {
 
-.header {
-    display: flex;
-    gap: .2em;
-    background-color: var(--prime);
-    border: 1px solid var(--sec-3);
-    letter-spacing: 1.1pt;
 }
-.logo {
-    display: flex;
-    gap: .2em;
-    max-height: 40px;
-    max-width: 32px;
-    
-}
-.logo_title {
-    font-size: 1rem;
-    font-family: 'Zen Dots', cursive;
-
-}
-.logo_image {
-    object-fit: cover;
-}
-.ul {
-    margin: auto auto;
-    display: flex;
-    list-style: none;
-    gap: 2em;
-}
-.li {
-}
-.link:hover {
-    background-color: black;
-    color: var(--acc-2);
-}
-.link {
-    font-size: 0.9rem;
-    padding: .7em .9em;
-}
-}
-
     /* MEDIA QUERY  MOBILE*/
 
 @media (max-width:600px) {
- 
+
     .header {
+        position: sticky;
+        top: 0px;
+        z-index: 100;
+        width: 100vw;
         display: flex;
-        gap: .1em;
-        background-color: var(--prime);
-        border: 1px solid var(--prime);
-        letter-spacing: 0.1pt;
+        gap: 0em;
+        background-color: var(--prime-1);
+        border: 1px solid var(--sec-3);
+        letter-spacing: 1.1pt;
+        font-family: 'Orbitron', sans-serif;
+    
     }
     .logo {
-    display: none;
+        display: flex;
+        gap: .2em;
+        max-height: 120px;
+        max-width: 51px;
+        font-size: 1.3rem;
+        font-weight: bold;
+        
     }
-    .logo_image {
-        object-fit: cover;
+    .logo_title {
+        display: none;    
     }
     .ul {
+        position: relative;
         margin: auto auto;
         display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
         list-style: none;
-        gap: 0em;
-    }
-    .li {
-    }
-    .link:hover {
-        background-color: black;
-        color: var(--acc-2);
-    }
-    .link {
-        font-size: 0.9rem;
-        letter-spacing: 0;
-        padding: .3em .4em;
-    }
-    .icon {
-        display: none;
+        gap: .2em;
+        padding: 0;
     }
     
+    .link {
+        font-size: .7rem;
+        padding: .7em .9em;
+    }
+
+    
+    .langswitcher {
+        display: none;
+    }
 }
 
 

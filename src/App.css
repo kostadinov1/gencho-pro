@@ -82,11 +82,15 @@ a {
 
   
 
-/* Media Query */
+/* <========== Media Query ================> */
+
+/* TABLET */
 
 @media (max-width:900px) {
 
 }
+/* MOBILE */
+
 @media (max-width:600px) {
 
 }

@@ -166,3 +166,20 @@
 
 
 
+/* Media Query */
+
+/* TABLET */
+
+@media (max-width:900px) {
+
+}
+
+
+
+/* MOBILE */
+
+@media (max-width:600px) {
+  .icon_wheel {
+    display: none;
+  }
+}

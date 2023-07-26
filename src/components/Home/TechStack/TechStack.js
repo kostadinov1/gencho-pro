@@ -12,7 +12,7 @@ const TechStack = () => {
         ([entry]) => {
           setIsIntersecting(entry.isIntersecting);
         },
-        { rootMargin: "-300px" }
+        { rootMargin: "-50px" }
       );
       console.log(isIntersecting);
       observer.observe(ref.current);
@@ -31,7 +31,7 @@ const TechStack = () => {
         <div className={`${styles.child_2} ${styles.child} ${isIntersecting ? styles.slide_in : ''}`}>
             <h2 className={`${styles.child_title}`}>Frontend Development</h2>
             <ul className={`${styles.child_ul}`}>
-            <li className={`${styles.child_li}`}>
+                <li className={`${styles.child_li}`}>
                     <img 
                         className={`${styles.child_li_img}`}
                         alt='' src='/images/icons/node-js.png' />

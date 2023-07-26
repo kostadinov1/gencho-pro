@@ -13,6 +13,9 @@ function Contacts() {
 	const navigate = useNavigate()
 	const [messageApi, contextHolder] = message.useMessage();
 
+	// TODO FORM VALIDATIONS
+
+
 	const onSubmitHandler = (e) => {
 		e.preventDefault()
 

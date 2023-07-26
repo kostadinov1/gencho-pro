@@ -329,7 +329,7 @@ position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: .2em;
+  gap: .4em;
 
 
 }
@@ -417,4 +417,17 @@ font-size: .7rem;
     right: 1em;
     z-index: 1;
   }
+
+  @keyframes lighting {
+    0% {
+      color: var(--blue-3);
+    }
+    90% {
+      color: var(--blue-3);
+    }
+    100% {
+      text-shadow: 0 0 7px var(--blue-3), 0 0 50px #ff6c00;
+      color: var(--blue-3);
+    }
+}
 }

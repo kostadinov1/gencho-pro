@@ -115,6 +115,7 @@
         border: 1px solid var(--sec-3);
         letter-spacing: 1.1pt;
         font-family: 'Orbitron', sans-serif;
+        min-height: 2em;
     
     }
     .logo {

@@ -12,7 +12,7 @@ const TechStack = () => {
         ([entry]) => {
           setIsIntersecting(entry.isIntersecting);
         },
-        { rootMargin: "-50px" }
+        { rootMargin: "-150px" }
       );
       console.log(isIntersecting);
       observer.observe(ref.current);

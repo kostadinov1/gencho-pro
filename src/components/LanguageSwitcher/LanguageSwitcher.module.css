@@ -4,7 +4,7 @@
     flex-direction: column;
     gap: .4em;
     height: 100%;
-    /* width: 100%; */
+    width: 100%;
     color: var(--blue-3);
     border-radius: var(--b-radius);
     /* border: 1px solid var(--blue-2); */
@@ -22,13 +22,14 @@
         display: flex;
         flex-direction: column;
         gap: .4em;
-        height: 50%;
-
+        height: 100%;
+        width: 100%;
         border-radius: var(--b-radius);
-        border: 1px solid var(--acc-2);
-        padding: .4em;
+        padding: .3em;
         font-size: .6rem;
         background-color: var(--dimmer);
+        color: var(--acc-2);
+        border: 1px solid var(--acc-2);
     }
     .option {
         width: 100%;
@@ -41,7 +42,8 @@
         display: flex;
         flex-direction: column;
         gap: .4em;
-        height: 50%;
+        height: 100%;
+        width: 100%;
         border-radius: var(--b-radius);
         padding: .3em;
         font-size: .6rem;

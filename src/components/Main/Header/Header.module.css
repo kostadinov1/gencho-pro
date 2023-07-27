@@ -27,6 +27,7 @@
     scale: 1.1;
     text-shadow: var(--blue-3) 1px 0 10px;
     padding: 0em 1em;
+    color: var(--blue-1);
 
 }
 .logo_image {
@@ -99,6 +100,104 @@
 
 @media (max-width:900px) {
 
+    .header {
+        position: sticky;
+        top: 0px;
+        z-index: 100;
+        height: 2.7em;
+        width: 100vw;
+        display: flex;
+        gap: 3em;
+        background-color: var(--prime-1);
+        border: 1px solid var(--sec-3);
+        letter-spacing: 1.1pt;
+        font-family: 'Orbitron', sans-serif;
+    
+    }
+    .logo {
+        display: flex;
+        align-items: center;
+        gap: .2em;
+        max-height: 120px;
+        max-width: 51px;
+        font-size: 1.3rem;
+        font-weight: bold;
+        
+    }
+    .logo_title {
+        font-size: 1.2rem;
+        font-family: 'Zen Dots', cursive;
+        scale: 1.1;
+        text-shadow: var(--blue-3) 1px 0 10px;
+        padding: 0em 1em;
+    
+    }
+    .logo_image {
+        object-fit: cover;
+    }
+    .ul {
+        position: relative;
+        margin: auto auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        list-style: none;
+        gap: 1em;
+        padding: 0;
+    }
+    
+    .li {
+        position: relative;
+    }
+    
+    .link {
+        font-size: 1rem;
+        padding: .7em .9em;
+    }
+    .link:hover {
+        background-color: black;
+        color: var(--acc-2);
+    }
+    
+    
+    .li::before {
+        content: "";
+        width: 0;
+        height: 2px;
+        background-color: #00bcd4;
+        position: absolute;
+        top: 120%;
+        left: 0;
+        transition: all 0.5s;
+    }
+    .li::after {
+        content: "";
+        width: 0;
+        height: 2px;
+        background-color: var(--acc-2);
+        position: absolute;
+        top: 120%;
+        right: 0;
+        transition: all 0.5s;
+    
+    }
+    .li:hover:before {
+        background-color: var(--acc-2);
+        color: var(--acc-2);
+        width: 50%;
+        transform: translateX(100%);
+    }
+    .li:hover:after {
+        width: 50%;
+        transform: translateX(-100%);
+    }
+    
+    .langswitcher {
+        display: none;
+        width: 6em;
+    }
+    
 }
     /* MEDIA QUERY  MOBILE*/
 

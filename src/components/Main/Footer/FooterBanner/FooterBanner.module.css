@@ -45,7 +45,11 @@
 /* TABLET */
 
 @media (max-width:900px) {
-
+    .footer_banner {
+        display: none;
+        
+    
+    }
 }
 /* MOBILE */
 

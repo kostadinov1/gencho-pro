@@ -57,14 +57,14 @@
 .button {
     text-decoration: none;
     padding: 1.2em 4em;
-    color: var(--blue-1);
+    color: var(--blue-3);
     font-size: 18px;
     letter-spacing: 3px;
     border: 2px solid var(--blue-3);
     text-transform: uppercase;
     position: relative;
     margin: auto auto;
-
+    background-color: var(--dimmer-3);
     overflow: hidden;
     transition: all 0.5s;
     z-index: 1;

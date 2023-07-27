@@ -20,7 +20,9 @@ function Footer() {
         </ul>
         <Link className={`${styles.credits}`} to={'/credits'}>IMAGES USED IN THIS WEBSITE - THANK YOU!!!</Link>
         <FooterBanner ></FooterBanner>
-        <LanguageSwitcher></LanguageSwitcher>
+        <div className={styles.langswitcher}>
+          <LanguageSwitcher></LanguageSwitcher>
+        </div>
 
     </section>
   )

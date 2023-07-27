@@ -37,27 +37,27 @@
 
 .child_1 {
     height: 20vh;
-    transition: all ease-in 1s;
+    transition: all ease-in .8s;
     transform: translateY(-150%);
     opacity: 0;
     clip-path: polygon(5% 3%, 20% 34%, 5% 0, 96% 0, 80% 34%, 96% 3%, 100% 99%, 90% 80%, 100% 100%, 0 100%, 9% 79%, 0 99%); 
 
   }
   .child_2 {
-    transition: all ease-in 1.4s;
+    transition: all ease-in .8s;
     transform: translateX(150%);
     opacity: 0;
     clip-path: polygon(0 2%, 5% 40%, 0 0, 100% 0, 94% 40%, 100% 2%, 100% 100%, 97% 71%, 99% 100%, 1% 100%, 2% 71%, 0 100%);  
   }
 
 .child_3 {
-    transition: all ease-in 1.4s;
-    transform: translateX(-150%);
+  transition: all ease-in .8s;
+  transform: translateX(-150%);
     opacity: 0;
     clip-path: polygon(0 6%, 15% 15%, 3% 1%, 98% 0, 85% 15%, 100% 4%, 100% 96%, 85% 85%, 97% 100%, 3% 100%, 15% 85%, 0 98%);
   }
   .child_4 {
-    transition: all ease-in 1.4s;
+    transition: all ease-in .8s;
     transform: translateX(150%);
     opacity: 0;
     clip-path: polygon(0 2%, 5% 40%, 0 0, 100% 0, 94% 40%, 100% 2%, 100% 100%, 97% 71%, 99% 100%, 1% 100%, 2% 71%, 0 100%);
@@ -113,6 +113,115 @@
 
 @media (max-width:900px) {
 
+
+  .techstack {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+
+    padding: .6em;
+    min-height: 100vh;
+
+    background-color: var(--prime-1);
+    background-image: url('/public/images/placeholders/stacked-waves-haikei(1).svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; 
+}
+
+
+.child {
+    width: 95%;
+    /* height: 30vh; */
+    background-color: var(--blue-2);
+    text-align: center;
+}
+.tech_title {
+  font-size: 2.3rem;
+  font-family: 'Orbitron', sans-serif;
+  letter-spacing: 1.2pt;
+  padding: .2em;
+}
+.child_title {
+  font-size: 1.7rem;
+  letter-spacing: 1.2pt;
+  padding: .2em;
+}
+.child_1 {
+  height: 6vh;
+  transition: all ease-in .8s;
+  transform: translateY(-150%);
+  opacity: 0;
+  clip-path: polygon(5% 3%, 20% 34%, 5% 0, 96% 0, 80% 34%, 96% 3%, 100% 99%, 90% 80%, 100% 100%, 0 100%, 9% 79%, 0 99%); 
+
+}
+.child_2 {
+  transition: all ease-in .8s;
+  transform: translateX(150%);
+  opacity: 0;
+  clip-path: polygon(0 2%, 5% 40%, 0 0, 100% 0, 94% 40%, 100% 2%, 100% 100%, 97% 71%, 99% 100%, 1% 100%, 2% 71%, 0 100%);  
+}
+
+.child_3 {
+transition: all ease-in .8s;
+transform: translateX(-150%);
+  opacity: 0;
+  clip-path: polygon(0 6%, 15% 15%, 3% 1%, 98% 0, 85% 15%, 100% 4%, 100% 96%, 85% 85%, 97% 100%, 3% 100%, 15% 85%, 0 98%);
+}
+.child_4 {
+  transition: all ease-in .8s;
+  transform: translateX(150%);
+  opacity: 0;
+  clip-path: polygon(0 2%, 5% 40%, 0 0, 100% 0, 94% 40%, 100% 2%, 100% 100%, 97% 71%, 99% 100%, 1% 100%, 2% 71%, 0 100%);
+  }
+.slide_in {
+    transform: translateX(0) !important;
+    opacity: 1 !important;
+  }
+
+  
+  .child_ul {
+    position: relative;
+  
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: .4em;
+    padding: .2em 1em;
+    
+  }
+  .child_li {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: .4em;
+    padding: .6em;
+    overflow: visible;
+
+    font-size: 1.2rem;
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 1.2pt;
+    background-color: var(--dimmer-3);
+    clip-path: polygon(0 2%, 5% 40%, 0 0, 100% 0, 94% 40%, 100% 2%, 100% 100%, 97% 71%, 99% 100%, 1% 100%, 2% 71%, 0 100%);    transition: all ease-in-out 0.5s;
+  }
+  .child_li_img {
+    /* position: absolute; */
+    top: 1px;
+    left: 1px;
+    width: 3em;
+    height: 3em;
+    transition: all ease-in-out 0.5s;
+  }
+  .child_li_img:hover {
+    scale: 1.2;
+  }
+
+
 }
 /* MOBILE */
 
@@ -153,34 +262,33 @@
   letter-spacing: 1.2pt;
   padding: .2em;
 }
-
 .child_1 {
-    height: 10vh;
-    transition: all ease-in 1s;
-    transform: translateY(-150%);
-    opacity: 0;
-    clip-path: polygon(5% 3%, 20% 34%, 5% 0, 96% 0, 80% 34%, 96% 3%, 100% 99%, 90% 80%, 100% 100%, 0 100%, 9% 79%, 0 99%); 
+  height: 10vh;
+  transition: all ease-in .8s;
+  transform: translateY(-150%);
+  opacity: 0;
+  clip-path: polygon(5% 3%, 20% 34%, 5% 0, 96% 0, 80% 34%, 96% 3%, 100% 99%, 90% 80%, 100% 100%, 0 100%, 9% 79%, 0 99%); 
 
-  }
-  .child_2 {
-    transition: all ease-in 1.4s;
-    transform: translateX(150%);
-    opacity: 0;
-    clip-path: polygon(0 2%, 5% 40%, 0 0, 100% 0, 94% 40%, 100% 2%, 100% 100%, 97% 71%, 99% 100%, 1% 100%, 2% 71%, 0 100%);  
-  }
+}
+.child_2 {
+  transition: all ease-in .8s;
+  transform: translateX(150%);
+  opacity: 0;
+  clip-path: polygon(0 2%, 5% 40%, 0 0, 100% 0, 94% 40%, 100% 2%, 100% 100%, 97% 71%, 99% 100%, 1% 100%, 2% 71%, 0 100%);  
+}
 
 .child_3 {
-    transition: all ease-in 1.4s;
-    transform: translateX(-150%);
-    opacity: 0;
-    clip-path: polygon(0 6%, 15% 15%, 3% 1%, 98% 0, 85% 15%, 100% 4%, 100% 96%, 85% 85%, 97% 100%, 3% 100%, 15% 85%, 0 98%);
+transition: all ease-in .8s;
+transform: translateX(-150%);
+  opacity: 0;
+  clip-path: polygon(0 6%, 15% 15%, 3% 1%, 98% 0, 85% 15%, 100% 4%, 100% 96%, 85% 85%, 97% 100%, 3% 100%, 15% 85%, 0 98%);
+}
+.child_4 {
+  transition: all ease-in .8s;
+  transform: translateX(150%);
+  opacity: 0;
+  clip-path: polygon(0 2%, 5% 40%, 0 0, 100% 0, 94% 40%, 100% 2%, 100% 100%, 97% 71%, 99% 100%, 1% 100%, 2% 71%, 0 100%);
   }
-  .child_4 {
-    transition: all ease-in 1.4s;
-    transform: translateX(150%);
-    opacity: 0;
-    clip-path: polygon(0 2%, 5% 40%, 0 0, 100% 0, 94% 40%, 100% 2%, 100% 100%, 97% 71%, 99% 100%, 1% 100%, 2% 71%, 0 100%);
-    }
 .slide_in {
     transform: translateX(0) !important;
     opacity: 1 !important;

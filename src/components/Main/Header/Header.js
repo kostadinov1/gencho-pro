@@ -18,7 +18,7 @@ function Header() {
                 <Link to={'/'}>
                     <img src='/logo/dogramaLogoOnly.png'  alt='' className={styles.logo_image} />
                 </Link>
-                <div className={`${styles.logo_title}`}>Gencho</div>
+                <Link to={'/'} className={`${styles.logo_title}`}>Gencho</Link>
             </div>
             <nav className={styles.ul}>
                 <li className={styles.li}>

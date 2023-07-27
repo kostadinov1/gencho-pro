@@ -171,7 +171,26 @@
 /* TABLET */
 
 @media (max-width:900px) {
-
+  .icon_wheel {
+    display: none;
+    position: absolute;
+  top: 17em;
+  left: 3em;
+  /* height: 20em; */
+  width: 16em;
+  display: grid;
+  grid-template-areas:
+       "one . . two . . three"
+       ". . . . . . . "
+       "four . . nine . . five"
+       ". . . . . . . "
+       "six . . seven . . eight"
+      ;
+  gap: .7em;
+  align-items: center;
+  padding: 1.6em;
+  justify-content: center;
+  }
 }
 
 
